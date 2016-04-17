@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'CFLAppConfig_Example', :exclusive => true do
+  pod 'CFLAppConfig', :path => '../'
+end
+
+target 'CFLAppConfig_Tests', :exclusive => true do
+  pod 'CFLAppConfig', :path => '../'
+
+  
+end

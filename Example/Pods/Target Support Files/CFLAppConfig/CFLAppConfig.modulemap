@@ -1,0 +1,6 @@
+framework module CFLAppConfig {
+  umbrella header "CFLAppConfig-umbrella.h"
+
+  export *
+  module * { export * }
+}

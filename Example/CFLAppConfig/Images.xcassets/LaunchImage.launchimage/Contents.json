@@ -1,0 +1,57 @@
+{
+  "images" : [
+    {
+      "orientation" : "portrait",
+      "idiom" : "iphone",
+      "extent" : "full-screen",
+      "minimum-system-version" : "7.0",
+      "scale" : "2x",
+      "filename": "iphone_retina.png"
+    },
+    {
+      "orientation" : "portrait",
+      "idiom" : "iphone",
+      "subtype" : "retina4",
+      "extent" : "full-screen",
+      "minimum-system-version" : "7.0",
+      "scale" : "2x",
+      "filename": "iphone_retina_4inch.png"
+    },
+    {
+      "orientation" : "portrait",
+      "idiom" : "ipad",
+      "extent" : "full-screen",
+      "minimum-system-version" : "7.0",
+      "scale" : "1x",
+      "filename": "ipad_portrait.png"
+    },
+    {
+      "orientation" : "landscape",
+      "idiom" : "ipad",
+      "extent" : "full-screen",
+      "minimum-system-version" : "7.0",
+      "scale" : "1x",
+      "filename": "ipad_landscape.png"
+    },
+    {
+      "orientation" : "portrait",
+      "idiom" : "ipad",
+      "extent" : "full-screen",
+      "minimum-system-version" : "7.0",
+      "scale" : "2x",
+      "filename": "ipad_retina_portrait.png"
+    },
+    {
+      "orientation" : "landscape",
+      "idiom" : "ipad",
+      "extent" : "full-screen",
+      "minimum-system-version" : "7.0",
+      "scale" : "2x",
+      "filename": "ipad_retina_landscape.png"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

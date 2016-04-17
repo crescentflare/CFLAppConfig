@@ -1,0 +1,14 @@
+PODS:
+  - CFLAppConfig (0.2.0)
+
+DEPENDENCIES:
+  - CFLAppConfig (from `../`)
+
+EXTERNAL SOURCES:
+  CFLAppConfig:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CFLAppConfig: 88d8deb685e4b9f60dd26ed84fa218476cea960e
+
+COCOAPODS: 0.39.0
