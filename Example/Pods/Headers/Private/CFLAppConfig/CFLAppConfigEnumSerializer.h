@@ -1,0 +1,1 @@
+../../../../../CFLAppConfig/Classes/Model/CFLAppConfigEnumSerializer.h

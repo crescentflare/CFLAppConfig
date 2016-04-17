@@ -1,0 +1,969 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A492CE2FB31136FAE6F18083574F4E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		1C9985CC7F7126D996C9A1C49BC0941E /* CFLAppConfig-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A24552E60D91440B53811A7F5C2FAB /* CFLAppConfig-dummy.m */; };
+		2833F1A37AFBD43EDE064447A925FAD7 /* CFLAppConfigEnumSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = A3330EC11EB3C08C1ACEBAF089B1174C /* CFLAppConfigEnumSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29A3CA8F8A407403B151C73C6F949758 /* CFLAppConfigManageInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 308EE74BB322FB80A74A460AFA326EAD /* CFLAppConfigManageInfoCell.m */; };
+		37D7FB7556AEB1D57E6838C1108A70F9 /* CFLAppConfig.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 596A5BED81554E6CA0E32B04DD255D83 /* CFLAppConfig.bundle */; };
+		3B5FDD3A252F089DE084AF3A5A4075FE /* CFLAppConfigManageTableValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5DFFE8B232C89D2B43B35CDBCAEEE2 /* CFLAppConfigManageTableValue.m */; };
+		49790017032E26BE55A8E6AAC432AA4E /* Pods-CFLAppConfig_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9221E3ECD8644E178BDF68087063249 /* Pods-CFLAppConfig_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53E35CF81830F4A72E6D813369929E0E /* CFLAppConfigBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A2A8655B5413B182512F76377634A9 /* CFLAppConfigBaseModel.m */; };
+		67F673CD1D23FAA92F8BADAD7ECC4B71 /* CFLAppConfigManageItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D2554C6D2195C1DA35D2A9EF7C9365D5 /* CFLAppConfigManageItemCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68DCB347E3DD8D6958AEB3AFCF7EBD20 /* CFLAppConfigManageSectionCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E10EC513DD4A3391D74D2B1B0233052F /* CFLAppConfigManageSectionCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CAA5B5108DDA4D47B7BF6659ED3D4A4 /* CFLAppConfig-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7280EE0A66F9407271962AD5815AB25 /* CFLAppConfig-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E46C5A79DB20C7DB4EE524DA667E28A /* Pods-CFLAppConfig_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39C37870C524DCFC2490EEAB8814F9B0 /* Pods-CFLAppConfig_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FF428E18746E3C969AC219269A62B1E /* CFLAppConfigBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5A20CDC561978A9B1B164299643551 /* CFLAppConfigBaseManager.m */; };
+		79E55CDCDB192CE2318C6A53F2D14ACC /* CFLAppConfigManageTableValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9916B0E02020599CD61A78B2BBDEB22F /* CFLAppConfigManageTableValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FF032A3E801C6999B1ACA3DC7CA3E4E /* CFLAppConfigBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E27EEF271EDC3A7405163F32697E66A /* CFLAppConfigBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		821A9A18C124CAFECAA33204B656347E /* CFLAppConfigManageTable.h in Headers */ = {isa = PBXBuildFile; fileRef = D71A353EF7FFA90B692940932F584C9A /* CFLAppConfigManageTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86C85597669561D53323F01224A96C06 /* Pods-CFLAppConfig_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9170E43ABA9C5C2D60D1A2E29CC4378D /* Pods-CFLAppConfig_Tests-dummy.m */; };
+		894F12802DDE3DE821EA406B3640BBF9 /* CFLAppConfigManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 548C836AC3D4F6B1AA8BB1344A80250D /* CFLAppConfigManageViewController.m */; };
+		8D0E4A32FE948CCEF9CB72BCEAD61EA3 /* CFLAppConfigBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 31B65FD95AC5479173CEFF74CCE3D069 /* CFLAppConfigBaseManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9331274BB86BD55D47D693AF87C564CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		9517386A100A029E19941C3B9CB231E4 /* chevron@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A12CD6840DD865A8903B9BF1AB491613 /* chevron@2x.png */; };
+		A6817DFBFEDB170290D754A1A9071E37 /* CFLAppConfigManageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E2AF9A0F9E1D9099EEFB453FF1CF3D3 /* CFLAppConfigManageViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC73DD0F6C323E82CCB84573FD9DE776 /* CFLAppConfigOrderedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = F5503D9126CC5DFEDB0087550F717278 /* CFLAppConfigOrderedDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3EBF254DFDD012448C8770BBD7880E5 /* CFLAppConfigStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D82F6398149442A0BBBC4FE0099A8CA /* CFLAppConfigStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C771A59673AD1F4ACCE1B6F0C3C4CB21 /* Pods-CFLAppConfig_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F3AC18A08255F8315C3E9E7601A590 /* Pods-CFLAppConfig_Example-dummy.m */; };
+		CDDCF5733AF38F65846E8174376EC7DE /* CFLAppConfigManageTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CFC46C17CE8458FC25BAAF86AB0FCA /* CFLAppConfigManageTableCell.m */; };
+		CF17D95E505BF42DBD0000A16540BD05 /* CFLAppConfigEnumSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = CA35F17EE3BECF24C97E250B775EA0F4 /* CFLAppConfigEnumSerializer.m */; };
+		CF3AC158D30FD0434B7C08AA480AEEA6 /* CFLAppConfigManageItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9BAF1BE7A4E582CE8AEFEE9D18A80B /* CFLAppConfigManageItemCell.m */; };
+		D3A59D6AC27844217C5C06C46482435A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		D3D970CE36B33D36701975C44016946C /* CFLAppConfigManageSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A7C61AAC784D45A239A577F8D873C6 /* CFLAppConfigManageSectionCell.m */; };
+		DBFD5B2744E0987207DEB5FA58BC5FD2 /* CFLAppConfigManageInfoCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 067B8FC9E53B42E8D77EA84169FE8569 /* CFLAppConfigManageInfoCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0DDF1D13E5A1BF3308D99C7A51BE91B /* chevron@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B1102D524C0F6F83E0E2ABCB880AF9C /* chevron@3x.png */; };
+		E351E58F80A51DBD3D98C6140AD5C2F0 /* CFLAppConfigManageLoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2174E964BB9180F4ECE4F4C780460DAD /* CFLAppConfigManageLoadingCell.m */; };
+		E38EF1427AC31A536CB128772CA69BCE /* CFLAppConfigManageTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F671B0DAD5FEB9A130B692530991207 /* CFLAppConfigManageTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7FB8352AC93EBA0B6606BC713F5080E /* CFLAppConfigManageLoadingCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 7443403E24BCACCFA2D22C52268B4014 /* CFLAppConfigManageLoadingCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9A2DE05F794707815F1ABE2626778BE /* chevron.png in Resources */ = {isa = PBXBuildFile; fileRef = E64734DE132504EB68D160E68989C100 /* chevron.png */; };
+		F08920AA496BA55163B0832295F585E8 /* CFLAppConfigManageTable.m in Sources */ = {isa = PBXBuildFile; fileRef = E695E2AC1815837BAA9D8D53969C0E7B /* CFLAppConfigManageTable.m */; };
+		F244809A406C8E172D5354B7E0BF1715 /* CFLAppConfigOrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4857CD66A2FF0F0ACCC037A99AA9804D /* CFLAppConfigOrderedDictionary.m */; };
+		FAA2DD90F50C261F37BD3FC4E5FEE6EB /* CFLAppConfigStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9B4346785AFF45C88DA7423D46414F /* CFLAppConfigStorage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD7AC9819AA712AED04BD3996E1B2127 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50C6A4FDBBF50FC4579B8903EF6A6DC5;
+			remoteInfo = CFLAppConfig;
+		};
+		C58E8A1182FCDFFD655D1EC06E432324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC673E6F39DF0920B9B39D099D02768;
+			remoteInfo = "CFLAppConfig-CFLAppConfig";
+		};
+		CAFAF0BEE00DD0804348FB065806FF68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50C6A4FDBBF50FC4579B8903EF6A6DC5;
+			remoteInfo = CFLAppConfig;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0446FE68D910A76F68259CDB459A38E7 /* CFLAppConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CFLAppConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		067B8FC9E53B42E8D77EA84169FE8569 /* CFLAppConfigManageInfoCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigManageInfoCell.h; sourceTree = "<group>"; };
+		09F8FFBF03A5A9819BBC6B4ACB9013B8 /* Pods-CFLAppConfig_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CFLAppConfig_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0A5DFFE8B232C89D2B43B35CDBCAEEE2 /* CFLAppConfigManageTableValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigManageTableValue.m; sourceTree = "<group>"; };
+		0F671B0DAD5FEB9A130B692530991207 /* CFLAppConfigManageTableCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigManageTableCell.h; sourceTree = "<group>"; };
+		17F3AC18A08255F8315C3E9E7601A590 /* Pods-CFLAppConfig_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CFLAppConfig_Example-dummy.m"; sourceTree = "<group>"; };
+		1B1102D524C0F6F83E0E2ABCB880AF9C /* chevron@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "chevron@3x.png"; sourceTree = "<group>"; };
+		1DCB5C4BAC2886FFD4A3ABBDB0FBA90B /* Pods_CFLAppConfig_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CFLAppConfig_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2174E964BB9180F4ECE4F4C780460DAD /* CFLAppConfigManageLoadingCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigManageLoadingCell.m; sourceTree = "<group>"; };
+		231A21C19ECA7AA59FB2060C1A14D937 /* Pods-CFLAppConfig_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CFLAppConfig_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		2859FCC6E28A5246F561BFA4FF56819B /* Pods-CFLAppConfig_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CFLAppConfig_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2BEBD1164927FB571C8EAFF84CA91BAB /* Pods-CFLAppConfig_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CFLAppConfig_Example-resources.sh"; sourceTree = "<group>"; };
+		2C5A20CDC561978A9B1B164299643551 /* CFLAppConfigBaseManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigBaseManager.m; sourceTree = "<group>"; };
+		2E27EEF271EDC3A7405163F32697E66A /* CFLAppConfigBaseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigBaseModel.h; sourceTree = "<group>"; };
+		308EE74BB322FB80A74A460AFA326EAD /* CFLAppConfigManageInfoCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigManageInfoCell.m; sourceTree = "<group>"; };
+		31312471EFCA0FA1F1A3E17764B588C3 /* Pods-CFLAppConfig_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CFLAppConfig_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		31B65FD95AC5479173CEFF74CCE3D069 /* CFLAppConfigBaseManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigBaseManager.h; sourceTree = "<group>"; };
+		38CFC46C17CE8458FC25BAAF86AB0FCA /* CFLAppConfigManageTableCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigManageTableCell.m; sourceTree = "<group>"; };
+		39C37870C524DCFC2490EEAB8814F9B0 /* Pods-CFLAppConfig_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CFLAppConfig_Example-umbrella.h"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		475ABFFA7F24B116C0B3F40B80B6328E /* Pods-CFLAppConfig_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CFLAppConfig_Example-frameworks.sh"; sourceTree = "<group>"; };
+		4857CD66A2FF0F0ACCC037A99AA9804D /* CFLAppConfigOrderedDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigOrderedDictionary.m; sourceTree = "<group>"; };
+		4E2AF9A0F9E1D9099EEFB453FF1CF3D3 /* CFLAppConfigManageViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigManageViewController.h; sourceTree = "<group>"; };
+		50B7688642ADED8139D7931F31721830 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		548C836AC3D4F6B1AA8BB1344A80250D /* CFLAppConfigManageViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigManageViewController.m; sourceTree = "<group>"; };
+		5952A008A5C040C14B9D06AA1D588B43 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		596A5BED81554E6CA0E32B04DD255D83 /* CFLAppConfig.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CFLAppConfig.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D82F6398149442A0BBBC4FE0099A8CA /* CFLAppConfigStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigStorage.h; sourceTree = "<group>"; };
+		73E8DD1456B8F2DE7B3F75B4978FCC0B /* Pods-CFLAppConfig_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CFLAppConfig_Tests.modulemap"; sourceTree = "<group>"; };
+		7443403E24BCACCFA2D22C52268B4014 /* CFLAppConfigManageLoadingCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigManageLoadingCell.h; sourceTree = "<group>"; };
+		7514894EE87A19ADC50F55E9D579072E /* Pods-CFLAppConfig_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CFLAppConfig_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7CFC493CCD69B9F4C33458558D49EE97 /* CFLAppConfig.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CFLAppConfig.modulemap; sourceTree = "<group>"; };
+		7D268525EBB27CCC748AD6E05124FF42 /* Pods_CFLAppConfig_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CFLAppConfig_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B386289C2BDDD1F90248098D2E4E44 /* Pods-CFLAppConfig_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CFLAppConfig_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8409F1EA09942E6B2A4A5F9B49EA9713 /* CFLAppConfig.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CFLAppConfig.xcconfig; sourceTree = "<group>"; };
+		8D9BAF1BE7A4E582CE8AEFEE9D18A80B /* CFLAppConfigManageItemCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigManageItemCell.m; sourceTree = "<group>"; };
+		9170E43ABA9C5C2D60D1A2E29CC4378D /* Pods-CFLAppConfig_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CFLAppConfig_Tests-dummy.m"; sourceTree = "<group>"; };
+		97168EA74205C2B7BE14D5C6159E7E78 /* Pods-CFLAppConfig_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CFLAppConfig_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9916B0E02020599CD61A78B2BBDEB22F /* CFLAppConfigManageTableValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigManageTableValue.h; sourceTree = "<group>"; };
+		A12CD6840DD865A8903B9BF1AB491613 /* chevron@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "chevron@2x.png"; sourceTree = "<group>"; };
+		A3330EC11EB3C08C1ACEBAF089B1174C /* CFLAppConfigEnumSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigEnumSerializer.h; sourceTree = "<group>"; };
+		A91F5739D6F0EF6AC37A96644EA96ACD /* CFLAppConfig-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CFLAppConfig-prefix.pch"; sourceTree = "<group>"; };
+		B7280EE0A66F9407271962AD5815AB25 /* CFLAppConfig-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CFLAppConfig-umbrella.h"; sourceTree = "<group>"; };
+		B9A2A8655B5413B182512F76377634A9 /* CFLAppConfigBaseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigBaseModel.m; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB9B4346785AFF45C88DA7423D46414F /* CFLAppConfigStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigStorage.m; sourceTree = "<group>"; };
+		CA29B146C1D7996F6138C9ED63026419 /* Pods-CFLAppConfig_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CFLAppConfig_Example.modulemap"; sourceTree = "<group>"; };
+		CA35F17EE3BECF24C97E250B775EA0F4 /* CFLAppConfigEnumSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigEnumSerializer.m; sourceTree = "<group>"; };
+		D2554C6D2195C1DA35D2A9EF7C9365D5 /* CFLAppConfigManageItemCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigManageItemCell.h; sourceTree = "<group>"; };
+		D6A24552E60D91440B53811A7F5C2FAB /* CFLAppConfig-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CFLAppConfig-dummy.m"; sourceTree = "<group>"; };
+		D71A353EF7FFA90B692940932F584C9A /* CFLAppConfigManageTable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigManageTable.h; sourceTree = "<group>"; };
+		E10EC513DD4A3391D74D2B1B0233052F /* CFLAppConfigManageSectionCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigManageSectionCell.h; sourceTree = "<group>"; };
+		E628F818F27E93DFF5DFBAB702553F0E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E64734DE132504EB68D160E68989C100 /* chevron.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = chevron.png; sourceTree = "<group>"; };
+		E68E5738E9701E709EF147C1E9C3F8EA /* Pods-CFLAppConfig_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CFLAppConfig_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		E695E2AC1815837BAA9D8D53969C0E7B /* CFLAppConfigManageTable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigManageTable.m; sourceTree = "<group>"; };
+		E9221E3ECD8644E178BDF68087063249 /* Pods-CFLAppConfig_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CFLAppConfig_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F125D042634248DC9B17831B36570161 /* Pods-CFLAppConfig_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CFLAppConfig_Tests-resources.sh"; sourceTree = "<group>"; };
+		F5503D9126CC5DFEDB0087550F717278 /* CFLAppConfigOrderedDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigOrderedDictionary.h; sourceTree = "<group>"; };
+		F8C204F4AFF58636048D6778BADE63A2 /* Pods-CFLAppConfig_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CFLAppConfig_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F9A7C61AAC784D45A239A577F8D873C6 /* CFLAppConfigManageSectionCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigManageSectionCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4854B92DC965B0C3FE3CB642D9862285 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9331274BB86BD55D47D693AF87C564CF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D1F911C4AB05DCD2590642D488A9FD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A59D6AC27844217C5C06C46482435A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56B6581FA6EB819175D2DFE09EFC6AAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DD5E9E9A5B72B58CAEEC1320B1F57DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A492CE2FB31136FAE6F18083574F4E4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		010A1D7BAE3E2D0A83CF0E32886533E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				067B8FC9E53B42E8D77EA84169FE8569 /* CFLAppConfigManageInfoCell.h */,
+				308EE74BB322FB80A74A460AFA326EAD /* CFLAppConfigManageInfoCell.m */,
+				D2554C6D2195C1DA35D2A9EF7C9365D5 /* CFLAppConfigManageItemCell.h */,
+				8D9BAF1BE7A4E582CE8AEFEE9D18A80B /* CFLAppConfigManageItemCell.m */,
+				7443403E24BCACCFA2D22C52268B4014 /* CFLAppConfigManageLoadingCell.h */,
+				2174E964BB9180F4ECE4F4C780460DAD /* CFLAppConfigManageLoadingCell.m */,
+				E10EC513DD4A3391D74D2B1B0233052F /* CFLAppConfigManageSectionCell.h */,
+				F9A7C61AAC784D45A239A577F8D873C6 /* CFLAppConfigManageSectionCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04749214F0275BDB7991142FD4B83A76 /* ManageAppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				4E2AF9A0F9E1D9099EEFB453FF1CF3D3 /* CFLAppConfigManageViewController.h */,
+				548C836AC3D4F6B1AA8BB1344A80250D /* CFLAppConfigManageViewController.m */,
+				93050B9DF0993742D2DD739B845EEDA7 /* Table */,
+				010A1D7BAE3E2D0A83CF0E32886533E6 /* View */,
+			);
+			path = ManageAppConfig;
+			sourceTree = "<group>";
+		};
+		050A1843EC57C29BDBBF241DDC99E63B /* CFLAppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				36430C514AE382AF3463EC6961BA1D86 /* Classes */,
+			);
+			path = CFLAppConfig;
+			sourceTree = "<group>";
+		};
+		36430C514AE382AF3463EC6961BA1D86 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6C23CC003E459794FE76B7C1AF637 /* Helper */,
+				808DE35E3793E836A05ED9E3FE63B703 /* Manager */,
+				CFB25BA2FE2CD0F140147FD5E9217BFC /* Model */,
+				859386209D71514F7BD0E4FBD4845962 /* ViewController */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3A6E89D7BE9EA254EF23D72FC4E69A20 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E64734DE132504EB68D160E68989C100 /* chevron.png */,
+				A12CD6840DD865A8903B9BF1AB491613 /* chevron@2x.png */,
+				1B1102D524C0F6F83E0E2ABCB880AF9C /* chevron@3x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3DAD44A4446B9153C4C65E46F1B362D2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D4F83122C96CCCFD3704FB9B7E51D3FC /* CFLAppConfig */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		651ACC2DA75E38903C130C084FA21EF4 /* CFLAppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				050A1843EC57C29BDBBF241DDC99E63B /* CFLAppConfig */,
+				3DAD44A4446B9153C4C65E46F1B362D2 /* Resources */,
+				ADC004238E8204E07C87BC9F3F6E8279 /* Support Files */,
+			);
+			name = CFLAppConfig;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		698B88AD71D2F5588CBA315E289C7C8A /* Pods-CFLAppConfig_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5952A008A5C040C14B9D06AA1D588B43 /* Info.plist */,
+				73E8DD1456B8F2DE7B3F75B4978FCC0B /* Pods-CFLAppConfig_Tests.modulemap */,
+				83B386289C2BDDD1F90248098D2E4E44 /* Pods-CFLAppConfig_Tests-acknowledgements.markdown */,
+				7514894EE87A19ADC50F55E9D579072E /* Pods-CFLAppConfig_Tests-acknowledgements.plist */,
+				9170E43ABA9C5C2D60D1A2E29CC4378D /* Pods-CFLAppConfig_Tests-dummy.m */,
+				E68E5738E9701E709EF147C1E9C3F8EA /* Pods-CFLAppConfig_Tests-frameworks.sh */,
+				F125D042634248DC9B17831B36570161 /* Pods-CFLAppConfig_Tests-resources.sh */,
+				E9221E3ECD8644E178BDF68087063249 /* Pods-CFLAppConfig_Tests-umbrella.h */,
+				31312471EFCA0FA1F1A3E17764B588C3 /* Pods-CFLAppConfig_Tests.debug.xcconfig */,
+				97168EA74205C2B7BE14D5C6159E7E78 /* Pods-CFLAppConfig_Tests.release.xcconfig */,
+			);
+			name = "Pods-CFLAppConfig_Tests";
+			path = "Target Support Files/Pods-CFLAppConfig_Tests";
+			sourceTree = "<group>";
+		};
+		7A1CAFE915BF96E18290A2D3419F136B /* Pods-CFLAppConfig_Example */ = {
+			isa = PBXGroup;
+			children = (
+				E628F818F27E93DFF5DFBAB702553F0E /* Info.plist */,
+				CA29B146C1D7996F6138C9ED63026419 /* Pods-CFLAppConfig_Example.modulemap */,
+				09F8FFBF03A5A9819BBC6B4ACB9013B8 /* Pods-CFLAppConfig_Example-acknowledgements.markdown */,
+				231A21C19ECA7AA59FB2060C1A14D937 /* Pods-CFLAppConfig_Example-acknowledgements.plist */,
+				17F3AC18A08255F8315C3E9E7601A590 /* Pods-CFLAppConfig_Example-dummy.m */,
+				475ABFFA7F24B116C0B3F40B80B6328E /* Pods-CFLAppConfig_Example-frameworks.sh */,
+				2BEBD1164927FB571C8EAFF84CA91BAB /* Pods-CFLAppConfig_Example-resources.sh */,
+				39C37870C524DCFC2490EEAB8814F9B0 /* Pods-CFLAppConfig_Example-umbrella.h */,
+				2859FCC6E28A5246F561BFA4FF56819B /* Pods-CFLAppConfig_Example.debug.xcconfig */,
+				F8C204F4AFF58636048D6778BADE63A2 /* Pods-CFLAppConfig_Example.release.xcconfig */,
+			);
+			name = "Pods-CFLAppConfig_Example";
+			path = "Target Support Files/Pods-CFLAppConfig_Example";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				7E11F1599934E965B0D0B106DAD2CB5A /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				BDCB5711FEC4A9A206986D68B492B547 /* Products */,
+				B2B712A2C9C54566C9EDB73599885DAE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E11F1599934E965B0D0B106DAD2CB5A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				651ACC2DA75E38903C130C084FA21EF4 /* CFLAppConfig */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		808DE35E3793E836A05ED9E3FE63B703 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				31B65FD95AC5479173CEFF74CCE3D069 /* CFLAppConfigBaseManager.h */,
+				2C5A20CDC561978A9B1B164299643551 /* CFLAppConfigBaseManager.m */,
+				5D82F6398149442A0BBBC4FE0099A8CA /* CFLAppConfigStorage.h */,
+				BB9B4346785AFF45C88DA7423D46414F /* CFLAppConfigStorage.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		859386209D71514F7BD0E4FBD4845962 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04749214F0275BDB7991142FD4B83A76 /* ManageAppConfig */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		93050B9DF0993742D2DD739B845EEDA7 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				D71A353EF7FFA90B692940932F584C9A /* CFLAppConfigManageTable.h */,
+				E695E2AC1815837BAA9D8D53969C0E7B /* CFLAppConfigManageTable.m */,
+				0F671B0DAD5FEB9A130B692530991207 /* CFLAppConfigManageTableCell.h */,
+				38CFC46C17CE8458FC25BAAF86AB0FCA /* CFLAppConfigManageTableCell.m */,
+				9916B0E02020599CD61A78B2BBDEB22F /* CFLAppConfigManageTableValue.h */,
+				0A5DFFE8B232C89D2B43B35CDBCAEEE2 /* CFLAppConfigManageTableValue.m */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		ADC004238E8204E07C87BC9F3F6E8279 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CFC493CCD69B9F4C33458558D49EE97 /* CFLAppConfig.modulemap */,
+				8409F1EA09942E6B2A4A5F9B49EA9713 /* CFLAppConfig.xcconfig */,
+				D6A24552E60D91440B53811A7F5C2FAB /* CFLAppConfig-dummy.m */,
+				A91F5739D6F0EF6AC37A96644EA96ACD /* CFLAppConfig-prefix.pch */,
+				B7280EE0A66F9407271962AD5815AB25 /* CFLAppConfig-umbrella.h */,
+				50B7688642ADED8139D7931F31721830 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CFLAppConfig";
+			sourceTree = "<group>";
+		};
+		B2B712A2C9C54566C9EDB73599885DAE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A1CAFE915BF96E18290A2D3419F136B /* Pods-CFLAppConfig_Example */,
+				698B88AD71D2F5588CBA315E289C7C8A /* Pods-CFLAppConfig_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDCB5711FEC4A9A206986D68B492B547 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				596A5BED81554E6CA0E32B04DD255D83 /* CFLAppConfig.bundle */,
+				0446FE68D910A76F68259CDB459A38E7 /* CFLAppConfig.framework */,
+				7D268525EBB27CCC748AD6E05124FF42 /* Pods_CFLAppConfig_Example.framework */,
+				1DCB5C4BAC2886FFD4A3ABBDB0FBA90B /* Pods_CFLAppConfig_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CEC6C23CC003E459794FE76B7C1AF637 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F5503D9126CC5DFEDB0087550F717278 /* CFLAppConfigOrderedDictionary.h */,
+				4857CD66A2FF0F0ACCC037A99AA9804D /* CFLAppConfigOrderedDictionary.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CFB25BA2FE2CD0F140147FD5E9217BFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E27EEF271EDC3A7405163F32697E66A /* CFLAppConfigBaseModel.h */,
+				B9A2A8655B5413B182512F76377634A9 /* CFLAppConfigBaseModel.m */,
+				A3330EC11EB3C08C1ACEBAF089B1174C /* CFLAppConfigEnumSerializer.h */,
+				CA35F17EE3BECF24C97E250B775EA0F4 /* CFLAppConfigEnumSerializer.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D4F83122C96CCCFD3704FB9B7E51D3FC /* CFLAppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				3A6E89D7BE9EA254EF23D72FC4E69A20 /* Assets */,
+			);
+			path = CFLAppConfig;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		06F121A21319C982464777D6B87CC92C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49790017032E26BE55A8E6AAC432AA4E /* Pods-CFLAppConfig_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A61361C38882CE44BEBD2E44EE82D03 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CAA5B5108DDA4D47B7BF6659ED3D4A4 /* CFLAppConfig-umbrella.h in Headers */,
+				8D0E4A32FE948CCEF9CB72BCEAD61EA3 /* CFLAppConfigBaseManager.h in Headers */,
+				7FF032A3E801C6999B1ACA3DC7CA3E4E /* CFLAppConfigBaseModel.h in Headers */,
+				2833F1A37AFBD43EDE064447A925FAD7 /* CFLAppConfigEnumSerializer.h in Headers */,
+				DBFD5B2744E0987207DEB5FA58BC5FD2 /* CFLAppConfigManageInfoCell.h in Headers */,
+				67F673CD1D23FAA92F8BADAD7ECC4B71 /* CFLAppConfigManageItemCell.h in Headers */,
+				E7FB8352AC93EBA0B6606BC713F5080E /* CFLAppConfigManageLoadingCell.h in Headers */,
+				68DCB347E3DD8D6958AEB3AFCF7EBD20 /* CFLAppConfigManageSectionCell.h in Headers */,
+				821A9A18C124CAFECAA33204B656347E /* CFLAppConfigManageTable.h in Headers */,
+				E38EF1427AC31A536CB128772CA69BCE /* CFLAppConfigManageTableCell.h in Headers */,
+				79E55CDCDB192CE2318C6A53F2D14ACC /* CFLAppConfigManageTableValue.h in Headers */,
+				A6817DFBFEDB170290D754A1A9071E37 /* CFLAppConfigManageViewController.h in Headers */,
+				AC73DD0F6C323E82CCB84573FD9DE776 /* CFLAppConfigOrderedDictionary.h in Headers */,
+				C3EBF254DFDD012448C8770BBD7880E5 /* CFLAppConfigStorage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC412F3039B2AEFB46CDF21DFAA93807 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E46C5A79DB20C7DB4EE524DA667E28A /* Pods-CFLAppConfig_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3B7A32142AA3675050E1A7E60E51FD17 /* Pods-CFLAppConfig_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7F57C3E1B88F4A241D002CCDFA5D868 /* Build configuration list for PBXNativeTarget "Pods-CFLAppConfig_Tests" */;
+			buildPhases = (
+				4579B02AA368B26AFF417A20A3271A5B /* Sources */,
+				4854B92DC965B0C3FE3CB642D9862285 /* Frameworks */,
+				06F121A21319C982464777D6B87CC92C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C8ABB6D6709683B29057FA4F4F0F30C /* PBXTargetDependency */,
+			);
+			name = "Pods-CFLAppConfig_Tests";
+			productName = "Pods-CFLAppConfig_Tests";
+			productReference = 1DCB5C4BAC2886FFD4A3ABBDB0FBA90B /* Pods_CFLAppConfig_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		50C6A4FDBBF50FC4579B8903EF6A6DC5 /* CFLAppConfig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01EC12225069B5A9C025E8437FC3F459 /* Build configuration list for PBXNativeTarget "CFLAppConfig" */;
+			buildPhases = (
+				0102BB03DDA946DE880C184DB72804DF /* Sources */,
+				4D1F911C4AB05DCD2590642D488A9FD0 /* Frameworks */,
+				492BD2AFB1D9F6269717C86FC26BF907 /* Resources */,
+				4A61361C38882CE44BEBD2E44EE82D03 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04E114FFF8C255C01A512EF927809434 /* PBXTargetDependency */,
+			);
+			name = CFLAppConfig;
+			productName = CFLAppConfig;
+			productReference = 0446FE68D910A76F68259CDB459A38E7 /* CFLAppConfig.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E8057B1BF6F72E01D2C512C405F1BD89 /* Pods-CFLAppConfig_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21A2B0D5576D7CE745D99A6F702088F0 /* Build configuration list for PBXNativeTarget "Pods-CFLAppConfig_Example" */;
+			buildPhases = (
+				BC9EEE362953D78B9931257DC43555D5 /* Sources */,
+				9DD5E9E9A5B72B58CAEEC1320B1F57DD /* Frameworks */,
+				AC412F3039B2AEFB46CDF21DFAA93807 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86062C023C369E54B9AAF960AABBF4A0 /* PBXTargetDependency */,
+			);
+			name = "Pods-CFLAppConfig_Example";
+			productName = "Pods-CFLAppConfig_Example";
+			productReference = 7D268525EBB27CCC748AD6E05124FF42 /* Pods_CFLAppConfig_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EDC673E6F39DF0920B9B39D099D02768 /* CFLAppConfig-CFLAppConfig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00D2F1DC9AD4DA78757C56D0C24E73EA /* Build configuration list for PBXNativeTarget "CFLAppConfig-CFLAppConfig" */;
+			buildPhases = (
+				BD82C53FD90C3213822B73CB048FEB2C /* Sources */,
+				56B6581FA6EB819175D2DFE09EFC6AAA /* Frameworks */,
+				FA16B134B6FAC87A2E396CF6BEAEA672 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CFLAppConfig-CFLAppConfig";
+			productName = "CFLAppConfig-CFLAppConfig";
+			productReference = 596A5BED81554E6CA0E32B04DD255D83 /* CFLAppConfig.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = BDCB5711FEC4A9A206986D68B492B547 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50C6A4FDBBF50FC4579B8903EF6A6DC5 /* CFLAppConfig */,
+				EDC673E6F39DF0920B9B39D099D02768 /* CFLAppConfig-CFLAppConfig */,
+				E8057B1BF6F72E01D2C512C405F1BD89 /* Pods-CFLAppConfig_Example */,
+				3B7A32142AA3675050E1A7E60E51FD17 /* Pods-CFLAppConfig_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		492BD2AFB1D9F6269717C86FC26BF907 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37D7FB7556AEB1D57E6838C1108A70F9 /* CFLAppConfig.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA16B134B6FAC87A2E396CF6BEAEA672 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9A2DE05F794707815F1ABE2626778BE /* chevron.png in Resources */,
+				9517386A100A029E19941C3B9CB231E4 /* chevron@2x.png in Resources */,
+				E0DDF1D13E5A1BF3308D99C7A51BE91B /* chevron@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0102BB03DDA946DE880C184DB72804DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C9985CC7F7126D996C9A1C49BC0941E /* CFLAppConfig-dummy.m in Sources */,
+				6FF428E18746E3C969AC219269A62B1E /* CFLAppConfigBaseManager.m in Sources */,
+				53E35CF81830F4A72E6D813369929E0E /* CFLAppConfigBaseModel.m in Sources */,
+				CF17D95E505BF42DBD0000A16540BD05 /* CFLAppConfigEnumSerializer.m in Sources */,
+				29A3CA8F8A407403B151C73C6F949758 /* CFLAppConfigManageInfoCell.m in Sources */,
+				CF3AC158D30FD0434B7C08AA480AEEA6 /* CFLAppConfigManageItemCell.m in Sources */,
+				E351E58F80A51DBD3D98C6140AD5C2F0 /* CFLAppConfigManageLoadingCell.m in Sources */,
+				D3D970CE36B33D36701975C44016946C /* CFLAppConfigManageSectionCell.m in Sources */,
+				F08920AA496BA55163B0832295F585E8 /* CFLAppConfigManageTable.m in Sources */,
+				CDDCF5733AF38F65846E8174376EC7DE /* CFLAppConfigManageTableCell.m in Sources */,
+				3B5FDD3A252F089DE084AF3A5A4075FE /* CFLAppConfigManageTableValue.m in Sources */,
+				894F12802DDE3DE821EA406B3640BBF9 /* CFLAppConfigManageViewController.m in Sources */,
+				F244809A406C8E172D5354B7E0BF1715 /* CFLAppConfigOrderedDictionary.m in Sources */,
+				FAA2DD90F50C261F37BD3FC4E5FEE6EB /* CFLAppConfigStorage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4579B02AA368B26AFF417A20A3271A5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86C85597669561D53323F01224A96C06 /* Pods-CFLAppConfig_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9EEE362953D78B9931257DC43555D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C771A59673AD1F4ACCE1B6F0C3C4CB21 /* Pods-CFLAppConfig_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD82C53FD90C3213822B73CB048FEB2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04E114FFF8C255C01A512EF927809434 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CFLAppConfig-CFLAppConfig";
+			target = EDC673E6F39DF0920B9B39D099D02768 /* CFLAppConfig-CFLAppConfig */;
+			targetProxy = C58E8A1182FCDFFD655D1EC06E432324 /* PBXContainerItemProxy */;
+		};
+		3C8ABB6D6709683B29057FA4F4F0F30C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CFLAppConfig;
+			target = 50C6A4FDBBF50FC4579B8903EF6A6DC5 /* CFLAppConfig */;
+			targetProxy = AD7AC9819AA712AED04BD3996E1B2127 /* PBXContainerItemProxy */;
+		};
+		86062C023C369E54B9AAF960AABBF4A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CFLAppConfig;
+			target = 50C6A4FDBBF50FC4579B8903EF6A6DC5 /* CFLAppConfig */;
+			targetProxy = CAFAF0BEE00DD0804348FB065806FF68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0995D1F6A06E4BDDC39EAA30D09D6127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8409F1EA09942E6B2A4A5F9B49EA9713 /* CFLAppConfig.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = CFLAppConfig;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		276B11BFF7B2C273B9D1DD78CF94BB60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8C204F4AFF58636048D6778BADE63A2 /* Pods-CFLAppConfig_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CFLAppConfig_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CFLAppConfig_Example/Pods-CFLAppConfig_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_CFLAppConfig_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		84847928E3F132D83C3E38626D93732C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2859FCC6E28A5246F561BFA4FF56819B /* Pods-CFLAppConfig_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CFLAppConfig_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CFLAppConfig_Example/Pods-CFLAppConfig_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_CFLAppConfig_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		91CF764C81D87E937EB6E2A36332371B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8409F1EA09942E6B2A4A5F9B49EA9713 /* CFLAppConfig.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CFLAppConfig/CFLAppConfig-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CFLAppConfig/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CFLAppConfig/CFLAppConfig.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CFLAppConfig;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		99861CA6AA995F4B20FF6697A5700E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31312471EFCA0FA1F1A3E17764B588C3 /* Pods-CFLAppConfig_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CFLAppConfig_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CFLAppConfig_Tests/Pods-CFLAppConfig_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_CFLAppConfig_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9ECCD7C7D48FC76A3160306EA91E4D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97168EA74205C2B7BE14D5C6159E7E78 /* Pods-CFLAppConfig_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CFLAppConfig_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CFLAppConfig_Tests/Pods-CFLAppConfig_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_CFLAppConfig_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C05DD77D6A6DDBDFB28E57F5548AE59D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8409F1EA09942E6B2A4A5F9B49EA9713 /* CFLAppConfig.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CFLAppConfig/CFLAppConfig-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CFLAppConfig/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CFLAppConfig/CFLAppConfig.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CFLAppConfig;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E30D1318C710D5CB87B5946D9BA740FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8409F1EA09942E6B2A4A5F9B49EA9713 /* CFLAppConfig.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = CFLAppConfig;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00D2F1DC9AD4DA78757C56D0C24E73EA /* Build configuration list for PBXNativeTarget "CFLAppConfig-CFLAppConfig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E30D1318C710D5CB87B5946D9BA740FD /* Debug */,
+				0995D1F6A06E4BDDC39EAA30D09D6127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01EC12225069B5A9C025E8437FC3F459 /* Build configuration list for PBXNativeTarget "CFLAppConfig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91CF764C81D87E937EB6E2A36332371B /* Debug */,
+				C05DD77D6A6DDBDFB28E57F5548AE59D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21A2B0D5576D7CE745D99A6F702088F0 /* Build configuration list for PBXNativeTarget "Pods-CFLAppConfig_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84847928E3F132D83C3E38626D93732C /* Debug */,
+				276B11BFF7B2C273B9D1DD78CF94BB60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7F57C3E1B88F4A241D002CCDFA5D868 /* Build configuration list for PBXNativeTarget "Pods-CFLAppConfig_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99861CA6AA995F4B20FF6697A5700E2D /* Debug */,
+				9ECCD7C7D48FC76A3160306EA91E4D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
