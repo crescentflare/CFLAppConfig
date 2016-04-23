@@ -89,4 +89,10 @@ static CGFloat kMinHeight = 48;
     return self.configLabel.text;
 }
 
+- (void)setUserInteractionEnabled:(BOOL)userInteractionEnabled
+{
+    [super setUserInteractionEnabled:userInteractionEnabled];
+    self.disclosureImage.hidden = !userInteractionEnabled;
+}
+
 @end

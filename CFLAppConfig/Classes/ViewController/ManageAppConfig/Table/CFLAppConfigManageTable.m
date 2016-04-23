@@ -62,22 +62,31 @@
 {
     //Table values list
     self.tableValues = [NSMutableArray new];
+    
+    //Add last selected config
+    BOOL foundLastSelected = NO;
+    [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForSection:NSLocalizedString(@"Last selected", nil)]];
+    if (lastSelectedConfig)
+    {
+        for (NSString *configuration in configurations)
+        {
+            if ([configuration isEqualToString:lastSelectedConfig])
+            {
+                [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:lastSelectedConfig andText:lastSelectedConfig]];
+                foundLastSelected = YES;
+                break;
+            }
+        }
+    }
+    if (!foundLastSelected)
+    {
+        [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:@"" andText:NSLocalizedString(@"None", nil)]];
+    }
 
     //Add predefined configurations (if present)
     if ([configurations count] > 0)
     {
         [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForSection:NSLocalizedString(@"Predefined configurations", nil)]];
-        if (lastSelectedConfig)
-        {
-            for (NSString *configuration in configurations)
-            {
-                if ([configuration isEqualToString:lastSelectedConfig])
-                {
-                    [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:lastSelectedConfig andText:[NSString stringWithFormat:@"%@: %@", NSLocalizedString(@"Last selected", nil), lastSelectedConfig]]];
-                    break;
-                }
-            }
-        }
         for (NSString *configuration in configurations)
         {
             [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:configuration andText:configuration]];
@@ -150,6 +159,8 @@
         }
         
         //Supply data
+        cell.userInteractionEnabled = [tableValue.config length] > 0;
+        cellView.userInteractionEnabled = [tableValue.config length] > 0;
         cellView.configText = tableValue.labelString;
         
         //Calculate frame
