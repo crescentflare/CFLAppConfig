@@ -224,11 +224,14 @@
                                             {
                                                 for (NSDictionary *field in category[@"fields"])
                                                 {
-                                                    if (field[@"customSerializer"] && [field[@"customSerializer"] isKindOfClass:CFLAppConfigEnumSerializer.class])
+                                                    if (field[@"fieldName"] && [field[@"fieldName"] isEqualToString:key])
                                                     {
-                                                        value = [((CFLAppConfigEnumSerializer *)field[@"customSerializer"]).class fromEnumValue:[((NSNumber *)value) integerValue]];
-                                                        alreadyFound = YES;
-                                                        break;
+                                                        if (field[@"customSerializer"] && [field[@"customSerializer"] isKindOfClass:CFLAppConfigEnumSerializer.class])
+                                                        {
+                                                            value = [((CFLAppConfigEnumSerializer *)field[@"customSerializer"]).class fromEnumValue:[((NSNumber *)value) integerValue]];
+                                                            alreadyFound = YES;
+                                                            break;
+                                                        }
                                                     }
                                                 }
                                             }
@@ -242,10 +245,13 @@
                                     {
                                         for (NSDictionary *field in modelStructure[@"fields"])
                                         {
-                                            if (field[@"customSerializer"] && [field[@"customSerializer"] isKindOfClass:CFLAppConfigEnumSerializer.class])
+                                            if (field[@"fieldName"] && [field[@"fieldName"] isEqualToString:key])
                                             {
-                                                value = [((CFLAppConfigEnumSerializer *)field[@"customSerializer"]).class fromEnumValue:[((NSNumber *)value) integerValue]];
-                                                break;
+                                                if (field[@"customSerializer"] && [field[@"customSerializer"] isKindOfClass:CFLAppConfigEnumSerializer.class])
+                                                {
+                                                    value = [((CFLAppConfigEnumSerializer *)field[@"customSerializer"]).class fromEnumValue:[((NSNumber *)value) integerValue]];
+                                                    break;
+                                                }
                                             }
                                         }
                                     }
