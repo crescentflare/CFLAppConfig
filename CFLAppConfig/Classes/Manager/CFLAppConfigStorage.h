@@ -28,6 +28,13 @@
 //Useful to determine if the storage is being used or not to override the configuration (for test/production builds)
 - (BOOL)isInitialized;
 
+//Obtain manager instance, only used internally if the given manager is a singleton (which is recommended)
+- (CFLAppConfigBaseManager *)configManager;
+
+//Return settings for the given configuration
+- (NSDictionary *)configSettings:(NSString *)config;
+- (NSDictionary *)configSettingsNotNull:(NSString *)config;
+
 //Return the currently selected config, can be nil
 - (NSString *)selectedConfig;
 

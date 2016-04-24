@@ -231,23 +231,19 @@
 
 - (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static BOOL supportEditing = NO;
-    if (supportEditing)
-    {
-        UITableViewRowAction *editAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:NSLocalizedString(@"Edit", nil) handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
-            CFLAppConfigManageTableValue *tableValue = (CFLAppConfigManageTableValue *)[self.tableValues objectAtIndex:indexPath.row];
-            if (self.delegate)
+    UITableViewRowAction *editAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:NSLocalizedString(@"Edit", nil) handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
+        CFLAppConfigManageTableValue *tableValue = (CFLAppConfigManageTableValue *)[self.tableValues objectAtIndex:indexPath.row];
+        if (self.delegate)
+        {
+            if (tableValue.config)
             {
-                if (tableValue.config)
-                {
-                    [self.delegate editConfig:tableValue.config];
-                }
+                [self.delegate editConfig:tableValue.config];
             }
-        }];
-        editAction.backgroundColor = [UIColor blueColor];
-        return @[editAction];
-    }
-    return @[];
+        }
+        [tableView setEditing:NO animated:YES];
+    }];
+    editAction.backgroundColor = [UIColor blueColor];
+    return @[editAction];
 }
 
 #pragma mark UITableViewDelegate

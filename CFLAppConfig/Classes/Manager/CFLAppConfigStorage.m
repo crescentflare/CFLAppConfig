@@ -69,7 +69,30 @@
 }
 
 
+#pragma mark Internal manager access
+
+- (CFLAppConfigBaseManager *)configManager
+{
+    return _configManager;
+}
+
+
 #pragma mark Obtain from storage
+
+- (NSDictionary *)configSettings:(NSString *)config
+{
+    return [self.storedConfigs objectForKey:config];
+}
+
+- (NSDictionary *)configSettingsNotNull:(NSString *)config
+{
+    NSDictionary *settings = [self configSettings:config];
+    if (!settings)
+    {
+        settings = @{};
+    }
+    return settings;
+}
 
 - (NSString *)selectedConfig
 {

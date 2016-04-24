@@ -6,6 +6,7 @@
 //Import
 #import "CFLAppConfigManageViewController.h"
 #import "CFLAppConfigStorage.h"
+#import "CFLAppConfigEditViewController.h"
 
 //Internal interface definition
 @interface CFLAppConfigManageViewController ()
@@ -118,6 +119,12 @@
 
 - (void)editConfig:(NSString *)configName
 {
+    if (self.navigationController)
+    {
+        CFLAppConfigEditViewController *viewController = [CFLAppConfigEditViewController new];
+        viewController.configName = configName;
+        [self.navigationController pushViewController:viewController animated:YES];
+    }
 }
 
 @end

@@ -2,7 +2,7 @@
 //  CFLAppConfigManageViewController.h
 //  CFLAppConfig Pod
 //
-//  Library view controller: managing configurations
+//  Library view controller: edit configuration
 //  Be able to select, add and edit app configurations
 //
 
