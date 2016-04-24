@@ -6,6 +6,7 @@
 //Import
 #import "CFLAppConfigStorage.h"
 #import "CFLAppConfigOrderedDictionary.h"
+#import "CFLAppConfigEnumSerializer.h"
 
 //Definitions
 #define kDefaultsSelectedConfigName @"CFLAppConfig_SelectedConfigName"
@@ -207,6 +208,47 @@
                                 else
                                 {
                                     value = @"";
+                                }
+                            }
+                            if ([value isKindOfClass:NSNumber.class])
+                            {
+                                NSDictionary *modelStructure = [model.class modelStructure];
+                                BOOL alreadyFound = NO;
+                                if (modelStructure)
+                                {
+                                    if (modelStructure[@"categories"])
+                                    {
+                                        for (NSDictionary *category in modelStructure[@"categories"])
+                                        {
+                                            if (category[@"fields"])
+                                            {
+                                                for (NSDictionary *field in category[@"fields"])
+                                                {
+                                                    if (field[@"customSerializer"] && [field[@"customSerializer"] isKindOfClass:CFLAppConfigEnumSerializer.class])
+                                                    {
+                                                        value = [((CFLAppConfigEnumSerializer *)field[@"customSerializer"]).class fromEnumValue:[((NSNumber *)value) integerValue]];
+                                                        alreadyFound = YES;
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                            if (alreadyFound)
+                                            {
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    if (modelStructure[@"fields"] && !alreadyFound)
+                                    {
+                                        for (NSDictionary *field in modelStructure[@"fields"])
+                                        {
+                                            if (field[@"customSerializer"] && [field[@"customSerializer"] isKindOfClass:CFLAppConfigEnumSerializer.class])
+                                            {
+                                                value = [((CFLAppConfigEnumSerializer *)field[@"customSerializer"]).class fromEnumValue:[((NSNumber *)value) integerValue]];
+                                                break;
+                                            }
+                                        }
+                                    }
                                 }
                             }
                             defaultItem[key] = value;
