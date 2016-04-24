@@ -100,9 +100,12 @@
             }
             if ([value isKindOfClass:NSNumber.class])
             {
-                value = [((NSNumber *)value) stringValue];
+                [self.tableValues addObject:[CFLAppConfigEditTableValue valueForEditText:key andValue:[((NSNumber *)value) stringValue] numberOnly:YES]];
             }
-            [self.tableValues addObject:[CFLAppConfigEditTableValue valueForEditText:key andValue:value]];
+            else
+            {
+                [self.tableValues addObject:[CFLAppConfigEditTableValue valueForEditText:key andValue:value numberOnly:NO]];
+            }
         }
     }
     
@@ -198,6 +201,7 @@
         //Supply data
         cellView.labelText = tableValue.configSetting;
         cellView.editedText = tableValue.labelString;
+        cellView.numbersOnly = tableValue.limitUsage;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
 
         //Calculate frame

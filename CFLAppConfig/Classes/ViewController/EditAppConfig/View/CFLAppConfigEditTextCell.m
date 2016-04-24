@@ -16,6 +16,7 @@ static CGFloat kBetweenSpacing = 4;
 @property (nonatomic, strong) UILabel *textLabel;
 @property (nonatomic, strong) UITextField *textEntry;
 @property (nonatomic, strong) UIView *divider;
+@property (nonatomic, assign) BOOL applyNumberLimitation;
 
 @end
 
@@ -31,6 +32,7 @@ static CGFloat kBetweenSpacing = 4;
     {
         //Add label
         self.backgroundColor = [UIColor whiteColor];
+        self.applyNumberLimitation = NO;
         self.textLabel = [UILabel new];
         self.textLabel.font = [UIFont systemFontOfSize:10];
         self.textLabel.textColor = self.tintColor;
@@ -39,6 +41,7 @@ static CGFloat kBetweenSpacing = 4;
         
         //Add editable field
         self.textEntry = [UITextField new];
+        self.textEntry.delegate = self;
         [self addSubview:self.textEntry];
 
         //Add divider line
@@ -93,6 +96,53 @@ static CGFloat kBetweenSpacing = 4;
 - (NSString *)editedText
 {
     return self.textEntry.text;
+}
+
+- (void)setNumbersOnly:(BOOL)numbersOnly
+{
+    self.applyNumberLimitation = numbersOnly;
+    self.textEntry.keyboardType = numbersOnly ? UIKeyboardTypeNumbersAndPunctuation : UIKeyboardTypeAlphabet;
+}
+
+- (BOOL)numbersOnly
+{
+    return self.applyNumberLimitation;
+}
+
+
+#pragma mark UITextFieldDelegate
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    //Only use limitation code if applied
+    if (!self.applyNumberLimitation)
+    {
+        return YES;
+    }
+    
+    //Allow backspace
+    if (!string.length)
+    {
+        return YES;
+    }
+    
+    //Prevent invalid character input, if keyboard is set to a number-like input form
+    if (textField.keyboardType == UIKeyboardTypeNumbersAndPunctuation || textField.keyboardType == UIKeyboardTypeNumberPad)
+    {
+        NSString *checkString = string;
+        if ([textField.text length] == 0)
+        {
+            if ([string rangeOfString:@"-"].location == 0)
+            {
+                checkString = [string substringFromIndex:1];
+            }
+        }
+        if ([checkString rangeOfCharacterFromSet:[[NSCharacterSet decimalDigitCharacterSet] invertedSet]].location != NSNotFound)
+        {
+            return NO;
+        }
+    }
+    return YES;
 }
 
 @end

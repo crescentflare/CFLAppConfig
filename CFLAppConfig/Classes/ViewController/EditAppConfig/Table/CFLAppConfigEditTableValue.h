@@ -35,12 +35,13 @@ typedef enum
 @property (nonatomic, strong, readonly) NSString *configSetting;
 @property (nonatomic, strong, readonly) NSString *labelString;
 @property (nonatomic, assign, readonly) BOOL booleanValue;
+@property (nonatomic, assign, readonly) BOOL limitUsage;
 @property (nonatomic, assign, readonly) CFLAppConfigEditTableValueType type;
 @property (nonatomic, assign, readonly) CFLAppConfigEditTableValueAction action;
 
 + (CFLAppConfigEditTableValue *)valueForLoading:(NSString *)loadingText;
 + (CFLAppConfigEditTableValue *)valueForAction:(CFLAppConfigEditTableValueAction)action andText:(NSString *)actionLabel;
-+ (CFLAppConfigEditTableValue *)valueForEditText:(NSString *)configSetting andValue:(NSString *)settingValue;
++ (CFLAppConfigEditTableValue *)valueForEditText:(NSString *)configSetting andValue:(NSString *)settingValue numberOnly:(BOOL)onlyNumbers;
 + (CFLAppConfigEditTableValue *)valueForSlider:(NSString *)configSetting andSwitchedOn:(BOOL)settingValue;
 + (CFLAppConfigEditTableValue *)valueForSelection:(NSString *)configSetting andValue:(NSString *)settingValue;
 + (CFLAppConfigEditTableValue *)valueForSection:(NSString *)sectionText;

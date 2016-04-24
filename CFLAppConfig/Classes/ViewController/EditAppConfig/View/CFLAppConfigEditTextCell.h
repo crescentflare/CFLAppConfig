@@ -11,9 +11,10 @@
 @import UIKit;
 
 //Interface definition
-@interface CFLAppConfigEditTextCell : UIView
+@interface CFLAppConfigEditTextCell : UIView <UITextFieldDelegate>
 
 @property (nonatomic) NSString *labelText;
 @property (nonatomic) NSString *editedText;
+@property (nonatomic) BOOL numbersOnly;
 
 @end
