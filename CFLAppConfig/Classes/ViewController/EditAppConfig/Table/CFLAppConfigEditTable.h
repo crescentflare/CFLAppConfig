@@ -9,6 +9,7 @@
 
 //Import
 @import UIKit;
+#import "CFLAppConfigBaseModel.h"
 
 //Delegate protocol
 @protocol CFLAppConfigEditTableDelegate <NSObject>
@@ -24,6 +25,6 @@
 @property (nonatomic, weak) id<CFLAppConfigEditTableDelegate> delegate;
 
 - (void)setConfigurationSettings:(NSDictionary *)configurationSettings forConfig:(NSString *)configName;
-- (void)setConfigurationSettings:(NSDictionary *)configurationSettings forConfig:(NSString *)configName withStructure:(NSDictionary *)modelStructure;
+- (void)setConfigurationSettings:(NSDictionary *)configurationSettings forConfig:(NSString *)configName withModel:(CFLAppConfigBaseModel *)model;
 
 @end

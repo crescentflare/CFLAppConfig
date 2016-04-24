@@ -61,13 +61,20 @@
 
 - (void)setConfigurationSettings:(NSDictionary *)configurationSettings forConfig:(NSString *)configName
 {
-    [self setConfigurationSettings:configurationSettings forConfig:configName withStructure:nil];
+    [self setConfigurationSettings:configurationSettings forConfig:configName withModel:nil];
 }
 
-- (void)setConfigurationSettings:(NSDictionary *)configurationSettings forConfig:(NSString *)configName withStructure:(NSDictionary *)modelStructure
+- (void)setConfigurationSettings:(NSDictionary *)configurationSettings forConfig:(NSString *)configName withModel:(CFLAppConfigBaseModel *)model
 {
     //Add editable fields
     BOOL configSectionAdded = NO;
+    NSDictionary *modelStructure = nil;
+    NSDictionary *modelValueTypes = nil;
+    if (model)
+    {
+        modelValueTypes = [model obtainValueTypes];
+        modelStructure = [model.class modelStructure];
+    }
     self.tableValues = [NSMutableArray new];
     if ([[configurationSettings allKeys] count] > 0)
     {
@@ -83,6 +90,14 @@
                 configSectionAdded = YES;
             }
             NSObject *value = [configurationSettings valueForKey:key];
+            if (modelValueTypes)
+            {
+                if (modelValueTypes[key] && [modelValueTypes[key] isEqualToString:@"BOOL"] && [value isKindOfClass:NSNumber.class])
+                {
+                    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForSlider:key andSwitchedOn:[((NSNumber *)value) boolValue]]];
+                    continue;
+                }
+            }
             if ([value isKindOfClass:NSNumber.class])
             {
                 value = [((NSNumber *)value) stringValue];

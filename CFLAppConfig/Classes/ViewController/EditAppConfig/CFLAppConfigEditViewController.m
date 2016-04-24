@@ -55,8 +55,7 @@
         NSDictionary *settings = [[CFLAppConfigStorage sharedStorage] configSettingsNotNull:self.configName];
         if ([[CFLAppConfigStorage sharedStorage] configManager])
         {
-            NSDictionary *modelStructure = [[[[CFLAppConfigStorage sharedStorage] configManager] obtainBaseModelInstance].class modelStructure];
-            [self.editConfigTable setConfigurationSettings:settings forConfig:self.configName withStructure:modelStructure];
+            [self.editConfigTable setConfigurationSettings:settings forConfig:self.configName withModel:[[[CFLAppConfigStorage sharedStorage] configManager] obtainBaseModelInstance]];
         }
         else
         {
