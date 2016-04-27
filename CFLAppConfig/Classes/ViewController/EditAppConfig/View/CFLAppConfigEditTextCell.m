@@ -37,6 +37,7 @@ static CGFloat kBetweenSpacing = 4;
         self.textLabel.font = [UIFont systemFontOfSize:10];
         self.textLabel.textColor = self.tintColor;
         self.textLabel.numberOfLines = 0;
+        self.textLabel.userInteractionEnabled = NO;
         [self addSubview:self.textLabel];
         
         //Add editable field
@@ -143,6 +144,14 @@ static CGFloat kBetweenSpacing = 4;
         }
     }
     return YES;
+}
+
+
+#pragma mark Implementation
+
+- (void)startEditing
+{
+    [self.textEntry becomeFirstResponder];
 }
 
 @end

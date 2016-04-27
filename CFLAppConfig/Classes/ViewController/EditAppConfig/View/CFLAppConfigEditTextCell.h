@@ -17,4 +17,6 @@
 @property (nonatomic) NSString *editedText;
 @property (nonatomic) BOOL numbersOnly;
 
+- (void)startEditing;
+
 @end

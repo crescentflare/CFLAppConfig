@@ -218,7 +218,6 @@
         cellView.labelText = tableValue.configSetting;
         cellView.editedText = tableValue.labelString;
         cellView.numbersOnly = tableValue.limitUsage;
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
 
         //Calculate frame
         CGSize bounds = [cellView sizeThatFits:CGSizeMake(self.frame.size.width, self.frame.size.height)];
@@ -244,7 +243,6 @@
         //Supply data
         cellView.labelText = tableValue.configSetting;
         cellView.on = tableValue.booleanValue;
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         
         //Calculate frame
         CGSize bounds = [cellView sizeThatFits:CGSizeMake(self.frame.size.width, self.frame.size.height)];
@@ -346,6 +344,22 @@
         viewController.choices = tableValue.choices;
         viewController.delegate = self;
         [self.parentViewController.navigationController pushViewController:viewController animated:YES];
+    }
+    else if (tableValue.type == CFLAppConfigEditTableValueTypeSlider)
+    {
+        CFLAppConfigEditTableCell *cell = (CFLAppConfigEditTableCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+        if (cell && cell.cellView)
+        {
+            [((CFLAppConfigEditSliderCell *)cell.cellView) toggleState];
+        }
+    }
+    else if (tableValue.type == CFLAppConfigEditTableValueTypeEditText)
+    {
+        CFLAppConfigEditTableCell *cell = (CFLAppConfigEditTableCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+        if (cell && cell.cellView)
+        {
+            [((CFLAppConfigEditTextCell *)cell.cellView) startEditing];
+        }
     }
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
 }

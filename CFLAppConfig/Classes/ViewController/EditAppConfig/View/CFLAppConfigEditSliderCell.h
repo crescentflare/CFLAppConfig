@@ -16,4 +16,6 @@
 @property (nonatomic) NSString *labelText;
 @property (nonatomic) BOOL on;
 
+- (void)toggleState;
+
 @end

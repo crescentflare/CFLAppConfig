@@ -94,4 +94,12 @@ static CGFloat kSwitchSpacing = 6;
     return self.switchControl.on;
 }
 
+
+#pragma mark Implementation
+
+- (void)toggleState
+{
+    [self.switchControl setOn:!self.switchControl.on animated:YES];
+}
+
 @end
