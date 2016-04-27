@@ -20,6 +20,7 @@
 
 @property (nonatomic, strong) NSMutableArray *tableValues;
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, assign) NSInteger bottomInset;
 
 @end
 
@@ -46,8 +47,18 @@
         //Show loading indicator by default
         self.tableValues = [NSMutableArray new];
         [self.tableValues addObject:[CFLAppConfigEditTableValue valueForLoading:NSLocalizedString(@"Loading configurations...", nil)]];
+
+        //Register keyboard events
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
     }
     return self;
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
 }
 
 
@@ -55,7 +66,39 @@
 
 - (void)layoutSubviews
 {
-    self.tableView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+    self.tableView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height - self.bottomInset);
+}
+
+- (void)keyboardWillShow:(NSNotification *)notification
+{
+    NSDictionary *userInfo = [notification userInfo];
+    CGSize keyboardSize = [[userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+    NSNumber *keyboardDuration = [notification.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey];
+    NSNumber *keyboardCurve = [notification.userInfo objectForKey: UIKeyboardAnimationCurveUserInfoKey];
+    [UIView animateWithDuration:[keyboardDuration floatValue] delay:0 options:(UIViewAnimationOptions)[keyboardCurve integerValue] animations:^
+    {
+        self.bottomInset = keyboardSize.height;
+        self.tableView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height - self.bottomInset);
+    }
+    completion:^(BOOL finished)
+    {
+    }];
+}
+
+- (void)keyboardWillHide:(NSNotification *)notification
+{
+    NSDictionary *userInfo = [notification userInfo];
+    CGSize keyboardSize = [[userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+    NSNumber *keyboardDuration = [notification.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey];
+    NSNumber *keyboardCurve = [notification.userInfo objectForKey: UIKeyboardAnimationCurveUserInfoKey];
+    [UIView animateWithDuration:[keyboardDuration floatValue] delay:0 options:(UIViewAnimationOptions)[keyboardCurve integerValue] animations:^
+    {
+        self.bottomInset = 0;
+        self.tableView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height - self.bottomInset);
+    }
+    completion:^(BOOL finished)
+    {
+    }];
 }
 
 
@@ -325,6 +368,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CFLAppConfigEditTableValue *tableValue = (CFLAppConfigEditTableValue *)[self.tableValues objectAtIndex:indexPath.row];
+    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
     if (tableValue.type == CFLAppConfigEditTableValueTypeAction && self.delegate)
     {
         switch (tableValue.action)
