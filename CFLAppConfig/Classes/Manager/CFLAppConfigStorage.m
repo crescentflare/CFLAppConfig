@@ -212,49 +212,10 @@
                             }
                             if ([value isKindOfClass:NSNumber.class])
                             {
-                                NSDictionary *modelStructure = [model.class modelStructure];
-                                BOOL alreadyFound = NO;
-                                if (modelStructure)
+                                NSDictionary *field = [model.class modelStructureField:key];
+                                if (field && field[@"customSerializer"] && [field[@"customSerializer"] isKindOfClass:CFLAppConfigEnumSerializer.class])
                                 {
-                                    if (modelStructure[@"categories"])
-                                    {
-                                        for (NSDictionary *category in modelStructure[@"categories"])
-                                        {
-                                            if (category[@"fields"])
-                                            {
-                                                for (NSDictionary *field in category[@"fields"])
-                                                {
-                                                    if (field[@"fieldName"] && [field[@"fieldName"] isEqualToString:key])
-                                                    {
-                                                        if (field[@"customSerializer"] && [field[@"customSerializer"] isKindOfClass:CFLAppConfigEnumSerializer.class])
-                                                        {
-                                                            value = [((CFLAppConfigEnumSerializer *)field[@"customSerializer"]).class fromEnumValue:[((NSNumber *)value) integerValue]];
-                                                            alreadyFound = YES;
-                                                            break;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                            if (alreadyFound)
-                                            {
-                                                break;
-                                            }
-                                        }
-                                    }
-                                    if (modelStructure[@"fields"] && !alreadyFound)
-                                    {
-                                        for (NSDictionary *field in modelStructure[@"fields"])
-                                        {
-                                            if (field[@"fieldName"] && [field[@"fieldName"] isEqualToString:key])
-                                            {
-                                                if (field[@"customSerializer"] && [field[@"customSerializer"] isKindOfClass:CFLAppConfigEnumSerializer.class])
-                                                {
-                                                    value = [((CFLAppConfigEnumSerializer *)field[@"customSerializer"]).class fromEnumValue:[((NSNumber *)value) integerValue]];
-                                                    break;
-                                                }
-                                            }
-                                        }
-                                    }
+                                    value = [((CFLAppConfigEnumSerializer *)field[@"customSerializer"]).class fromEnumValue:[((NSNumber *)value) integerValue]];
                                 }
                             }
                             defaultItem[key] = value;

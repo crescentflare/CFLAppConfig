@@ -101,43 +101,10 @@
             }
             if (modelStructure)
             {
-                BOOL foundEnum = NO;
-                if (modelStructure[@"categories"])
+                NSDictionary *field = [model.class modelStructureField:key];
+                if (field && field[@"customSerializer"] && [field[@"customSerializer"] isKindOfClass:CFLAppConfigEnumSerializer.class])
                 {
-                    for (NSDictionary *category in modelStructure[@"categories"])
-                    {
-                        if (category[@"fields"])
-                        {
-                            for (NSDictionary *field in category[@"fields"])
-                            {
-                                if (field[@"fieldName"] && [field[@"fieldName"] isEqualToString:key] && field[@"customSerializer"] && [field[@"customSerializer"] isKindOfClass:CFLAppConfigEnumSerializer.class])
-                                {
-                                    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForSelection:key andValue:value]];
-                                    foundEnum = YES;
-                                    break;
-                                }
-                            }
-                        }
-                        if (foundEnum)
-                        {
-                            break;
-                        }
-                    }
-                }
-                if (modelStructure[@"fields"])
-                {
-                    for (NSDictionary *field in modelStructure[@"fields"])
-                    {
-                        if (field[@"fieldName"] && [field[@"fieldName"] isEqualToString:key] && field[@"customSerializer"] && [field[@"customSerializer"] isKindOfClass:CFLAppConfigEnumSerializer.class])
-                        {
-                            [self.tableValues addObject:[CFLAppConfigEditTableValue valueForSelection:key andValue:value]];
-                            foundEnum = YES;
-                            break;
-                        }
-                    }
-                }
-                if (foundEnum)
-                {
+                    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForSelection:key andValue:value]];
                     continue;
                 }
             }
