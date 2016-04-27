@@ -13,6 +13,7 @@
 #import "CFLAppConfigEditLoadingCell.h"
 #import "CFLAppConfigEditSectionCell.h"
 #import "CFLAppConfigEnumSerializer.h"
+#import "CFLAppConfigSelectionHelperViewController.h"
 
 //Internal interface definition
 @interface CFLAppConfigEditTable ()
@@ -104,8 +105,13 @@
                 NSDictionary *field = [model.class modelStructureField:key];
                 if (field && field[@"customSerializer"] && [field[@"customSerializer"] isKindOfClass:CFLAppConfigEnumSerializer.class])
                 {
-                    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForSelection:key andValue:value]];
-                    continue;
+                    CFLAppConfigEnumSerializer *enumSerializer = (CFLAppConfigEnumSerializer *)field[@"customSerializer"];
+                    NSDictionary *enumStates = [enumSerializer.class states];
+                    if (enumStates)
+                    {
+                        [self.tableValues addObject:[CFLAppConfigEditTableValue valueForSelection:key andValue:value andChoices:[enumStates allKeys]]];
+                        continue;
+                    }
                 }
             }
             if ([value isKindOfClass:NSNumber.class])
@@ -333,7 +339,32 @@
                 break;
         }
     }
+    else if (tableValue.type == CFLAppConfigEditTableValueTypeSelection && self.parentViewController)
+    {
+        CFLAppConfigSelectionHelperViewController *viewController = [CFLAppConfigSelectionHelperViewController new];
+        viewController.tag = tableValue.labelString;
+        viewController.choices = tableValue.choices;
+        viewController.delegate = self;
+        [self.parentViewController.navigationController pushViewController:viewController animated:YES];
+    }
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+}
+
+
+#pragma mark CFLAppConfigSelectionHelperViewControllerDelegate
+
+- (void)chosenItem:(NSString *)item givenTag:(NSObject *)tag
+{
+    for (int i = 0; i < [self.tableValues count]; i++)
+    {
+        CFLAppConfigEditTableValue *tableValue = [self.tableValues objectAtIndex:i];
+        if ([tableValue.labelString isEqualToString:(NSString *)tag])
+        {
+            self.tableValues[i] = [CFLAppConfigEditTableValue valueForSelection:tableValue.labelString andValue:item andChoices:tableValue.choices];
+            [self.tableView reloadData];
+            break;
+        }
+    }
 }
 
 @end

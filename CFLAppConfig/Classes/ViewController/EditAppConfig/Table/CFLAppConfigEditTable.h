@@ -23,6 +23,7 @@
 @interface CFLAppConfigEditTable : UIView <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, weak) id<CFLAppConfigEditTableDelegate> delegate;
+@property (nonatomic, weak) UIViewController *parentViewController;
 
 - (void)setConfigurationSettings:(NSDictionary *)configurationSettings forConfig:(NSString *)configName;
 - (void)setConfigurationSettings:(NSDictionary *)configurationSettings forConfig:(NSString *)configName withModel:(CFLAppConfigBaseModel *)model;

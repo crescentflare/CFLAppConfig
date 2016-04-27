@@ -67,6 +67,7 @@
 - (void)loadView
 {
     self.editConfigTable = [CFLAppConfigEditTable new];
+    self.editConfigTable.parentViewController = self;
     self.editConfigTable.delegate = self;
     self.view = self.editConfigTable;
 }
