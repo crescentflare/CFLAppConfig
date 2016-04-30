@@ -8,12 +8,10 @@
 #import "CFLAppConfigEditTableCell.h"
 #import "CFLAppConfigEditTableValue.h"
 #import "CFLAppConfigEditActionCell.h"
-#import "CFLAppConfigEditTextCell.h"
 #import "CFLAppConfigEditSliderCell.h"
 #import "CFLAppConfigEditLoadingCell.h"
 #import "CFLAppConfigEditSectionCell.h"
 #import "CFLAppConfigEnumSerializer.h"
-#import "CFLAppConfigSelectionHelperViewController.h"
 
 //Internal interface definition
 @interface CFLAppConfigEditTable ()
@@ -258,6 +256,7 @@
         }
         
         //Supply data
+        cellView.delegate = self;
         cellView.labelText = tableValue.configSetting;
         cellView.editedText = tableValue.labelString;
         cellView.numbersOnly = tableValue.limitUsage;
@@ -423,6 +422,22 @@
             [self.tableView beginUpdates];
             [self.tableView reloadRowsAtIndexPaths:@[totalIndexPath] withRowAnimation:UITableViewRowAnimationNone];
             [self.tableView endUpdates];
+            break;
+        }
+    }
+}
+
+
+#pragma mark CFLAppConfigEditTextCellDelegate
+
+- (void)changedEditText:(NSString *)newText forConfigSetting:(NSString *)configSetting
+{
+    for (int i = 0; i < [self.tableValues count]; i++)
+    {
+        CFLAppConfigEditTableValue *tableValue = [self.tableValues objectAtIndex:i];
+        if ([tableValue.configSetting isEqualToString:(NSString *)configSetting])
+        {
+            self.tableValues[i] = [CFLAppConfigEditTableValue valueForEditText:tableValue.configSetting andValue:newText numberOnly:tableValue.limitUsage];
             break;
         }
     }

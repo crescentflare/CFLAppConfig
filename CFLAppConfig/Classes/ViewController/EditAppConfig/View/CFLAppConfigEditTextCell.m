@@ -44,6 +44,7 @@ static CGFloat kBetweenSpacing = 4;
         self.textEntry = [UITextField new];
         self.textEntry.delegate = self;
         [self addSubview:self.textEntry];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChange:) name:UITextFieldTextDidChangeNotification object:self.textEntry];
 
         //Add divider line
         self.divider = [UIView new];
@@ -51,6 +52,11 @@ static CGFloat kBetweenSpacing = 4;
         [self addSubview:self.divider];
     }
     return self;
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UITextFieldTextDidChangeNotification object:self.textEntry];
 }
 
 
@@ -108,6 +114,17 @@ static CGFloat kBetweenSpacing = 4;
 - (BOOL)numbersOnly
 {
     return self.applyNumberLimitation;
+}
+
+
+#pragma mark Selector
+
+- (void)textFieldDidChange:(NSNotification *)notification
+{
+    if (self.delegate)
+    {
+        [self.delegate changedEditText:((UITextField *)notification.object).text forConfigSetting:self.labelText];
+    }
 }
 
 

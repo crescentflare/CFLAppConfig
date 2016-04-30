@@ -10,9 +10,17 @@
 //Import
 @import UIKit;
 
+//Delegate protocol
+@protocol CFLAppConfigEditTextCellDelegate <NSObject>
+
+- (void)changedEditText:(NSString *)newText forConfigSetting:(NSString *)configSetting;
+
+@end
+
 //Interface definition
 @interface CFLAppConfigEditTextCell : UIView <UITextFieldDelegate>
 
+@property (nonatomic, weak) id<CFLAppConfigEditTextCellDelegate> delegate;
 @property (nonatomic) NSString *labelText;
 @property (nonatomic) NSString *editedText;
 @property (nonatomic) BOOL numbersOnly;
