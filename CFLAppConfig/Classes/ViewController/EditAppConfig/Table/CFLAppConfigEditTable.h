@@ -17,7 +17,7 @@
 //Delegate protocol
 @protocol CFLAppConfigEditTableDelegate <NSObject>
 
-- (void)saveConfig;
+- (void)saveConfig:(NSDictionary *)newSettings;
 - (void)cancelEditing;
 
 @end
@@ -30,5 +30,6 @@
 
 - (void)setConfigurationSettings:(NSDictionary *)configurationSettings forConfig:(NSString *)configName;
 - (void)setConfigurationSettings:(NSDictionary *)configurationSettings forConfig:(NSString *)configName withModel:(CFLAppConfigBaseModel *)model;
+- (NSDictionary *)obtainNewConfigurationSettings;
 
 @end

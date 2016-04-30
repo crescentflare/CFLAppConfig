@@ -17,6 +17,7 @@
 
 @property (nonatomic, strong) NSMutableArray *tableValues;
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSString *configName;
 @property (nonatomic, assign) NSInteger bottomInset;
 
 @end
@@ -118,6 +119,7 @@
         modelStructure = [model.class modelStructure];
     }
     self.tableValues = [NSMutableArray new];
+    self.configName = configName;
     if ([[configurationSettings allKeys] count] > 0)
     {
         for (NSString *key in configurationSettings)
@@ -170,6 +172,28 @@
     [self.tableValues addObject:[CFLAppConfigEditTableValue valueForAction:CFLAppConfigEditTableValueActionSave andText:NSLocalizedString(@"Apply changes", nil)]];
     [self.tableValues addObject:[CFLAppConfigEditTableValue valueForAction:CFLAppConfigEditTableValueActionCancel andText:NSLocalizedString(@"Cancel", nil)]];
     [self.tableView reloadData];
+}
+
+- (NSDictionary *)obtainNewConfigurationSettings
+{
+    NSMutableDictionary *dictionary = [NSMutableDictionary new];
+    dictionary[@"name"] = self.configName;
+    for (CFLAppConfigEditTableValue *tableValue in self.tableValues)
+    {
+        switch (tableValue.type)
+        {
+            case CFLAppConfigEditTableValueTypeEditText:
+                dictionary[tableValue.configSetting] = tableValue.labelString;
+                break;
+            case CFLAppConfigEditTableValueTypeSlider:
+                dictionary[tableValue.configSetting] = @(tableValue.booleanValue);
+                break;
+            case CFLAppConfigEditTableValueTypeSelection:
+                dictionary[tableValue.configSetting] = tableValue.labelString;
+                break;
+        }
+    }
+    return dictionary;
 }
 
 
@@ -373,7 +397,7 @@
         switch (tableValue.action)
         {
             case CFLAppConfigEditTableValueActionSave:
-                [self.delegate saveConfig];
+                [self.delegate saveConfig:[self obtainNewConfigurationSettings]];
                 break;
             case CFLAppConfigEditTableValueActionCancel:
                 [self.delegate cancelEditing];

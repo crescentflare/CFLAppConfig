@@ -82,13 +82,13 @@
 
 - (void)saveButtonPressed
 {
-    [self saveConfig];
+    [self saveConfig:[self.editConfigTable obtainNewConfigurationSettings]];
 }
 
 
 #pragma mark CFLAppConfigEditTableDelegate
 
-- (void)saveConfig
+- (void)saveConfig:(NSDictionary *)newSettings
 {
     [[[UIAlertView alloc] initWithTitle:@"Not supported" message:@"Editing is not fully supported yet" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
     [self.navigationController popViewControllerAnimated:YES];
