@@ -39,6 +39,7 @@ static CGFloat kSwitchSpacing = 6;
         self.switchControl = [UISwitch new];
         self.switchControl.onTintColor = self.tintColor;
         [self addSubview:self.switchControl];
+        [self.switchControl addTarget:self action:@selector(setState:) forControlEvents:UIControlEventValueChanged];
         
         //Add divider line
         self.divider = [UIView new];
@@ -92,6 +93,17 @@ static CGFloat kSwitchSpacing = 6;
 - (BOOL)on
 {
     return self.switchControl.on;
+}
+
+
+#pragma mark Selector
+
+- (void)setState:(id)sender
+{
+    if (self.delegate)
+    {
+        [self.delegate changedSliderState:[sender isOn] forConfigSetting:self.labelText];
+    }
 }
 
 

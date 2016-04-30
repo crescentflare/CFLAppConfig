@@ -12,6 +12,7 @@
 #import "CFLAppConfigBaseModel.h"
 #import "CFLAppConfigSelectionHelperViewController.h"
 #import "CFLAppConfigEditTextCell.h"
+#import "CFLAppConfigEditSliderCell.h"
 
 //Delegate protocol
 @protocol CFLAppConfigEditTableDelegate <NSObject>
@@ -22,7 +23,7 @@
 @end
 
 //Interface definition
-@interface CFLAppConfigEditTable : UIView <UITableViewDataSource, UITableViewDelegate, CFLAppConfigSelectionHelperViewControllerDelegate, CFLAppConfigEditTextCellDelegate>
+@interface CFLAppConfigEditTable : UIView <UITableViewDataSource, UITableViewDelegate, CFLAppConfigSelectionHelperViewControllerDelegate, CFLAppConfigEditTextCellDelegate, CFLAppConfigEditSliderCellDelegate>
 
 @property (nonatomic, weak) id<CFLAppConfigEditTableDelegate> delegate;
 @property (nonatomic, weak) UIViewController *parentViewController;

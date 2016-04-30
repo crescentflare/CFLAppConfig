@@ -8,7 +8,6 @@
 #import "CFLAppConfigEditTableCell.h"
 #import "CFLAppConfigEditTableValue.h"
 #import "CFLAppConfigEditActionCell.h"
-#import "CFLAppConfigEditSliderCell.h"
 #import "CFLAppConfigEditLoadingCell.h"
 #import "CFLAppConfigEditSectionCell.h"
 #import "CFLAppConfigEnumSerializer.h"
@@ -283,6 +282,7 @@
         }
         
         //Supply data
+        cellView.delegate = self;
         cellView.labelText = tableValue.configSetting;
         cellView.on = tableValue.booleanValue;
         
@@ -438,6 +438,22 @@
         if ([tableValue.configSetting isEqualToString:(NSString *)configSetting])
         {
             self.tableValues[i] = [CFLAppConfigEditTableValue valueForEditText:tableValue.configSetting andValue:newText numberOnly:tableValue.limitUsage];
+            break;
+        }
+    }
+}
+
+
+#pragma mark CFLAppConfigEditSliderCellDelegate
+
+- (void)changedSliderState:(BOOL)on forConfigSetting:(NSString *)configSetting
+{
+    for (int i = 0; i < [self.tableValues count]; i++)
+    {
+        CFLAppConfigEditTableValue *tableValue = [self.tableValues objectAtIndex:i];
+        if ([tableValue.configSetting isEqualToString:(NSString *)configSetting])
+        {
+            self.tableValues[i] = [CFLAppConfigEditTableValue valueForSlider:tableValue.configSetting andSwitchedOn:on];
             break;
         }
     }

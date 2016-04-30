@@ -10,9 +10,17 @@
 //Import
 @import UIKit;
 
+//Delegate protocol
+@protocol CFLAppConfigEditSliderCellDelegate <NSObject>
+
+- (void)changedSliderState:(BOOL)on forConfigSetting:(NSString *)configSetting;
+
+@end
+
 //Interface definition
 @interface CFLAppConfigEditSliderCell : UIView
 
+@property (nonatomic, weak) id<CFLAppConfigEditSliderCellDelegate> delegate;
 @property (nonatomic) NSString *labelText;
 @property (nonatomic) BOOL on;
 
