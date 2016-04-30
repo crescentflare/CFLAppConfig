@@ -44,7 +44,7 @@ static CGFloat kBetweenSpacing = 4;
         self.textEntry = [UITextField new];
         self.textEntry.delegate = self;
         [self addSubview:self.textEntry];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChange:) name:UITextFieldTextDidChangeNotification object:self.textEntry];
+        [self.textEntry addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventAllEvents];
 
         //Add divider line
         self.divider = [UIView new];
@@ -52,11 +52,6 @@ static CGFloat kBetweenSpacing = 4;
         [self addSubview:self.divider];
     }
     return self;
-}
-
-- (void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UITextFieldTextDidChangeNotification object:self.textEntry];
 }
 
 
@@ -119,11 +114,11 @@ static CGFloat kBetweenSpacing = 4;
 
 #pragma mark Selector
 
-- (void)textFieldDidChange:(NSNotification *)notification
+- (void)textFieldDidChange:(UITextField *)textField
 {
     if (self.delegate)
     {
-        [self.delegate changedEditText:((UITextField *)notification.object).text forConfigSetting:self.labelText];
+        [self.delegate changedEditText:textField.text forConfigSetting:self.labelText];
     }
 }
 
