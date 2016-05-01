@@ -22,6 +22,10 @@
 #import "CFLAppConfigManageItemCell.h"
 #import "CFLAppConfigManageLoadingCell.h"
 #import "CFLAppConfigManageSectionCell.h"
+#import "CFLAppConfigSelectionHelperViewController.h"
+#import "CFLAppConfigSelectionHelperTable.h"
+#import "CFLAppConfigSelectionHelperTableCell.h"
+#import "CFLAppConfigSelectionHelperCell.h"
 
 FOUNDATION_EXPORT double CFLAppConfigVersionNumber;
 FOUNDATION_EXPORT const unsigned char CFLAppConfigVersionString[];

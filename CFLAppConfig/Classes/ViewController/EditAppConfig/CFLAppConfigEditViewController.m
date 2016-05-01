@@ -90,7 +90,17 @@
 
 - (void)saveConfig:(NSDictionary *)newSettings
 {
-    [[[UIAlertView alloc] initWithTitle:@"Not supported" message:@"Editing is not fully supported yet" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    BOOL wasSelected = [self.configName isEqualToString:[[CFLAppConfigStorage sharedStorage] selectedConfig]];
+    if ([[CFLAppConfigStorage sharedStorage] isCustomConfig:self.configName] || [[CFLAppConfigStorage sharedStorage] isConfigOverride:self.configName])
+    {
+        [[CFLAppConfigStorage sharedStorage] removeConfig:self.configName];
+    }
+    [[CFLAppConfigStorage sharedStorage] putCustomConfig:newSettings forConfig:newSettings[@"name"]];
+    if (wasSelected)
+    {
+        [[CFLAppConfigStorage sharedStorage] selectConfig:newSettings[@"name"]];
+    }
+    [[CFLAppConfigStorage sharedStorage] synchronizeCustomConfigWithUserDefaults:newSettings[@"name"]];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

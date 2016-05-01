@@ -11,14 +11,17 @@
 //Definitions
 #define kDefaultsSelectedConfigName @"CFLAppConfig_SelectedConfigName"
 #define kDefaultsSelectedConfigDictionary @"CFLAppConfig_SelectedConfigDictionary"
+#define kDefaultsCustomConfigs @"CFLAppConfig_CustomConfigs"
 
 //Internal interface definition
 @interface CFLAppConfigStorage ()
 
 @property (nonatomic, strong) CFLAppConfigBaseManager *configManager;
 @property (nonatomic, strong) CFLAppConfigOrderedDictionary *storedConfigs;
+@property (nonatomic, strong) CFLAppConfigOrderedDictionary *customConfigs;
 @property (nonatomic, strong) NSString *loadFromAssetFile;
 @property (nonatomic, strong) NSString *selectedItem;
+@property (nonatomic, assign) BOOL customConfigLoaded;
 @property (nonatomic, assign) BOOL initialized;
 
 @end
@@ -44,6 +47,7 @@
     if (self)
     {
         self.storedConfigs = [CFLAppConfigOrderedDictionary new];
+        self.customConfigs = [CFLAppConfigOrderedDictionary new];
     }
     return self;
 }
@@ -82,6 +86,10 @@
 
 - (NSDictionary *)configSettings:(NSString *)config
 {
+    if (self.customConfigs && [self.customConfigs objectForKey:config])
+    {
+        return [self.customConfigs objectForKey:config];
+    }
     return [self.storedConfigs objectForKey:config];
 }
 
@@ -111,7 +119,50 @@
 }
 
 
+#pragma mark Add to storage
+
+- (void)putCustomConfig:(NSDictionary *)settings forConfig:(NSString *)config
+{
+    if (self.customConfigs[config])
+    {
+        [self removeConfig:config];
+    }
+    if (settings)
+    {
+        if (!self.storedConfigs[config] || ![self.storedConfigs[config] isEqualToDictionary:settings])
+        {
+            self.customConfigs[config] = settings;
+        }
+    }
+}
+
+
 #pragma mark Other operations
+
+- (BOOL)removeConfig:(NSString *)config
+{
+    BOOL removed = NO;
+    if (self.customConfigs[config])
+    {
+        [self.customConfigs removeObjectForKey:config];
+        removed = YES;
+    }
+    else if (self.storedConfigs[config])
+    {
+        [self.storedConfigs removeObjectForKey:config];
+        removed = YES;
+    }
+    if (removed && [config isEqualToString:self.selectedItem])
+    {
+        self.selectedItem = nil;
+        if (self.configManager)
+        {
+            [self.configManager applyConfigToModel:[self configSettingsNotNull:self.selectedItem] withName:self.selectedItem];
+        }
+        [NSNotificationCenter.defaultCenter postNotificationName:kAppConfigConfigurationChanged object:self];
+    }
+    return removed;
+}
 
 - (void)selectConfig:(NSString *)configName
 {
@@ -141,6 +192,16 @@
     [NSNotificationCenter.defaultCenter postNotificationName:kAppConfigConfigurationChanged object:self];
 }
 
+- (BOOL)isCustomConfig:(NSString *)config
+{
+    return self.customConfigs[config] && !self.storedConfigs[config];
+}
+
+- (BOOL)isConfigOverride:(NSString *)config
+{
+    return self.customConfigs[config] && self.storedConfigs[config];
+}
+
 
 #pragma mark Loading
 
@@ -159,6 +220,11 @@
                 self.storedConfigs = loadedConfigs;
                 self.loadFromAssetFile = nil;
             }
+            if (!self.customConfigLoaded)
+            {
+                [self loadCustomConfigurationsFromUserDefaults];
+                self.customConfigLoaded = YES;
+            }
             completion();
         });
     });
@@ -171,6 +237,11 @@
     {
         self.storedConfigs = loadedConfigs;
         self.loadFromAssetFile = nil;
+    }
+    if (!self.customConfigLoaded)
+    {
+        [self loadCustomConfigurationsFromUserDefaults];
+        self.customConfigLoaded = YES;
     }
 }
 
@@ -273,6 +344,22 @@
 
 #pragma Userdefaults handling
 
+- (void)synchronizeCustomConfigWithUserDefaults:(NSString *)config
+{
+    if (!config)
+    {
+        return;
+    }
+    if (self.customConfigs[config])
+    {
+        [self storeCustomItemInUserDefaults:config];
+    }
+    else
+    {
+        [self removeCustomItemFromUserDefaults:config];
+    }
+}
+
 - (void)loadSelectedItemFromUserDefaults
 {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
@@ -303,6 +390,49 @@
     {
         [userDefaults removeObjectForKey:kDefaultsSelectedConfigName];
         [userDefaults removeObjectForKey:kDefaultsSelectedConfigDictionary];
+    }
+}
+
+- (void)storeCustomItemInUserDefaults:(NSString *)config
+{
+    NSUserDefaults *stupid = [NSUserDefaults standardUserDefaults];
+    if (self.customConfigs[config])
+    {
+        NSMutableArray *configs = [NSMutableArray new];
+        [self removeCustomItemFromUserDefaults:config];
+        if ([[NSUserDefaults standardUserDefaults] valueForKey:kDefaultsCustomConfigs])
+        {
+            configs = [[[NSUserDefaults standardUserDefaults] valueForKey:kDefaultsCustomConfigs] mutableCopy];
+        }
+        [configs addObject:self.customConfigs[config]];
+        [[NSUserDefaults standardUserDefaults] setValue:configs forKey:kDefaultsCustomConfigs];
+    }
+}
+
+- (void)removeCustomItemFromUserDefaults:(NSString *)config
+{
+    if (![[NSUserDefaults standardUserDefaults] valueForKey:kDefaultsCustomConfigs])
+    {
+        return;
+    }
+    NSMutableArray *configs = [[[NSUserDefaults standardUserDefaults] valueForKey:kDefaultsCustomConfigs] mutableCopy];
+    for (NSDictionary *settings in configs)
+    {
+        if (settings[@"name"] && [settings[@"name"] isEqualToString:config])
+        {
+            [configs removeObject:settings];
+            break;
+        }
+    }
+    [[NSUserDefaults standardUserDefaults] setValue:configs forKey:kDefaultsCustomConfigs];
+}
+
+- (void)loadCustomConfigurationsFromUserDefaults
+{
+    [self.customConfigs removeAllObjects];
+    for (NSDictionary *settings in [[NSUserDefaults standardUserDefaults] valueForKey:kDefaultsCustomConfigs])
+    {
+        self.customConfigs[settings[@"name"]] = settings;
     }
 }
 
