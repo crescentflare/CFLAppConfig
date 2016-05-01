@@ -181,7 +181,11 @@
         NSDictionary *config = nil;
         if (self.selectedItem)
         {
-            config = self.storedConfigs[self.selectedItem];
+            config = self.customConfigs[self.selectedItem];
+            if (!config)
+            {
+                config = self.storedConfigs[self.selectedItem];
+            }
         }
         if (!config)
         {
@@ -384,7 +388,14 @@
     if (self.selectedItem && self.storedConfigs[self.selectedItem])
     {
         [userDefaults setValue:self.selectedItem forKey:kDefaultsSelectedConfigName];
-        [userDefaults setValue:[self.storedConfigs[self.selectedItem] copy] forKey:kDefaultsSelectedConfigDictionary];
+        if (self.customConfigs[self.selectedItem])
+        {
+            [userDefaults setValue:[self.customConfigs[self.selectedItem] copy] forKey:kDefaultsSelectedConfigDictionary];
+        }
+        else
+        {
+            [userDefaults setValue:[self.storedConfigs[self.selectedItem] copy] forKey:kDefaultsSelectedConfigDictionary];
+        }
     }
     else
     {
