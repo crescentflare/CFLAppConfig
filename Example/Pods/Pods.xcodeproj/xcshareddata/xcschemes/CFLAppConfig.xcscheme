@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CEF1C756C431840796F8866E'
+               BlueprintIdentifier = '99015A5CF8B0B7DE9D87B231'
                BlueprintName = 'CFLAppConfig'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'CFLAppConfig.framework'>
