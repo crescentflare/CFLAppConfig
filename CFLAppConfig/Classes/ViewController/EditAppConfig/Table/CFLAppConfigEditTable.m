@@ -446,7 +446,7 @@
         if ([tableValue.labelString isEqualToString:(NSString *)tag])
         {
             NSIndexPath *totalIndexPath = [NSIndexPath indexPathForRow:i inSection:0];
-            self.tableValues[i] = [CFLAppConfigEditTableValue valueForSelection:tableValue.labelString andValue:item andChoices:tableValue.choices];
+            self.tableValues[i] = [CFLAppConfigEditTableValue valueForSelection:tableValue.configSetting andValue:item andChoices:tableValue.choices];
             [self.tableView beginUpdates];
             [self.tableView reloadRowsAtIndexPaths:@[totalIndexPath] withRowAnimation:UITableViewRowAnimationNone];
             [self.tableView endUpdates];
