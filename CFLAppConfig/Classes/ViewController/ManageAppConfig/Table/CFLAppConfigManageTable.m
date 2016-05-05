@@ -11,6 +11,7 @@
 #import "CFLAppConfigManageItemCell.h"
 #import "CFLAppConfigManageLoadingCell.h"
 #import "CFLAppConfigManageSectionCell.h"
+#import "CFLAppConfigStorage.h"
 
 //Internal interface definition
 @interface CFLAppConfigManageTable ()
@@ -72,7 +73,12 @@
         {
             if ([configuration isEqualToString:lastSelectedConfig])
             {
-                [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:lastSelectedConfig andText:lastSelectedConfig]];
+                NSString *label = lastSelectedConfig;
+                if ([[CFLAppConfigStorage sharedStorage] isConfigOverride:label])
+                {
+                    label = [NSString stringWithFormat:@"%@ *", label];
+                }
+                [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:lastSelectedConfig andText:label]];
                 foundLastSelected = YES;
                 break;
             }
@@ -89,7 +95,12 @@
         [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForSection:NSLocalizedString(@"Predefined configurations", nil)]];
         for (NSString *configuration in configurations)
         {
-            [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:configuration andText:configuration]];
+            NSString *label = configuration;
+            if ([[CFLAppConfigStorage sharedStorage] isConfigOverride:label])
+            {
+                label = [NSString stringWithFormat:@"%@ *", label];
+            }
+            [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:configuration andText:label]];
         }
     }
     
