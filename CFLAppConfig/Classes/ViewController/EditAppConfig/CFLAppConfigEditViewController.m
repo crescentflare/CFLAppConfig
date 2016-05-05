@@ -111,10 +111,15 @@
 
 - (void)revertConfig
 {
+    BOOL wasSelected = [self.configName isEqualToString:[[CFLAppConfigStorage sharedStorage] selectedConfig]];
     if ([[CFLAppConfigStorage sharedStorage] isCustomConfig:self.configName] || [[CFLAppConfigStorage sharedStorage] isConfigOverride:self.configName])
     {
         [[CFLAppConfigStorage sharedStorage] removeConfig:self.configName];
         [[CFLAppConfigStorage sharedStorage] synchronizeCustomConfigWithUserDefaults:self.configName];
+    }
+    if (wasSelected)
+    {
+        [[CFLAppConfigStorage sharedStorage] selectConfig:self.configName];
     }
     [self.navigationController popViewControllerAnimated:YES];
 }
