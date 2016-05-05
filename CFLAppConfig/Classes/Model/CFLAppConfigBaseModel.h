@@ -22,6 +22,9 @@
 //- Controlling sort order
 + (NSDictionary *)modelStructure;
 
+//Helper method quickly find a field in the model structure (which can be within a category or a plain field list)
++ (NSDictionary *)modelStructureField:(NSString *)fieldName;
+
 //Helper method to obtain a list of defined properties in the derived model, including its type
 //Currently only a limited set of types are supported: boolean, integer (including enum), long and NSString
 - (NSDictionary *)obtainValueTypes;

@@ -1,5 +1,5 @@
 PODS:
-  - CFLAppConfig (0.2.0)
+  - CFLAppConfig (0.5.0)
 
 DEPENDENCIES:
   - CFLAppConfig (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  CFLAppConfig: 88d8deb685e4b9f60dd26ed84fa218476cea960e
+  CFLAppConfig: 6a616e6a41272d089824b479edf84b095c0ce038
 
 COCOAPODS: 0.39.0

@@ -1,28 +1,28 @@
 //
-//  CFLAppConfigManageItemCell.m
+//  CFLAppConfigSelectionHelperCell.m
 //  CFLAppConfig Pod
 //
 
 //Import
-#import "CFLAppConfigManageItemCell.h"
+#import "CFLAppConfigSelectionHelperCell.h"
 
-//Definitions
+//Definition
 static CGFloat kEdgePadding = 8;
 static CGFloat kDisclosureWidth = 11;
 static CGFloat kDisclosureSpacing = 8;
 static CGFloat kMinHeight = 48;
 
 //Internal interface definition
-@interface CFLAppConfigManageItemCell ()
+@interface CFLAppConfigSelectionHelperCell ()
 
-@property (nonatomic, strong) UILabel *configLabel;
+@property (nonatomic, strong) UILabel *actionLabel;
 @property (nonatomic, strong) UIImageView *disclosureImage;
 @property (nonatomic, strong) UIView *divider;
 
 @end
 
 //Interface implementation
-@implementation CFLAppConfigManageItemCell
+@implementation CFLAppConfigSelectionHelperCell
 
 #pragma mark Initialization
 
@@ -36,10 +36,10 @@ static CGFloat kMinHeight = 48;
         UIImage *chevronImage = [UIImage imageNamed:@"chevron" inBundle:bundle compatibleWithTraitCollection:nil];
         self.backgroundColor = [UIColor whiteColor];
         
-        //Add label for config
-        self.configLabel = [UILabel new];
-        self.configLabel.numberOfLines = 0;
-        [self addSubview:self.configLabel];
+        //Add label for action
+        self.actionLabel = [UILabel new];
+        self.actionLabel.numberOfLines = 0;
+        [self addSubview:self.actionLabel];
         
         //Add accessory image
         self.disclosureImage = [UIImageView new];
@@ -60,14 +60,14 @@ static CGFloat kMinHeight = 48;
 
 - (CGSize)sizeThatFits:(CGSize)size
 {
-    CGSize labelSize = [self.configLabel sizeThatFits:CGSizeMake(size.width - kEdgePadding * 2 - kDisclosureWidth - kDisclosureSpacing, 0)];
+    CGSize labelSize = [self.actionLabel sizeThatFits:CGSizeMake(size.width - kEdgePadding * 2 - kDisclosureWidth - kDisclosureSpacing, 0)];
     return CGSizeMake(size.width, MAX(kMinHeight, kEdgePadding + labelSize.height + kEdgePadding + [self dividerHeight]));
 }
 
 - (void)layoutSubviews
 {
-    self.configLabel.frame = CGRectMake(kEdgePadding, kEdgePadding, self.frame.size.width - kEdgePadding * 2 - kDisclosureWidth - kDisclosureSpacing, self.frame.size.height - kEdgePadding * 2 - [self dividerHeight]);
-    self.disclosureImage.frame = CGRectMake(kEdgePadding + self.configLabel.frame.size.width + kDisclosureSpacing, kEdgePadding, kDisclosureWidth, self.frame.size.height - kEdgePadding * 2);
+    self.actionLabel.frame = CGRectMake(kEdgePadding, kEdgePadding, self.frame.size.width - kEdgePadding * 2 - kDisclosureWidth - kDisclosureSpacing, self.frame.size.height - kEdgePadding * 2 - [self dividerHeight]);
+    self.disclosureImage.frame = CGRectMake(kEdgePadding + self.actionLabel.frame.size.width + kDisclosureSpacing, kEdgePadding, kDisclosureWidth, self.frame.size.height - kEdgePadding * 2);
     self.divider.frame = CGRectMake(0, self.frame.size.height - [self dividerHeight], self.frame.size.width, [self dividerHeight]);
 }
 
@@ -79,20 +79,14 @@ static CGFloat kMinHeight = 48;
 
 #pragma mark Property accessors
 
-- (void)setConfigText:(NSString *)configText
+- (void)setLabelText:(NSString *)labelText
 {
-    self.configLabel.text = configText;
+    self.actionLabel.text = labelText;
 }
 
-- (NSString *)configText
+- (NSString *)labelText
 {
-    return self.configLabel.text;
-}
-
-- (void)setUserInteractionEnabled:(BOOL)userInteractionEnabled
-{
-    [super setUserInteractionEnabled:userInteractionEnabled];
-    self.disclosureImage.hidden = !userInteractionEnabled;
+    return self.actionLabel.text;
 }
 
 @end

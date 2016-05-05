@@ -28,14 +28,31 @@
 //Useful to determine if the storage is being used or not to override the configuration (for test/production builds)
 - (BOOL)isInitialized;
 
+//Obtain manager instance, only used internally if the given manager is a singleton (which is recommended)
+- (CFLAppConfigBaseManager *)configManager;
+
+//Return settings for the given configuration
+- (NSDictionary *)configSettings:(NSString *)config;
+- (NSDictionary *)configSettingsNotNull:(NSString *)config;
+
 //Return the currently selected config, can be nil
 - (NSString *)selectedConfig;
 
 //Obtain a list of loaded configurations
 - (NSArray *)obtainConfigList;
 
+//Set custom values for an existing or new configuration
+- (void)putCustomConfig:(NSDictionary *)settings forConfig:(NSString *)config;
+
+//Remove a configuration
+- (BOOL)removeConfig:(NSString *)config;
+
 //Select a configuration
 - (void)selectConfig:(NSString *)configName;
+
+//Return information about type and state of configuration
+- (BOOL)isCustomConfig:(NSString *)config;
+- (BOOL)isConfigOverride:(NSString *)config;
 
 //Supply the path of the file containing the overrides
 //Should point to a plist file
@@ -45,6 +62,9 @@
 //Internal method: load configurations from specified source
 - (void)loadFromSource:(void (^)())completion;
 - (void)loadFromSourceSync;
+
+//Internal method: synchronize customized configuration with user defaults
+- (void)synchronizeCustomConfigWithUserDefaults:(NSString *)config;
 
 //Add/remove observer for configuration changes
 - (void)addDataObserver:(id)observer selector:(SEL)selector name:(NSString *)identifier;

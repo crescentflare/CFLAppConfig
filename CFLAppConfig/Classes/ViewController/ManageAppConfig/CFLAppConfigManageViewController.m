@@ -6,11 +6,13 @@
 //Import
 #import "CFLAppConfigManageViewController.h"
 #import "CFLAppConfigStorage.h"
+#import "CFLAppConfigEditViewController.h"
 
 //Internal interface definition
 @interface CFLAppConfigManageViewController ()
 
 @property (nonatomic, assign) BOOL isPresentedController;
+@property (nonatomic, assign) BOOL isLoaded;
 @property (nonatomic, strong) CFLAppConfigManageTable *manageConfigTable;
 
 @end
@@ -53,6 +55,7 @@
     
     //Update configuration list
     [[CFLAppConfigStorage sharedStorage] loadFromSource:^(){
+        self.isLoaded = YES;
         [self.manageConfigTable setConfigurations:[[CFLAppConfigStorage sharedStorage] obtainConfigList] lastSelected:[[CFLAppConfigStorage sharedStorage] selectedConfig]];
     }];
 }
@@ -70,6 +73,14 @@
     self.manageConfigTable = [CFLAppConfigManageTable new];
     self.manageConfigTable.delegate = self;
     self.view = self.manageConfigTable;
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    if (self.isLoaded)
+    {
+        [self.manageConfigTable setConfigurations:[[CFLAppConfigStorage sharedStorage] obtainConfigList] lastSelected:[[CFLAppConfigStorage sharedStorage] selectedConfig]];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -118,6 +129,12 @@
 
 - (void)editConfig:(NSString *)configName
 {
+    if (self.navigationController)
+    {
+        CFLAppConfigEditViewController *viewController = [CFLAppConfigEditViewController new];
+        viewController.configName = configName;
+        [self.navigationController pushViewController:viewController animated:YES];
+    }
 }
 
 @end

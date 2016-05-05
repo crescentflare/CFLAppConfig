@@ -35,6 +35,41 @@
     return nil;
 }
 
++ (NSDictionary *)modelStructureField:(NSString *)fieldName
+{
+    NSDictionary *modelStructure = [self.class modelStructure];
+    if (modelStructure)
+    {
+        if (modelStructure[@"categories"])
+        {
+            for (NSDictionary *category in modelStructure[@"categories"])
+            {
+                if (category[@"fields"])
+                {
+                    for (NSDictionary *field in category[@"fields"])
+                    {
+                        if (field[@"fieldName"] && [field[@"fieldName"] isEqualToString:fieldName])
+                        {
+                            return field;
+                        }
+                    }
+                }
+            }
+        }
+        if (modelStructure[@"fields"])
+        {
+            for (NSDictionary *field in modelStructure[@"fields"])
+            {
+                if (field[@"fieldName"] && [field[@"fieldName"] isEqualToString:fieldName])
+                {
+                    return field;
+                }
+            }
+        }
+    }
+    return nil;
+}
+
 - (NSDictionary *)obtainValueTypes
 {
     NSDictionary *supportedTypes = @{

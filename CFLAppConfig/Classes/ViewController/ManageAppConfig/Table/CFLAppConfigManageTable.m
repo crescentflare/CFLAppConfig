@@ -11,6 +11,7 @@
 #import "CFLAppConfigManageItemCell.h"
 #import "CFLAppConfigManageLoadingCell.h"
 #import "CFLAppConfigManageSectionCell.h"
+#import "CFLAppConfigStorage.h"
 
 //Internal interface definition
 @interface CFLAppConfigManageTable ()
@@ -62,25 +63,44 @@
 {
     //Table values list
     self.tableValues = [NSMutableArray new];
+    
+    //Add last selected config
+    BOOL foundLastSelected = NO;
+    [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForSection:NSLocalizedString(@"Last selected", nil)]];
+    if (lastSelectedConfig)
+    {
+        for (NSString *configuration in configurations)
+        {
+            if ([configuration isEqualToString:lastSelectedConfig])
+            {
+                NSString *label = lastSelectedConfig;
+                if ([[CFLAppConfigStorage sharedStorage] isConfigOverride:label])
+                {
+                    label = [NSString stringWithFormat:@"%@ *", label];
+                }
+                [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:lastSelectedConfig andText:label]];
+                foundLastSelected = YES;
+                break;
+            }
+        }
+    }
+    if (!foundLastSelected)
+    {
+        [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:@"" andText:NSLocalizedString(@"None", nil)]];
+    }
 
     //Add predefined configurations (if present)
     if ([configurations count] > 0)
     {
         [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForSection:NSLocalizedString(@"Predefined configurations", nil)]];
-        if (lastSelectedConfig)
-        {
-            for (NSString *configuration in configurations)
-            {
-                if ([configuration isEqualToString:lastSelectedConfig])
-                {
-                    [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:lastSelectedConfig andText:[NSString stringWithFormat:@"%@: %@", NSLocalizedString(@"Last selected", nil), lastSelectedConfig]]];
-                    break;
-                }
-            }
-        }
         for (NSString *configuration in configurations)
         {
-            [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:configuration andText:configuration]];
+            NSString *label = configuration;
+            if ([[CFLAppConfigStorage sharedStorage] isConfigOverride:label])
+            {
+                label = [NSString stringWithFormat:@"%@ *", label];
+            }
+            [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:configuration andText:label]];
         }
     }
     
@@ -150,6 +170,8 @@
         }
         
         //Supply data
+        cell.userInteractionEnabled = [tableValue.config length] > 0;
+        cellView.userInteractionEnabled = [tableValue.config length] > 0;
         cellView.configText = tableValue.labelString;
         
         //Calculate frame
@@ -220,23 +242,19 @@
 
 - (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static BOOL supportEditing = NO;
-    if (supportEditing)
-    {
-        UITableViewRowAction *editAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:NSLocalizedString(@"Edit", nil) handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
-            CFLAppConfigManageTableValue *tableValue = (CFLAppConfigManageTableValue *)[self.tableValues objectAtIndex:indexPath.row];
-            if (self.delegate)
+    UITableViewRowAction *editAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:NSLocalizedString(@"Edit", nil) handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
+        CFLAppConfigManageTableValue *tableValue = (CFLAppConfigManageTableValue *)[self.tableValues objectAtIndex:indexPath.row];
+        if (self.delegate)
+        {
+            if (tableValue.config)
             {
-                if (tableValue.config)
-                {
-                    [self.delegate editConfig:tableValue.config];
-                }
+                [self.delegate editConfig:tableValue.config];
             }
-        }];
-        editAction.backgroundColor = [UIColor blueColor];
-        return @[editAction];
-    }
-    return @[];
+        }
+        [tableView setEditing:NO animated:YES];
+    }];
+    editAction.backgroundColor = [UIColor blueColor];
+    return @[editAction];
 }
 
 #pragma mark UITableViewDelegate
