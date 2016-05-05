@@ -85,7 +85,6 @@
 
 - (void)keyboardWillHide:(NSNotification *)notification
 {
-    NSDictionary *userInfo = [notification userInfo];
     NSNumber *keyboardDuration = [notification.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey];
     NSNumber *keyboardCurve = [notification.userInfo objectForKey: UIKeyboardAnimationCurveUserInfoKey];
     [UIView animateWithDuration:[keyboardDuration floatValue] delay:0 options:(UIViewAnimationOptions)[keyboardCurve integerValue] animations:^
