@@ -406,7 +406,6 @@
 
 - (void)storeCustomItemInUserDefaults:(NSString *)config
 {
-    NSUserDefaults *stupid = [NSUserDefaults standardUserDefaults];
     if (self.customConfigs[config])
     {
         NSMutableArray *configs = [NSMutableArray new];

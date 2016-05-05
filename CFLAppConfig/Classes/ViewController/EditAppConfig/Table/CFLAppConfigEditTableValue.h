@@ -25,7 +25,8 @@ typedef enum
 //Action type enum
 typedef enum
 {
-    CFLAppConfigEditTableValueActionSave = 0,
+    CFLAppConfigEditTableValueActionNone = 0,
+    CFLAppConfigEditTableValueActionSave,
     CFLAppConfigEditTableValueActionCancel,
     CFLAppConfigEditTableValueActionRevert
 }CFLAppConfigEditTableValueAction;
