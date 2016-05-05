@@ -184,7 +184,16 @@
         switch (tableValue.type)
         {
             case CFLAppConfigEditTableValueTypeEditText:
-                dictionary[tableValue.configSetting] = tableValue.labelString;
+                if (tableValue.limitUsage)
+                {
+                    NSNumberFormatter *formatter = [NSNumberFormatter new];
+                    formatter.numberStyle = NSNumberFormatterDecimalStyle;
+                    dictionary[tableValue.configSetting] = [formatter numberFromString:tableValue.labelString];
+                }
+                else
+                {
+                    dictionary[tableValue.configSetting] = tableValue.labelString;
+                }
                 break;
             case CFLAppConfigEditTableValueTypeSlider:
                 dictionary[tableValue.configSetting] = @(tableValue.booleanValue);
