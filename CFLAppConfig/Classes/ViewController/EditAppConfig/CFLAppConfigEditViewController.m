@@ -109,4 +109,14 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (void)revertConfig
+{
+    if ([[CFLAppConfigStorage sharedStorage] isCustomConfig:self.configName] || [[CFLAppConfigStorage sharedStorage] isConfigOverride:self.configName])
+    {
+        [[CFLAppConfigStorage sharedStorage] removeConfig:self.configName];
+        [[CFLAppConfigStorage sharedStorage] synchronizeCustomConfigWithUserDefaults:self.configName];
+    }
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 @end

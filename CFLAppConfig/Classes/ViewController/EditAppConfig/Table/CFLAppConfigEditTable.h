@@ -19,6 +19,7 @@
 
 - (void)saveConfig:(NSDictionary *)newSettings;
 - (void)cancelEditing;
+- (void)revertConfig;
 
 @end
 

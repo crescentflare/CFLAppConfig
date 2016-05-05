@@ -170,6 +170,7 @@
     //Add actions and reload table
     [self.tableValues addObject:[CFLAppConfigEditTableValue valueForSection:NSLocalizedString(@"Actions", nil)]];
     [self.tableValues addObject:[CFLAppConfigEditTableValue valueForAction:CFLAppConfigEditTableValueActionSave andText:NSLocalizedString(@"Apply changes", nil)]];
+    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForAction:CFLAppConfigEditTableValueActionRevert andText:NSLocalizedString(@"Reset to defaults", nil)]];
     [self.tableValues addObject:[CFLAppConfigEditTableValue valueForAction:CFLAppConfigEditTableValueActionCancel andText:NSLocalizedString(@"Cancel", nil)]];
     [self.tableView reloadData];
 }
@@ -401,6 +402,9 @@
                 break;
             case CFLAppConfigEditTableValueActionCancel:
                 [self.delegate cancelEditing];
+                break;
+            case CFLAppConfigEditTableValueActionRevert:
+                [self.delegate revertConfig];
                 break;
         }
     }

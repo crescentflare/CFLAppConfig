@@ -26,7 +26,8 @@ typedef enum
 typedef enum
 {
     CFLAppConfigEditTableValueActionSave = 0,
-    CFLAppConfigEditTableValueActionCancel
+    CFLAppConfigEditTableValueActionCancel,
+    CFLAppConfigEditTableValueActionRevert
 }CFLAppConfigEditTableValueAction;
 
 //Interface definition
