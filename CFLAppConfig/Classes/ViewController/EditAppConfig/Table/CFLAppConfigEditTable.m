@@ -86,7 +86,6 @@
 - (void)keyboardWillHide:(NSNotification *)notification
 {
     NSDictionary *userInfo = [notification userInfo];
-    CGSize keyboardSize = [[userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
     NSNumber *keyboardDuration = [notification.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey];
     NSNumber *keyboardCurve = [notification.userInfo objectForKey: UIKeyboardAnimationCurveUserInfoKey];
     [UIView animateWithDuration:[keyboardDuration floatValue] delay:0 options:(UIViewAnimationOptions)[keyboardCurve integerValue] animations:^
@@ -151,7 +150,7 @@
                     NSDictionary *enumStates = [enumSerializer.class states];
                     if (enumStates)
                     {
-                        [self.tableValues addObject:[CFLAppConfigEditTableValue valueForSelection:key andValue:value andChoices:[enumStates allKeys]]];
+                        [self.tableValues addObject:[CFLAppConfigEditTableValue valueForSelection:key andValue:(NSString *)value andChoices:[enumStates allKeys]]];
                         continue;
                     }
                 }
@@ -162,7 +161,7 @@
             }
             else
             {
-                [self.tableValues addObject:[CFLAppConfigEditTableValue valueForEditText:key andValue:value numberOnly:NO]];
+                [self.tableValues addObject:[CFLAppConfigEditTableValue valueForEditText:key andValue:(NSString *)value numberOnly:NO]];
             }
         }
     }
@@ -201,6 +200,8 @@
             case CFLAppConfigEditTableValueTypeSelection:
                 dictionary[tableValue.configSetting] = tableValue.labelString;
                 break;
+            default:
+                break; //Others are not editable cells
         }
     }
     return dictionary;
@@ -414,6 +415,8 @@
                 break;
             case CFLAppConfigEditTableValueActionRevert:
                 [self.delegate revertConfig];
+                break;
+            case CFLAppConfigEditTableValueActionNone:
                 break;
         }
     }

@@ -46,7 +46,7 @@ typedef enum
 + (CFLAppConfigEditTableValue *)valueForAction:(CFLAppConfigEditTableValueAction)action andText:(NSString *)actionLabel;
 + (CFLAppConfigEditTableValue *)valueForEditText:(NSString *)configSetting andValue:(NSString *)settingValue numberOnly:(BOOL)onlyNumbers;
 + (CFLAppConfigEditTableValue *)valueForSlider:(NSString *)configSetting andSwitchedOn:(BOOL)settingValue;
-+ (CFLAppConfigEditTableValue *)valueForSelection:(NSString *)configSetting andValue:(NSString *)settingValue andChoices:(NSString *)choices;
++ (CFLAppConfigEditTableValue *)valueForSelection:(NSString *)configSetting andValue:(NSString *)settingValue andChoices:(NSArray *)choices;
 + (CFLAppConfigEditTableValue *)valueForSection:(NSString *)sectionText;
 
 - (NSString *)cellIdentifier;

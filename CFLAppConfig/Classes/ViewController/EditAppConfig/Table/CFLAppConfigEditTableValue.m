@@ -54,7 +54,7 @@
     return [[CFLAppConfigEditTableValue alloc] initWithType:CFLAppConfigEditTableValueTypeSlider andAction:CFLAppConfigEditTableValueActionNone andChoices:nil andSetting:configSetting andLabelString:nil andBooleanValue:settingValue andLimitUsage:NO];
 }
 
-+ (CFLAppConfigEditTableValue *)valueForSelection:(NSString *)configSetting andValue:(NSString *)settingValue andChoices:(NSString *)choices
++ (CFLAppConfigEditTableValue *)valueForSelection:(NSString *)configSetting andValue:(NSString *)settingValue andChoices:(NSArray *)choices
 {
     return [[CFLAppConfigEditTableValue alloc] initWithType:CFLAppConfigEditTableValueTypeSelection andAction:CFLAppConfigEditTableValueActionNone andChoices:choices andSetting:configSetting andLabelString:settingValue andBooleanValue:NO andLimitUsage:NO];
 }
