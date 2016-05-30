@@ -57,7 +57,7 @@
     //Update configuration list
     [[CFLAppConfigStorage sharedStorage] loadFromSource:^(){
         self.isLoaded = YES;
-        [self.manageConfigTable setConfigurations:[[CFLAppConfigStorage sharedStorage] obtainConfigList] lastSelected:[[CFLAppConfigStorage sharedStorage] selectedConfig]];
+        [self.manageConfigTable setConfigurations:[[CFLAppConfigStorage sharedStorage] obtainConfigList] customConfigs:[[CFLAppConfigStorage sharedStorage] obtainCustomConfigList] lastSelected:[[CFLAppConfigStorage sharedStorage] selectedConfig]];
     }];
 }
 
@@ -72,6 +72,7 @@
         self.isPresentedController = [self isBeingPresented];
     }
     self.manageConfigTable = [CFLAppConfigManageTable new];
+    self.manageConfigTable.parentViewController = self;
     self.manageConfigTable.delegate = self;
     self.view = self.manageConfigTable;
 }
@@ -80,7 +81,7 @@
 {
     if (self.isLoaded)
     {
-        [self.manageConfigTable setConfigurations:[[CFLAppConfigStorage sharedStorage] obtainConfigList] lastSelected:[[CFLAppConfigStorage sharedStorage] selectedConfig]];
+        [self.manageConfigTable setConfigurations:[[CFLAppConfigStorage sharedStorage] obtainConfigList] customConfigs:[[CFLAppConfigStorage sharedStorage] obtainCustomConfigList] lastSelected:[[CFLAppConfigStorage sharedStorage] selectedConfig]];
     }
 }
 
@@ -134,6 +135,17 @@
     {
         CFLAppConfigEditViewController *viewController = [CFLAppConfigEditViewController new];
         viewController.configName = configName;
+        [self.navigationController pushViewController:viewController animated:YES];
+    }
+}
+
+- (void)newCustomConfigFrom:(NSString *)originalConfigName
+{
+    if (self.navigationController)
+    {
+        CFLAppConfigEditViewController *viewController = [CFLAppConfigEditViewController new];
+        viewController.configName = originalConfigName;
+        viewController.newConfig = YES;
         [self.navigationController pushViewController:viewController animated:YES];
     }
 }

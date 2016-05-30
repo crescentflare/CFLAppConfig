@@ -28,6 +28,7 @@
 
 @property (nonatomic, weak) id<CFLAppConfigEditTableDelegate> delegate;
 @property (nonatomic, weak) UIViewController *parentViewController;
+@property (nonatomic, assign) BOOL newConfig;
 
 - (void)setConfigurationSettings:(NSDictionary *)configurationSettings forConfig:(NSString *)configName;
 - (void)setConfigurationSettings:(NSDictionary *)configurationSettings forConfig:(NSString *)configName withModel:(CFLAppConfigBaseModel *)model;

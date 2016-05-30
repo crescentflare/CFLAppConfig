@@ -24,7 +24,14 @@
 {
     //Set title
     [super viewDidLoad];
-    [self.navigationItem setTitle:[CFLAppConfigBundle localizedString:@"CFLAC_EDIT_TITLE"]];
+    if (self.newConfig)
+    {
+        [self.navigationItem setTitle:[CFLAppConfigBundle localizedString:@"CFLAC_EDIT_NEW_TITLE"]];
+    }
+    else
+    {
+        [self.navigationItem setTitle:[CFLAppConfigBundle localizedString:@"CFLAC_EDIT_TITLE"]];
+    }
     self.navigationController.navigationBar.translucent = NO;
     
     //Add an easy-reachable save button to the navigation bar
@@ -53,14 +60,13 @@
     
     //Update configuration list
     [[CFLAppConfigStorage sharedStorage] loadFromSource:^(){
-        NSDictionary *settings = [[CFLAppConfigStorage sharedStorage] configSettingsNotNull:self.configName];
         if ([[CFLAppConfigStorage sharedStorage] configManager])
         {
-            [self.editConfigTable setConfigurationSettings:settings forConfig:self.configName withModel:[[[CFLAppConfigStorage sharedStorage] configManager] obtainBaseModelInstance]];
+            [self.editConfigTable setConfigurationSettings:[self obtainSettings] forConfig:self.configName withModel:[[[CFLAppConfigStorage sharedStorage] configManager] obtainBaseModelInstance]];
         }
         else
         {
-            [self.editConfigTable setConfigurationSettings:settings forConfig:self.configName];
+            [self.editConfigTable setConfigurationSettings:[self obtainSettings] forConfig:self.configName];
         }
     }];
 }
@@ -69,6 +75,7 @@
 {
     self.editConfigTable = [CFLAppConfigEditTable new];
     self.editConfigTable.parentViewController = self;
+    self.editConfigTable.newConfig = self.newConfig;
     self.editConfigTable.delegate = self;
     self.view = self.editConfigTable;
 }
@@ -76,6 +83,19 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+
+#pragma mark Helpers
+
+- (NSDictionary *)obtainSettings
+{
+    NSMutableDictionary *settings = [[[CFLAppConfigStorage sharedStorage] configSettingsNotNull:self.configName] mutableCopy];
+    if (self.newConfig)
+    {
+        settings[@"name"] = [NSString stringWithFormat:@"%@ %@", self.configName, [CFLAppConfigBundle localizedString:@"CFLAC_EDIT_COPY_SUFFIX"]];
+    }
+    return settings;
 }
 
 

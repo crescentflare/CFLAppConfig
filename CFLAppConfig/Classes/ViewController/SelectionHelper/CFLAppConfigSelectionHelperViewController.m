@@ -80,11 +80,11 @@
 
 - (void)chosenItem:(NSString *)choice
 {
+    [self.navigationController popViewControllerAnimated:!self.preventAnimateOnClose];
     if (self.delegate)
     {
         [self.delegate chosenItem:choice givenTag:self.tag];
     }
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

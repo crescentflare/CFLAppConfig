@@ -14,5 +14,6 @@
 @interface CFLAppConfigEditViewController : UIViewController <CFLAppConfigEditTableDelegate>
 
 @property (nonatomic, strong) NSString *configName;
+@property (nonatomic, assign) BOOL newConfig;
 
 @end

@@ -23,5 +23,6 @@
 @property (nonatomic, weak) id<CFLAppConfigSelectionHelperViewControllerDelegate> delegate;
 @property (nonatomic, strong) NSObject *tag;
 @property (nonatomic, strong) NSArray *choices;
+@property (nonatomic, assign) BOOL preventAnimateOnClose;
 
 @end

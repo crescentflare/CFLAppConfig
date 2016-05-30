@@ -40,6 +40,7 @@
 
 //Obtain a list of loaded configurations
 - (NSArray *)obtainConfigList;
+- (NSArray *)obtainCustomConfigList;
 
 //Set custom values for an existing or new configuration
 - (void)putCustomConfig:(NSDictionary *)settings forConfig:(NSString *)config;
