@@ -11,6 +11,7 @@
 #import "CFLAppConfigEditLoadingCell.h"
 #import "CFLAppConfigEditSectionCell.h"
 #import "CFLAppConfigEnumSerializer.h"
+#import "CFLAppConfigBundle.h"
 
 //Internal interface definition
 @interface CFLAppConfigEditTable ()
@@ -44,7 +45,7 @@
         
         //Show loading indicator by default
         self.tableValues = [NSMutableArray new];
-        [self.tableValues addObject:[CFLAppConfigEditTableValue valueForLoading:NSLocalizedString(@"Loading configurations...", nil)]];
+        [self.tableValues addObject:[CFLAppConfigEditTableValue valueForLoading:[CFLAppConfigBundle localizedString:@"CFLAC_SHARED_LOADING_CONFIGS"]]];
 
         //Register keyboard events
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
@@ -166,10 +167,10 @@
     }
     
     //Add actions and reload table
-    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForSection:NSLocalizedString(@"Actions", nil)]];
-    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForAction:CFLAppConfigEditTableValueActionSave andText:NSLocalizedString(@"Apply changes", nil)]];
-    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForAction:CFLAppConfigEditTableValueActionRevert andText:NSLocalizedString(@"Reset to defaults", nil)]];
-    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForAction:CFLAppConfigEditTableValueActionCancel andText:NSLocalizedString(@"Cancel", nil)]];
+    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForSection:[CFLAppConfigBundle localizedString:@"CFLAC_EDIT_SECTION_ACTIONS"]]];
+    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForAction:CFLAppConfigEditTableValueActionSave andText:[CFLAppConfigBundle localizedString:@"CFLAC_EDIT_SECTION_ACTION_APPLY"]]];
+    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForAction:CFLAppConfigEditTableValueActionRevert andText:[CFLAppConfigBundle localizedString:@"CFLAC_EDIT_SECTION_ACTION_RESET"]]];
+    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForAction:CFLAppConfigEditTableValueActionCancel andText:[CFLAppConfigBundle localizedString:@"CFLAC_EDIT_SECTION_ACTION_CANCEL"]]];
     [self.tableView reloadData];
 }
 

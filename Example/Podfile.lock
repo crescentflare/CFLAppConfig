@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  CFLAppConfig: 6a616e6a41272d089824b479edf84b095c0ce038
+  CFLAppConfig: d7f68a6ba5b2e0da2cf5aa7ef61fa52e7a1f0c6d
 
 COCOAPODS: 0.39.0

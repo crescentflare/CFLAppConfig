@@ -12,6 +12,7 @@
 #import "CFLAppConfigManageLoadingCell.h"
 #import "CFLAppConfigManageSectionCell.h"
 #import "CFLAppConfigStorage.h"
+#import "CFLAppConfigBundle.h"
 
 //Internal interface definition
 @interface CFLAppConfigManageTable ()
@@ -43,7 +44,7 @@
         
         //Show loading indicator by default
         self.tableValues = [NSMutableArray new];
-        [self.tableValues addObject:[CFLAppConfigManageTableValue valueForLoading:NSLocalizedString(@"Loading configurations...", nil)]];
+        [self.tableValues addObject:[CFLAppConfigManageTableValue valueForLoading:[CFLAppConfigBundle localizedString:@"CFLAC_SHARED_LOADING_CONFIGS"]]];
     }
     return self;
 }
@@ -66,7 +67,7 @@
     
     //Add last selected config
     BOOL foundLastSelected = NO;
-    [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForSection:NSLocalizedString(@"Last selected", nil)]];
+    [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForSection:[CFLAppConfigBundle localizedString:@"CFLAC_MANAGE_SECTION_LAST_SELECTED"]]];
     if (lastSelectedConfig)
     {
         for (NSString *configuration in configurations)
@@ -86,13 +87,13 @@
     }
     if (!foundLastSelected)
     {
-        [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:@"" andText:NSLocalizedString(@"None", nil)]];
+        [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:@"" andText:[CFLAppConfigBundle localizedString:@"CFLAC_MANAGE_LAST_SELECTED_NONE"]]];
     }
 
     //Add predefined configurations (if present)
     if ([configurations count] > 0)
     {
-        [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForSection:NSLocalizedString(@"Predefined configurations", nil)]];
+        [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForSection:[CFLAppConfigBundle localizedString:@"CFLAC_MANAGE_SECTION_PREDEFINED"]]];
         for (NSString *configuration in configurations)
         {
             NSString *label = configuration;
@@ -105,9 +106,9 @@
     }
     
     //Add build information
-    [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForSection:NSLocalizedString(@"Build information", nil)]];
-    [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForInfo:[NSString stringWithFormat:@"%@: %@", NSLocalizedString(@"Build", nil), [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleVersion"]]]];
-    [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForInfo:[NSString stringWithFormat:@"%@: %@", NSLocalizedString(@"iOS version", nil), [[UIDevice currentDevice] systemVersion]]]];
+    [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForSection:[CFLAppConfigBundle localizedString:@"CFLAC_MANAGE_SECTION_BUILD_INFO"]]];
+    [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForInfo:[NSString stringWithFormat:@"%@: %@", [CFLAppConfigBundle localizedString:@"CFLAC_MANAGE_BUILD_NR"], [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleVersion"]]]];
+    [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForInfo:[NSString stringWithFormat:@"%@: %@", [CFLAppConfigBundle localizedString:@"CFLAC_MANAGE_BUILD_IOS_VERSION"], [[UIDevice currentDevice] systemVersion]]]];
     [self.tableView reloadData];
 }
 
@@ -242,7 +243,7 @@
 
 - (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewRowAction *editAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:NSLocalizedString(@"Edit", nil) handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
+    UITableViewRowAction *editAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:[CFLAppConfigBundle localizedString:@"CFLAC_MANAGE_SWIPE_EDIT"] handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
         CFLAppConfigManageTableValue *tableValue = (CFLAppConfigManageTableValue *)[self.tableValues objectAtIndex:indexPath.row];
         if (self.delegate)
         {

@@ -6,6 +6,7 @@
 //Import
 #import "CFLAppConfigEditViewController.h"
 #import "CFLAppConfigStorage.h"
+#import "CFLAppConfigBundle.h"
 
 //Internal interface definition
 @interface CFLAppConfigEditViewController ()
@@ -23,7 +24,7 @@
 {
     //Set title
     [super viewDidLoad];
-    [self.navigationItem setTitle:NSLocalizedString(@"Edit configuration", nil)];
+    [self.navigationItem setTitle:[CFLAppConfigBundle localizedString:@"CFLAC_EDIT_TITLE"]];
     self.navigationController.navigationBar.translucent = NO;
     
     //Add an easy-reachable save button to the navigation bar
@@ -38,7 +39,7 @@
         //Create button
         UIButton *saveButton = [UIButton new];
         [saveButton.titleLabel setFont:[UIFont systemFontOfSize:15]];
-        [saveButton setTitle:NSLocalizedString(@"Save", nil) forState:UIControlStateNormal];
+        [saveButton setTitle:[CFLAppConfigBundle localizedString:@"CFLAC_SHARED_SAVE"] forState:UIControlStateNormal];
         [saveButton setTitleColor:tintColor forState:UIControlStateNormal];
         [saveButton setTitleColor:highlightTintColor forState:UIControlStateHighlighted];
         [saveButton addTarget:self action:@selector(saveButtonPressed) forControlEvents:UIControlEventTouchUpInside];

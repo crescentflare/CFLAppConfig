@@ -7,6 +7,7 @@
 #import "CFLAppConfigManageViewController.h"
 #import "CFLAppConfigStorage.h"
 #import "CFLAppConfigEditViewController.h"
+#import "CFLAppConfigBundle.h"
 
 //Internal interface definition
 @interface CFLAppConfigManageViewController ()
@@ -26,7 +27,7 @@
 {
     //Set title
     [super viewDidLoad];
-    [self.navigationItem setTitle:NSLocalizedString(@"App configurations", nil)];
+    [self.navigationItem setTitle:[CFLAppConfigBundle localizedString:@"CFLAC_MANAGE_TITLE"]];
     self.navigationController.navigationBar.translucent = NO;
     
     //Always use a cancel button (when having a navigation bar)
@@ -41,7 +42,7 @@
         //Create button
         UIButton *cancelButton = [UIButton new];
         [cancelButton.titleLabel setFont:[UIFont systemFontOfSize:15]];
-        [cancelButton setTitle:NSLocalizedString(@"Cancel", nil) forState:UIControlStateNormal];
+        [cancelButton setTitle:[CFLAppConfigBundle localizedString:@"CFLAC_SHARED_CANCEL"] forState:UIControlStateNormal];
         [cancelButton setTitleColor:tintColor forState:UIControlStateNormal];
         [cancelButton setTitleColor:highlightTintColor forState:UIControlStateHighlighted];
         [cancelButton addTarget:self action:@selector(cancelButtonPressed) forControlEvents:UIControlEventTouchUpInside];
