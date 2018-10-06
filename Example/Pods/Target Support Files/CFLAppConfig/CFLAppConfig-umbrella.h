@@ -1,5 +1,6 @@
 #import <UIKit/UIKit.h>
 
+#import "CFLAppConfigBundle.h"
 #import "CFLAppConfigOrderedDictionary.h"
 #import "CFLAppConfigBaseManager.h"
 #import "CFLAppConfigStorage.h"

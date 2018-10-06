@@ -111,7 +111,12 @@ static CGFloat kSwitchSpacing = 6;
 
 - (void)toggleState
 {
-    [self.switchControl setOn:!self.switchControl.on animated:YES];
+    BOOL newState = !self.switchControl.on;
+    [self.switchControl setOn:newState animated:YES];
+    if (self.delegate)
+    {
+        [self.delegate changedSliderState:newState forConfigSetting:self.labelText];
+    }
 }
 
 @end

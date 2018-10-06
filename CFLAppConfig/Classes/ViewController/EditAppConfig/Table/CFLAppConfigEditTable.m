@@ -11,6 +11,8 @@
 #import "CFLAppConfigEditLoadingCell.h"
 #import "CFLAppConfigEditSectionCell.h"
 #import "CFLAppConfigEnumSerializer.h"
+#import "CFLAppConfigStorage.h"
+#import "CFLAppConfigBundle.h"
 
 //Internal interface definition
 @interface CFLAppConfigEditTable ()
@@ -44,7 +46,7 @@
         
         //Show loading indicator by default
         self.tableValues = [NSMutableArray new];
-        [self.tableValues addObject:[CFLAppConfigEditTableValue valueForLoading:NSLocalizedString(@"Loading configurations...", nil)]];
+        [self.tableValues addObject:[CFLAppConfigEditTableValue valueForLoading:[CFLAppConfigBundle localizedString:@"CFLAC_SHARED_LOADING_CONFIGS"]]];
 
         //Register keyboard events
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
@@ -120,6 +122,19 @@
     self.configName = configName;
     if ([[configurationSettings allKeys] count] > 0)
     {
+        BOOL customizedCopy = self.newConfig || ([[CFLAppConfigStorage sharedStorage] isCustomConfig:self.configName] && ![[CFLAppConfigStorage sharedStorage] isConfigOverride:self.configName]);
+        if (customizedCopy)
+        {
+            for (NSString *key in configurationSettings)
+            {
+                if ([key isEqualToString:@"name"])
+                {
+                    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForSection:[CFLAppConfigBundle localizedString:@"CFLAC_EDIT_SECTION_NAME"]]];
+                    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForEditText:key andValue:(NSString *)[configurationSettings valueForKey:key] numberOnly:NO]];
+                    break;
+                }
+            }
+        }
         for (NSString *key in configurationSettings)
         {
             if ([key isEqualToString:@"name"])
@@ -128,7 +143,14 @@
             }
             if (!configSectionAdded)
             {
-                [self.tableValues addObject:[CFLAppConfigEditTableValue valueForSection:configName]];
+                if (customizedCopy)
+                {
+                    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForSection:[CFLAppConfigBundle localizedString:@"CFLAC_EDIT_SECTION_SETTINGS"]]];
+                }
+                else
+                {
+                    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForSection:configName]];
+                }
                 configSectionAdded = YES;
             }
             NSObject *value = [configurationSettings valueForKey:key];
@@ -166,10 +188,27 @@
     }
     
     //Add actions and reload table
-    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForSection:NSLocalizedString(@"Actions", nil)]];
-    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForAction:CFLAppConfigEditTableValueActionSave andText:NSLocalizedString(@"Apply changes", nil)]];
-    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForAction:CFLAppConfigEditTableValueActionRevert andText:NSLocalizedString(@"Reset to defaults", nil)]];
-    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForAction:CFLAppConfigEditTableValueActionCancel andText:NSLocalizedString(@"Cancel", nil)]];
+    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForSection:[CFLAppConfigBundle localizedString:@"CFLAC_EDIT_SECTION_ACTIONS"]]];
+    if (self.newConfig)
+    {
+        [self.tableValues addObject:[CFLAppConfigEditTableValue valueForAction:CFLAppConfigEditTableValueActionSave andText:[CFLAppConfigBundle localizedString:@"CFLAC_EDIT_ACTION_CREATE"]]];
+    }
+    else
+    {
+        [self.tableValues addObject:[CFLAppConfigEditTableValue valueForAction:CFLAppConfigEditTableValueActionSave andText:[CFLAppConfigBundle localizedString:@"CFLAC_EDIT_ACTION_APPLY"]]];
+    }
+    if (!self.newConfig)
+    {
+        if (![[CFLAppConfigStorage sharedStorage] isCustomConfig:self.configName] || [[CFLAppConfigStorage sharedStorage] isConfigOverride:self.configName])
+        {
+            [self.tableValues addObject:[CFLAppConfigEditTableValue valueForAction:CFLAppConfigEditTableValueActionRevert andText:[CFLAppConfigBundle localizedString:@"CFLAC_EDIT_ACTION_RESET"]]];
+        }
+        else
+        {
+            [self.tableValues addObject:[CFLAppConfigEditTableValue valueForAction:CFLAppConfigEditTableValueActionRevert andText:[CFLAppConfigBundle localizedString:@"CFLAC_EDIT_ACTION_DELETE"]]];
+        }
+    }
+    [self.tableValues addObject:[CFLAppConfigEditTableValue valueForAction:CFLAppConfigEditTableValueActionCancel andText:[CFLAppConfigBundle localizedString:@"CFLAC_EDIT_ACTION_CANCEL"]]];
     [self.tableView reloadData];
 }
 

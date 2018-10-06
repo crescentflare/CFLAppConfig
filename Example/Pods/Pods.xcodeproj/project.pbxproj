@@ -1,3350 +1,1154 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>01512717813EC58801606799BFC0FB1F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AFB73DE6082288674CFF1554E6749B5C</string>
-				<string>7A371BDC78B70E559EFAA70DD649341F</string>
-				<string>BBDE9A62C4A4D7BECE5EF706807D5EF6</string>
-				<string>47E50A3064E218BD8B6570E4014A9A1A</string>
-				<string>1AE8CE16BB5BF9106FDE0FE9589AA838</string>
-				<string>D3A8BA85E22C3EF052F4E7DB36762AD0</string>
-				<string>6FB3D0737EE994161E4C9866FBA5EEEE</string>
-				<string>CC24F3EB11C0A287A9EC6FE92E1642D6</string>
-				<string>673A088A9CEB2FD353F4880195E0BDA3</string>
-				<string>83DBB2DEA74E86659F32533847544ED1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>View</string>
-			<key>path</key>
-			<string>View</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>03774EDF5D001CB033D0DC8FA6314DC7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigManageLoadingCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0446FE68D910A76F68259CDB459A38E7</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>CFLAppConfig.framework</string>
-			<key>path</key>
-			<string>CFLAppConfig.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>050A1843EC57C29BDBBF241DDC99E63B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FAA2E63418CE145F24BA3D7C6606B7A8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CFLAppConfig</string>
-			<key>path</key>
-			<string>CFLAppConfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>062548B8257A77842555EDE685A9A30F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigStorage.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>069F990422D0085A1A2D829AE213C964</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EE55E974579ADCAAB4BD26F2AA82CA2E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>06F121A21319C982464777D6B87CC92C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>49790017032E26BE55A8E6AAC432AA4E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>09F8FFBF03A5A9819BBC6B4ACB9013B8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-CFLAppConfig_Example-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0A492CE2FB31136FAE6F18083574F4E4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0C7C929722C0E3F70E0D7396CD8DE5EB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>30D3D8083BD80B342309778BE67F52C1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>10DE1947DAC0ED28F6C0A9F9BD75D546</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>15277B76F50586838C8FB7D6606A06B9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D3A8BA85E22C3EF052F4E7DB36762AD0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>17F3AC18A08255F8315C3E9E7601A590</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-CFLAppConfig_Example-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>18874521A86F26A4BE66DD80B46DC487</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DBBB11304D4840E652F57838E9D138FC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>18DF47D7A5A714FBE4FA284051670480</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CF46DB2FB6442B07020830A18CFAF7F2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>1AE8CE16BB5BF9106FDE0FE9589AA838</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigEditSectionCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1B1102D524C0F6F83E0E2ABCB880AF9C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>chevron@3x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1DCB5C4BAC2886FFD4A3ABBDB0FBA90B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_CFLAppConfig_Tests.framework</string>
-			<key>path</key>
-			<string>Pods_CFLAppConfig_Tests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>1E0A706C64719F3EA6CD1986E5903BE2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>95758F7738A8636BD5374303A3D96E02</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>21A2B0D5576D7CE745D99A6F702088F0</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>84847928E3F132D83C3E38626D93732C</string>
-				<string>276B11BFF7B2C273B9D1DD78CF94BB60</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>22BF1053F98187CF09479E5F86DCD23A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigEnumSerializer.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>231A21C19ECA7AA59FB2060C1A14D937</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-CFLAppConfig_Example-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>23813C00B38EBCB42565BA926CB3C7BD</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>8409F1EA09942E6B2A4A5F9B49EA9713</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>CFLAppConfig</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>24305FADD882DCBE515892A8B3F5A0EB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigOrderedDictionary.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2477C3275CA54C41A3F7D1053C44C8C0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigManageLoadingCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>276B11BFF7B2C273B9D1DD78CF94BB60</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>F8C204F4AFF58636048D6778BADE63A2</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-CFLAppConfig_Example/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-CFLAppConfig_Example/Pods-CFLAppConfig_Example.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_CFLAppConfig_Example</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>2807956DEB987C11ABDFF97BA018BBE1</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EED1D3146BCE072869462C0A0BD4BEE8</string>
-				<string>BF100EE63DEDF0D5937FF859E494F325</string>
-				<string>E087B17F32D06FD42DA37CB00966C6D7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ViewController</string>
-			<key>path</key>
-			<string>ViewController</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2859FCC6E28A5246F561BFA4FF56819B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-CFLAppConfig_Example.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2A13D543D79077D8721EB685BADEBEF5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigManageSectionCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2BEBD1164927FB571C8EAFF84CA91BAB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-CFLAppConfig_Example-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2CCAE2E6E8708B25D56381B0E51FBE5D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F9F3F74557DD23E5DD1452A6EAFD88A4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>552D02D5BA751AC2E8790D2811D496CA</string>
-				<string>10DE1947DAC0ED28F6C0A9F9BD75D546</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>30D01FE14A8D31CBCF2A2D1FFE45C9FF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigSelectionHelperViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>30D3D8083BD80B342309778BE67F52C1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigOrderedDictionary.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>31312471EFCA0FA1F1A3E17764B588C3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-CFLAppConfig_Tests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>33E2455CC97497AE548497D3F93BEC8B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigManageTableValue.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3548D690278A3FB69B6FB3876C31E317</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7730A8BB28E78B2E8198711A0663D263</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3633119B6684E53991E85C70C475A1BB</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>8409F1EA09942E6B2A4A5F9B49EA9713</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/CFLAppConfig/CFLAppConfig-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/CFLAppConfig/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/CFLAppConfig/CFLAppConfig.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>CFLAppConfig</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>396C227055AADC63136F1D20A1EE6C5D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AFB73DE6082288674CFF1554E6749B5C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>39C37870C524DCFC2490EEAB8814F9B0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-CFLAppConfig_Example-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>39C7C90B2A05FF13917AA061ABF9BF39</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigEditTableCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A0A3B5E4A65A627FD07BFEE965B6C25</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A12CD6840DD865A8903B9BF1AB491613</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3A6E89D7BE9EA254EF23D72FC4E69A20</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E64734DE132504EB68D160E68989C100</string>
-				<string>A12CD6840DD865A8903B9BF1AB491613</string>
-				<string>1B1102D524C0F6F83E0E2ABCB880AF9C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Assets</string>
-			<key>path</key>
-			<string>Assets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B55BCB53C1375215442A7715D14C0FF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigManageViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B7A32142AA3675050E1A7E60E51FD17</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E7F57C3E1B88F4A241D002CCDFA5D868</string>
-			<key>buildPhases</key>
-			<array>
-				<string>4579B02AA368B26AFF417A20A3271A5B</string>
-				<string>4854B92DC965B0C3FE3CB642D9862285</string>
-				<string>06F121A21319C982464777D6B87CC92C</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>3C8ABB6D6709683B29057FA4F4F0F30C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-CFLAppConfig_Tests</string>
-			<key>productName</key>
-			<string>Pods-CFLAppConfig_Tests</string>
-			<key>productReference</key>
-			<string>1DCB5C4BAC2886FFD4A3ABBDB0FBA90B</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>3BB67CE048FF4CD8EE408FF486704A7D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>8409F1EA09942E6B2A4A5F9B49EA9713</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/CFLAppConfig/CFLAppConfig-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/CFLAppConfig/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/CFLAppConfig/CFLAppConfig.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>CFLAppConfig</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3C8ABB6D6709683B29057FA4F4F0F30C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>CFLAppConfig</string>
-			<key>target</key>
-			<string>4073737D922A8EB5ED1A7D78D6FA092A</string>
-			<key>targetProxy</key>
-			<string>AD7AC9819AA712AED04BD3996E1B2127</string>
-		</dict>
-		<key>3DAD44A4446B9153C4C65E46F1B362D2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D4F83122C96CCCFD3704FB9B7E51D3FC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3E4E89230EF59BC255123B67864ACF77</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>3EBD70A85C05019CFF556380C2823F80</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigEditTable.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4073737D922A8EB5ED1A7D78D6FA092A</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>D6654ACD73C7261402A68E4286544550</string>
-			<key>buildPhases</key>
-			<array>
-				<string>52B57B463FDCBC57E59FD04F28A2D2B4</string>
-				<string>64DBCCFF8DC54EAB312F2BD01B7F9597</string>
-				<string>81753444408178C7FB20B2051CB4B28C</string>
-				<string>950712FD3A0E8AF1A83A58EFF862E163</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>933D1E12D005AD1E246864FC2CADB0E8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>CFLAppConfig</string>
-			<key>productName</key>
-			<string>CFLAppConfig</string>
-			<key>productReference</key>
-			<string>0446FE68D910A76F68259CDB459A38E7</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>413A19849CF5A95A5F6C1C248D9CAAA1</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E5BD3A00EE821BE249895F414227D41A</string>
-				<string>87D792D5E0231D055EEAEA0910EC381B</string>
-				<string>711C109B3782FFAE5280CDE86F5F137E</string>
-				<string>22BF1053F98187CF09479E5F86DCD23A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Model</string>
-			<key>path</key>
-			<string>Model</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4233D7528E6A15158FF3B03AA4962FE1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigEditViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>456C50E2B9B01C0B37BB7526EFD87E6E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigSelectionHelperTableCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4579B02AA368B26AFF417A20A3271A5B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>86C85597669561D53323F01224A96C06</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>45B7225EA4704CEFF320E32515CBE2D8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>467877DE4E309836241189E3109E34B3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2A13D543D79077D8721EB685BADEBEF5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>475ABFFA7F24B116C0B3F40B80B6328E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-CFLAppConfig_Example-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>47DDD99EF20F1D6A12F9E90C3D6D0DEF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>39C7C90B2A05FF13917AA061ABF9BF39</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>47E50A3064E218BD8B6570E4014A9A1A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigEditLoadingCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>483C1FBDA285434DA2861B12C2D61458</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigEditViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4854B92DC965B0C3FE3CB642D9862285</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9331274BB86BD55D47D693AF87C564CF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>49790017032E26BE55A8E6AAC432AA4E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E9221E3ECD8644E178BDF68087063249</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>4A94F902ED04CD072A30F84FFB01B2A7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>83DBB2DEA74E86659F32533847544ED1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4B6FA7F656921D5A452DA88C1896121A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigEditTableValue.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>50109E624D7BAECF0CF7B02918654B7C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>87D792D5E0231D055EEAEA0910EC381B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>50B7688642ADED8139D7931F31721830</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>51EBCD4D1C2F249747AF66E181ACA84D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigBaseManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>526A5F04CF57B91D89EA0A0F6D0210C3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>619020BB739D82B8975F12B3C6705309</string>
-				<string>3A0A3B5E4A65A627FD07BFEE965B6C25</string>
-				<string>97EA1712DDC62749030025461F4D60CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>52B57B463FDCBC57E59FD04F28A2D2B4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C15032BF1521B4ADE594C2BC8328EF60</string>
-				<string>9F6E3BF1AF4BC9D10F417331BE7138A3</string>
-				<string>50109E624D7BAECF0CF7B02918654B7C</string>
-				<string>56CD3FAAF3876E0855456759341AC954</string>
-				<string>E075979BE58C043C4B98137C7BC5D848</string>
-				<string>15277B76F50586838C8FB7D6606A06B9</string>
-				<string>D19DDC492FA822FEA656AE8EA8B6D264</string>
-				<string>18874521A86F26A4BE66DD80B46DC487</string>
-				<string>B11C0C9F3FAF193D52052EC620BFA264</string>
-				<string>716D9ABF6B4027A7B45F5A40803A4E21</string>
-				<string>4A94F902ED04CD072A30F84FFB01B2A7</string>
-				<string>5E7E5F1C0D999A4F37627C133A0C0B22</string>
-				<string>C67D3124615E4C86CB94BD231055EDF9</string>
-				<string>BA740352A77F0A773C819B65D844BA48</string>
-				<string>EC122FB34E0AE5F1EC0CBC892CACDAA8</string>
-				<string>9A8968C623DC3DF1BBDA17B19AD8D7EF</string>
-				<string>3548D690278A3FB69B6FB3876C31E317</string>
-				<string>B93D77C589304E5FAAFAD7F573531982</string>
-				<string>7933F052225A2C0E2C41C35F198CF144</string>
-				<string>59E28599820E746E637CB0CB8FB3D634</string>
-				<string>069F990422D0085A1A2D829AE213C964</string>
-				<string>0C7C929722C0E3F70E0D7396CD8DE5EB</string>
-				<string>DC3B13D435854C21B3721CCE68480E81</string>
-				<string>650BF8EDDC2476AD0C6C3D970559D860</string>
-				<string>EB4637137A1F5999BE2E20DD438F7D6A</string>
-				<string>EB3D20B89569AC2DB2C2005FFAC1B846</string>
-				<string>F2FCFDA69A091653AD51980AEF2353B3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>5306B979D24DA7B299D05C1AD5A39D0A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigEditTableValue.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>540A2F029A0C6B56D3219F44FF70C051</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>65947873277C5255EF857C89951543CC</string>
-				<string>8B7E966C47358E49AF546DFCB0903BA4</string>
-				<string>725754972E43FA40765700FF9ABEB0EB</string>
-				<string>456C50E2B9B01C0B37BB7526EFD87E6E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Table</string>
-			<key>path</key>
-			<string>Table</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>552D02D5BA751AC2E8790D2811D496CA</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>55BD5B22404C1F45080495AC5C7CC983</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>56CD3FAAF3876E0855456759341AC954</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7A371BDC78B70E559EFAA70DD649341F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5952A008A5C040C14B9D06AA1D588B43</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>596A5BED81554E6CA0E32B04DD255D83</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>CFLAppConfig.bundle</string>
-			<key>path</key>
-			<string>CFLAppConfig.bundle</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>59E28599820E746E637CB0CB8FB3D634</key>
-		<dict>
-			<key>fileRef</key>
-			<string>33E2455CC97497AE548497D3F93BEC8B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5DCAE24897DFC7DA6EF293E8A4F3D8FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>65FFB75557BA9407AC9A1529837AE636</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>5E7E5F1C0D999A4F37627C133A0C0B22</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4233D7528E6A15158FF3B03AA4962FE1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5E9E08B566EA54F3A303F018387E9266</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>8409F1EA09942E6B2A4A5F9B49EA9713</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>CFLAppConfig</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>5F5AA46502134D5B97B6F1C94CE9DF47</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigEditTableCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>619020BB739D82B8975F12B3C6705309</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E64734DE132504EB68D160E68989C100</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>64DBCCFF8DC54EAB312F2BD01B7F9597</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>55BD5B22404C1F45080495AC5C7CC983</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>650BF8EDDC2476AD0C6C3D970559D860</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8B7E966C47358E49AF546DFCB0903BA4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>651ACC2DA75E38903C130C084FA21EF4</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>050A1843EC57C29BDBBF241DDC99E63B</string>
-				<string>3DAD44A4446B9153C4C65E46F1B362D2</string>
-				<string>ADC004238E8204E07C87BC9F3F6E8279</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CFLAppConfig</string>
-			<key>path</key>
-			<string>../..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>65947873277C5255EF857C89951543CC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigSelectionHelperTable.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>65FFB75557BA9407AC9A1529837AE636</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigSelectionHelperViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>673A088A9CEB2FD353F4880195E0BDA3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigEditTextCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>698B88AD71D2F5588CBA315E289C7C8A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5952A008A5C040C14B9D06AA1D588B43</string>
-				<string>73E8DD1456B8F2DE7B3F75B4978FCC0B</string>
-				<string>83B386289C2BDDD1F90248098D2E4E44</string>
-				<string>7514894EE87A19ADC50F55E9D579072E</string>
-				<string>9170E43ABA9C5C2D60D1A2E29CC4378D</string>
-				<string>E68E5738E9701E709EF147C1E9C3F8EA</string>
-				<string>F125D042634248DC9B17831B36570161</string>
-				<string>E9221E3ECD8644E178BDF68087063249</string>
-				<string>31312471EFCA0FA1F1A3E17764B588C3</string>
-				<string>97168EA74205C2B7BE14D5C6159E7E78</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-CFLAppConfig_Tests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-CFLAppConfig_Tests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E42C9FA392D33F624C86E9C97CE0F2E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>03774EDF5D001CB033D0DC8FA6314DC7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>6E46C5A79DB20C7DB4EE524DA667E28A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>39C37870C524DCFC2490EEAB8814F9B0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>6FB3D0737EE994161E4C9866FBA5EEEE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigEditSliderCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6FED95091EF1CCE446F62065DA842598</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AB5377406F9A145E60C242425050C063</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>711C109B3782FFAE5280CDE86F5F137E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigEnumSerializer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>716D9ABF6B4027A7B45F5A40803A4E21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4B6FA7F656921D5A452DA88C1896121A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>725754972E43FA40765700FF9ABEB0EB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigSelectionHelperTableCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>739156C340AFD97DDA335C8DC262844A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>73E8DD1456B8F2DE7B3F75B4978FCC0B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-CFLAppConfig_Tests.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7514894EE87A19ADC50F55E9D579072E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-CFLAppConfig_Tests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7730A8BB28E78B2E8198711A0663D263</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigManageSectionCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>77E360F2A05B6DA5CED47B80A8602E8F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigManageTableCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>78E756CFBB291C4B5324F01248B22563</key>
-		<dict>
-			<key>fileRef</key>
-			<string>596A5BED81554E6CA0E32B04DD255D83</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7933F052225A2C0E2C41C35F198CF144</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3D3761B5FA832C5B01A5D6DD03CE52B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7979B08233529D603ABE03DB96A01E92</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5306B979D24DA7B299D05C1AD5A39D0A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>7A1CAFE915BF96E18290A2D3419F136B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E628F818F27E93DFF5DFBAB702553F0E</string>
-				<string>CA29B146C1D7996F6138C9ED63026419</string>
-				<string>09F8FFBF03A5A9819BBC6B4ACB9013B8</string>
-				<string>231A21C19ECA7AA59FB2060C1A14D937</string>
-				<string>17F3AC18A08255F8315C3E9E7601A590</string>
-				<string>475ABFFA7F24B116C0B3F40B80B6328E</string>
-				<string>2BEBD1164927FB571C8EAFF84CA91BAB</string>
-				<string>39C37870C524DCFC2490EEAB8814F9B0</string>
-				<string>2859FCC6E28A5246F561BFA4FF56819B</string>
-				<string>F8C204F4AFF58636048D6778BADE63A2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-CFLAppConfig_Example</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-CFLAppConfig_Example</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7A371BDC78B70E559EFAA70DD649341F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigEditActionCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7A78EF207B4128D0726B1152E31BC21A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>95758F7738A8636BD5374303A3D96E02</string>
-				<string>BB98780D7D750A01A8F17346AB8CED2B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>View</string>
-			<key>path</key>
-			<string>View</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7C4BF0A44B0B335960E3723A8CA9A69F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E5BD3A00EE821BE249895F414227D41A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>7CFC493CCD69B9F4C33458558D49EE97</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>CFLAppConfig.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7D0192E26463CD6A6C3BDD6E9B0C9039</key>
-		<dict>
-			<key>fileRef</key>
-			<string>65947873277C5255EF857C89951543CC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>7D268525EBB27CCC748AD6E05124FF42</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_CFLAppConfig_Example.framework</string>
-			<key>path</key>
-			<string>Pods_CFLAppConfig_Example.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
-				<string>7E11F1599934E965B0D0B106DAD2CB5A</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>BDCB5711FEC4A9A206986D68B492B547</string>
-				<string>B2B712A2C9C54566C9EDB73599885DAE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7E11F1599934E965B0D0B106DAD2CB5A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>651ACC2DA75E38903C130C084FA21EF4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Development Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7E621B522803812E8437C078623DA717</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigStorage.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81753444408178C7FB20B2051CB4B28C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>78E756CFBB291C4B5324F01248B22563</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>8295C0EA8D348F6380F577B6651E09C8</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>23813C00B38EBCB42565BA926CB3C7BD</string>
-				<string>5E9E08B566EA54F3A303F018387E9266</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>83944323CFEE066511DD56BA19AF5E7B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigManageItemCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>83B386289C2BDDD1F90248098D2E4E44</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-CFLAppConfig_Tests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>83DBB2DEA74E86659F32533847544ED1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigEditTextCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8409F1EA09942E6B2A4A5F9B49EA9713</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>CFLAppConfig.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>84847928E3F132D83C3E38626D93732C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>2859FCC6E28A5246F561BFA4FF56819B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-CFLAppConfig_Example/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-CFLAppConfig_Example/Pods-CFLAppConfig_Example.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_CFLAppConfig_Example</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>86062C023C369E54B9AAF960AABBF4A0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>CFLAppConfig</string>
-			<key>target</key>
-			<string>4073737D922A8EB5ED1A7D78D6FA092A</string>
-			<key>targetProxy</key>
-			<string>CAFAF0BEE00DD0804348FB065806FF68</string>
-		</dict>
-		<key>86C85597669561D53323F01224A96C06</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9170E43ABA9C5C2D60D1A2E29CC4378D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>87D792D5E0231D055EEAEA0910EC381B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigBaseModel.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8B7E966C47358E49AF546DFCB0903BA4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigSelectionHelperTable.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8CD3FC8AF5EEF34F4E5DF33EC75A3E0A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BBDE9A62C4A4D7BECE5EF706807D5EF6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>8D75E5F0128FCD7EE47AA5281B7F954F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>711C109B3782FFAE5280CDE86F5F137E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>9170E43ABA9C5C2D60D1A2E29CC4378D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-CFLAppConfig_Tests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>91C2BBDB14C3D54CADEEA6790B093585</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6FB3D0737EE994161E4C9866FBA5EEEE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>92FDAE9D344C9FAB6CF9BA807B43AD5E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C12E18FB7BE4766BA481F62773FCE735</string>
-				<string>B494226868F995EF793A8275268D64A6</string>
-				<string>77E360F2A05B6DA5CED47B80A8602E8F</string>
-				<string>C3D3761B5FA832C5B01A5D6DD03CE52B</string>
-				<string>AB5377406F9A145E60C242425050C063</string>
-				<string>33E2455CC97497AE548497D3F93BEC8B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Table</string>
-			<key>path</key>
-			<string>Table</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9331274BB86BD55D47D693AF87C564CF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>933D1E12D005AD1E246864FC2CADB0E8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>CFLAppConfig-CFLAppConfig</string>
-			<key>target</key>
-			<string>F35DE4613A429D29ED7347C388254346</string>
-			<key>targetProxy</key>
-			<string>AB45666F5773589F19D4628D625834E1</string>
-		</dict>
-		<key>950712FD3A0E8AF1A83A58EFF862E163</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D552D3D09370B79CA1D5F77FAD03CE4C</string>
-				<string>F00CE3B857AF4B304DE3B13318F9594E</string>
-				<string>7C4BF0A44B0B335960E3723A8CA9A69F</string>
-				<string>396C227055AADC63136F1D20A1EE6C5D</string>
-				<string>8CD3FC8AF5EEF34F4E5DF33EC75A3E0A</string>
-				<string>C36AB4051F1E256821C61E2D2B44CBA7</string>
-				<string>91C2BBDB14C3D54CADEEA6790B093585</string>
-				<string>B4695A8FFDB90277496764A640F5B697</string>
-				<string>47DDD99EF20F1D6A12F9E90C3D6D0DEF</string>
-				<string>7979B08233529D603ABE03DB96A01E92</string>
-				<string>B33F028544071CCD65F0FB86C95BB642</string>
-				<string>C898A6118562A6B8EEE91BBB8AE778EB</string>
-				<string>8D75E5F0128FCD7EE47AA5281B7F954F</string>
-				<string>18DF47D7A5A714FBE4FA284051670480</string>
-				<string>2CCAE2E6E8708B25D56381B0E51FBE5D</string>
-				<string>6E42C9FA392D33F624C86E9C97CE0F2E</string>
-				<string>467877DE4E309836241189E3109E34B3</string>
-				<string>98382585518121997C35BE8A13E20DF8</string>
-				<string>A5556AC3F298D24C453A648E892C7363</string>
-				<string>6FED95091EF1CCE446F62065DA842598</string>
-				<string>ECD62429DD90AE170A991D27CDC502F2</string>
-				<string>9D8730FADA92ED171C581AA9998FE626</string>
-				<string>1E0A706C64719F3EA6CD1986E5903BE2</string>
-				<string>7D0192E26463CD6A6C3BDD6E9B0C9039</string>
-				<string>AAE611BC37C34CE76B5BB5D961679A48</string>
-				<string>5DCAE24897DFC7DA6EF293E8A4F3D8FB</string>
-				<string>A1A48E69FCBC36C8BED924328BF93516</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>95758F7738A8636BD5374303A3D96E02</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigSelectionHelperCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>97168EA74205C2B7BE14D5C6159E7E78</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-CFLAppConfig_Tests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>97EA1712DDC62749030025461F4D60CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1B1102D524C0F6F83E0E2ABCB880AF9C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>98382585518121997C35BE8A13E20DF8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C12E18FB7BE4766BA481F62773FCE735</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>99861CA6AA995F4B20FF6697A5700E2D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>31312471EFCA0FA1F1A3E17764B588C3</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-CFLAppConfig_Tests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-CFLAppConfig_Tests/Pods-CFLAppConfig_Tests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_CFLAppConfig_Tests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>99FCE4301A55DCA48E1EAFA44AFD0303</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CF46DB2FB6442B07020830A18CFAF7F2</string>
-				<string>F998D0AE88C5C5A14591CB1D729CF9BA</string>
-				<string>F9F3F74557DD23E5DD1452A6EAFD88A4</string>
-				<string>83944323CFEE066511DD56BA19AF5E7B</string>
-				<string>03774EDF5D001CB033D0DC8FA6314DC7</string>
-				<string>2477C3275CA54C41A3F7D1053C44C8C0</string>
-				<string>2A13D543D79077D8721EB685BADEBEF5</string>
-				<string>7730A8BB28E78B2E8198711A0663D263</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>View</string>
-			<key>path</key>
-			<string>View</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9A8968C623DC3DF1BBDA17B19AD8D7EF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2477C3275CA54C41A3F7D1053C44C8C0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9D8730FADA92ED171C581AA9998FE626</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24305FADD882DCBE515892A8B3F5A0EB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>9DD5E9E9A5B72B58CAEEC1320B1F57DD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0A492CE2FB31136FAE6F18083574F4E4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9ECCD7C7D48FC76A3160306EA91E4D11</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>97168EA74205C2B7BE14D5C6159E7E78</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-CFLAppConfig_Tests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-CFLAppConfig_Tests/Pods-CFLAppConfig_Tests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_CFLAppConfig_Tests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>9F6E3BF1AF4BC9D10F417331BE7138A3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E7AFB83FAA1FD7637D14F8DA8E375336</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A12CD6840DD865A8903B9BF1AB491613</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>chevron@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A1A48E69FCBC36C8BED924328BF93516</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7E621B522803812E8437C078623DA717</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>A5556AC3F298D24C453A648E892C7363</key>
-		<dict>
-			<key>fileRef</key>
-			<string>77E360F2A05B6DA5CED47B80A8602E8F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>A91F5739D6F0EF6AC37A96644EA96ACD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfig-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AAE611BC37C34CE76B5BB5D961679A48</key>
-		<dict>
-			<key>fileRef</key>
-			<string>725754972E43FA40765700FF9ABEB0EB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>AB45666F5773589F19D4628D625834E1</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>F35DE4613A429D29ED7347C388254346</string>
-			<key>remoteInfo</key>
-			<string>CFLAppConfig-CFLAppConfig</string>
-		</dict>
-		<key>AB5377406F9A145E60C242425050C063</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigManageTableValue.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AC412F3039B2AEFB46CDF21DFAA93807</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6E46C5A79DB20C7DB4EE524DA667E28A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>AD7AC9819AA712AED04BD3996E1B2127</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>4073737D922A8EB5ED1A7D78D6FA092A</string>
-			<key>remoteInfo</key>
-			<string>CFLAppConfig</string>
-		</dict>
-		<key>ADC004238E8204E07C87BC9F3F6E8279</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7CFC493CCD69B9F4C33458558D49EE97</string>
-				<string>8409F1EA09942E6B2A4A5F9B49EA9713</string>
-				<string>D6A24552E60D91440B53811A7F5C2FAB</string>
-				<string>A91F5739D6F0EF6AC37A96644EA96ACD</string>
-				<string>B7280EE0A66F9407271962AD5815AB25</string>
-				<string>50B7688642ADED8139D7931F31721830</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Example/Pods/Target Support Files/CFLAppConfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AFB73DE6082288674CFF1554E6749B5C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigEditActionCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B11C0C9F3FAF193D52052EC620BFA264</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5F5AA46502134D5B97B6F1C94CE9DF47</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B2B712A2C9C54566C9EDB73599885DAE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7A1CAFE915BF96E18290A2D3419F136B</string>
-				<string>698B88AD71D2F5588CBA315E289C7C8A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B33F028544071CCD65F0FB86C95BB642</key>
-		<dict>
-			<key>fileRef</key>
-			<string>673A088A9CEB2FD353F4880195E0BDA3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>B4695A8FFDB90277496764A640F5B697</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3EBD70A85C05019CFF556380C2823F80</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>B494226868F995EF793A8275268D64A6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigManageTable.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B4BD64A55713D9442A611EA00681602E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>51EBCD4D1C2F249747AF66E181ACA84D</string>
-				<string>E7AFB83FAA1FD7637D14F8DA8E375336</string>
-				<string>7E621B522803812E8437C078623DA717</string>
-				<string>062548B8257A77842555EDE685A9A30F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Manager</string>
-			<key>path</key>
-			<string>Manager</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B7280EE0A66F9407271962AD5815AB25</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfig-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B93D77C589304E5FAAFAD7F573531982</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B494226868F995EF793A8275268D64A6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BA54AD7190CE02E49CADE5092D9C33FC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3EBD70A85C05019CFF556380C2823F80</string>
-				<string>DBBB11304D4840E652F57838E9D138FC</string>
-				<string>39C7C90B2A05FF13917AA061ABF9BF39</string>
-				<string>5F5AA46502134D5B97B6F1C94CE9DF47</string>
-				<string>5306B979D24DA7B299D05C1AD5A39D0A</string>
-				<string>4B6FA7F656921D5A452DA88C1896121A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Table</string>
-			<key>path</key>
-			<string>Table</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>BA740352A77F0A773C819B65D844BA48</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F998D0AE88C5C5A14591CB1D729CF9BA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BB98780D7D750A01A8F17346AB8CED2B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigSelectionHelperCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BBDE9A62C4A4D7BECE5EF706807D5EF6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigEditLoadingCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF6342C8B29F4CEEA088EFF7AB4DE362</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BC9EEE362953D78B9931257DC43555D5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C771A59673AD1F4ACCE1B6F0C3C4CB21</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BDCB5711FEC4A9A206986D68B492B547</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>596A5BED81554E6CA0E32B04DD255D83</string>
-				<string>0446FE68D910A76F68259CDB459A38E7</string>
-				<string>7D268525EBB27CCC748AD6E05124FF42</string>
-				<string>1DCB5C4BAC2886FFD4A3ABBDB0FBA90B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF100EE63DEDF0D5937FF859E494F325</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3B55BCB53C1375215442A7715D14C0FF</string>
-				<string>EE55E974579ADCAAB4BD26F2AA82CA2E</string>
-				<string>92FDAE9D344C9FAB6CF9BA807B43AD5E</string>
-				<string>99FCE4301A55DCA48E1EAFA44AFD0303</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ManageAppConfig</string>
-			<key>path</key>
-			<string>ManageAppConfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3E4E89230EF59BC255123B67864ACF77</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C12E18FB7BE4766BA481F62773FCE735</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigManageTable.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C15032BF1521B4ADE594C2BC8328EF60</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D6A24552E60D91440B53811A7F5C2FAB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C36AB4051F1E256821C61E2D2B44CBA7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1AE8CE16BB5BF9106FDE0FE9589AA838</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>C3D3761B5FA832C5B01A5D6DD03CE52B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigManageTableCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67D3124615E4C86CB94BD231055EDF9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>22BF1053F98187CF09479E5F86DCD23A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C771A59673AD1F4ACCE1B6F0C3C4CB21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>17F3AC18A08255F8315C3E9E7601A590</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C898A6118562A6B8EEE91BBB8AE778EB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>483C1FBDA285434DA2861B12C2D61458</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>CA29B146C1D7996F6138C9ED63026419</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-CFLAppConfig_Example.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CAFAF0BEE00DD0804348FB065806FF68</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>4073737D922A8EB5ED1A7D78D6FA092A</string>
-			<key>remoteInfo</key>
-			<string>CFLAppConfig</string>
-		</dict>
-		<key>CB31CB9F593DB41C978CA6125C8E76D5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>24305FADD882DCBE515892A8B3F5A0EB</string>
-				<string>30D3D8083BD80B342309778BE67F52C1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Helper</string>
-			<key>path</key>
-			<string>Helper</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC24F3EB11C0A287A9EC6FE92E1642D6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigEditSliderCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CF46DB2FB6442B07020830A18CFAF7F2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigManageInfoCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D19DDC492FA822FEA656AE8EA8B6D264</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CC24F3EB11C0A287A9EC6FE92E1642D6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D3A8BA85E22C3EF052F4E7DB36762AD0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigEditSectionCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0700</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>BDCB5711FEC4A9A206986D68B492B547</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>4073737D922A8EB5ED1A7D78D6FA092A</string>
-				<string>F35DE4613A429D29ED7347C388254346</string>
-				<string>E8057B1BF6F72E01D2C512C405F1BD89</string>
-				<string>3B7A32142AA3675050E1A7E60E51FD17</string>
-			</array>
-		</dict>
-		<key>D4F83122C96CCCFD3704FB9B7E51D3FC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3A6E89D7BE9EA254EF23D72FC4E69A20</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CFLAppConfig</string>
-			<key>path</key>
-			<string>CFLAppConfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D552D3D09370B79CA1D5F77FAD03CE4C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B7280EE0A66F9407271962AD5815AB25</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>D6654ACD73C7261402A68E4286544550</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3BB67CE048FF4CD8EE408FF486704A7D</string>
-				<string>3633119B6684E53991E85C70C475A1BB</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>D6A24552E60D91440B53811A7F5C2FAB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfig-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DBBB11304D4840E652F57838E9D138FC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigEditTable.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DC3B13D435854C21B3721CCE68480E81</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BB98780D7D750A01A8F17346AB8CED2B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E075979BE58C043C4B98137C7BC5D848</key>
-		<dict>
-			<key>fileRef</key>
-			<string>47E50A3064E218BD8B6570E4014A9A1A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E087B17F32D06FD42DA37CB00966C6D7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>65FFB75557BA9407AC9A1529837AE636</string>
-				<string>30D01FE14A8D31CBCF2A2D1FFE45C9FF</string>
-				<string>540A2F029A0C6B56D3219F44FF70C051</string>
-				<string>7A78EF207B4128D0726B1152E31BC21A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>SelectionHelper</string>
-			<key>path</key>
-			<string>SelectionHelper</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5BD3A00EE821BE249895F414227D41A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigBaseModel.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E628F818F27E93DFF5DFBAB702553F0E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E64734DE132504EB68D160E68989C100</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>chevron.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E68E5738E9701E709EF147C1E9C3F8EA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-CFLAppConfig_Tests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E7AFB83FAA1FD7637D14F8DA8E375336</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigBaseManager.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E7F57C3E1B88F4A241D002CCDFA5D868</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>99861CA6AA995F4B20FF6697A5700E2D</string>
-				<string>9ECCD7C7D48FC76A3160306EA91E4D11</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E8057B1BF6F72E01D2C512C405F1BD89</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>21A2B0D5576D7CE745D99A6F702088F0</string>
-			<key>buildPhases</key>
-			<array>
-				<string>BC9EEE362953D78B9931257DC43555D5</string>
-				<string>9DD5E9E9A5B72B58CAEEC1320B1F57DD</string>
-				<string>AC412F3039B2AEFB46CDF21DFAA93807</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>86062C023C369E54B9AAF960AABBF4A0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-CFLAppConfig_Example</string>
-			<key>productName</key>
-			<string>Pods-CFLAppConfig_Example</string>
-			<key>productReference</key>
-			<string>7D268525EBB27CCC748AD6E05124FF42</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>E9221E3ECD8644E178BDF68087063249</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-CFLAppConfig_Tests-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EB3D20B89569AC2DB2C2005FFAC1B846</key>
-		<dict>
-			<key>fileRef</key>
-			<string>30D01FE14A8D31CBCF2A2D1FFE45C9FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EB4637137A1F5999BE2E20DD438F7D6A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>456C50E2B9B01C0B37BB7526EFD87E6E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EC122FB34E0AE5F1EC0CBC892CACDAA8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>83944323CFEE066511DD56BA19AF5E7B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ECD62429DD90AE170A991D27CDC502F2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3B55BCB53C1375215442A7715D14C0FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>EE55E974579ADCAAB4BD26F2AA82CA2E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigManageViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EED1D3146BCE072869462C0A0BD4BEE8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>483C1FBDA285434DA2861B12C2D61458</string>
-				<string>4233D7528E6A15158FF3B03AA4962FE1</string>
-				<string>BA54AD7190CE02E49CADE5092D9C33FC</string>
-				<string>01512717813EC58801606799BFC0FB1F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>EditAppConfig</string>
-			<key>path</key>
-			<string>EditAppConfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F00CE3B857AF4B304DE3B13318F9594E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>51EBCD4D1C2F249747AF66E181ACA84D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>F125D042634248DC9B17831B36570161</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-CFLAppConfig_Tests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F2FCFDA69A091653AD51980AEF2353B3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>062548B8257A77842555EDE685A9A30F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F35DE4613A429D29ED7347C388254346</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>8295C0EA8D348F6380F577B6651E09C8</string>
-			<key>buildPhases</key>
-			<array>
-				<string>739156C340AFD97DDA335C8DC262844A</string>
-				<string>45B7225EA4704CEFF320E32515CBE2D8</string>
-				<string>526A5F04CF57B91D89EA0A0F6D0210C3</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>CFLAppConfig-CFLAppConfig</string>
-			<key>productName</key>
-			<string>CFLAppConfig-CFLAppConfig</string>
-			<key>productReference</key>
-			<string>596A5BED81554E6CA0E32B04DD255D83</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>F8C204F4AFF58636048D6778BADE63A2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-CFLAppConfig_Example.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F998D0AE88C5C5A14591CB1D729CF9BA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CFLAppConfigManageInfoCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F9F3F74557DD23E5DD1452A6EAFD88A4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CFLAppConfigManageItemCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAA2E63418CE145F24BA3D7C6606B7A8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CB31CB9F593DB41C978CA6125C8E76D5</string>
-				<string>B4BD64A55713D9442A611EA00681602E</string>
-				<string>413A19849CF5A95A5F6C1C248D9CAAA1</string>
-				<string>2807956DEB987C11ABDFF97BA018BBE1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
-			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D41D8CD98F00B204E9800998ECF8427E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0450467B1CFC5BDF003F3133 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 045046791CFC5BDF003F3133 /* Localizable.strings */; };
+		0450467C1CFC5BDF003F3133 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 045046791CFC5BDF003F3133 /* Localizable.strings */; };
+		0A492CE2FB31136FAE6F18083574F4E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		1024854BB914CBB8E5CC06143CADB0FF /* CFLAppConfigOrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4844B59099F6C3CD1D2DDE7B3EEE239C /* CFLAppConfigOrderedDictionary.m */; };
+		1C691A8194A1815FAA3FB531DF7BB0A4 /* CFLAppConfigEditTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E39FE6BE1DF6A181616241B624FEB5C7 /* CFLAppConfigEditTableCell.m */; };
+		26CD0555238BF8E8F433DBE2A47E7AD8 /* CFLAppConfigStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 54540BC8032665B522E11DA04DAA311D /* CFLAppConfigStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28483BBB5D086B322CF009E3DEA5ED30 /* CFLAppConfigSelectionHelperTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 72FEA99BEF907ED1A0DBB5502A61EB9D /* CFLAppConfigSelectionHelperTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C9614CAE8CF00D27D9195C80ACC4EC5 /* CFLAppConfigManageLoadingCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4B40B54E1A19A642EBF09958F1FC41 /* CFLAppConfigManageLoadingCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CCA2EABFC3A2155433E2BAFB0025460 /* CFLAppConfigManageTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07550BD5A7B7E6AB820BE58B54F60CE9 /* CFLAppConfigManageTableCell.m */; };
+		304DB455DA8DB7A2BBCFFE4746D5789C /* CFLAppConfigManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1844C41AA33FFB8E911076C66159CB30 /* CFLAppConfigManageViewController.m */; };
+		35B7A02B7B31BCB8CDB1D821D451F4A4 /* CFLAppConfigOrderedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CD8657AA7B755643DA3FB097B62E3B4 /* CFLAppConfigOrderedDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		364221171F9321E8610CCF2C32C3300B /* CFLAppConfigManageTableValue.m in Sources */ = {isa = PBXBuildFile; fileRef = D47D863C40EFEA8B8A99D56471241381 /* CFLAppConfigManageTableValue.m */; };
+		3C85FC519AAE93BB0A82813607F1CEA2 /* chevron@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF834979A3ACBB2C1053A10700FB017F /* chevron@2x.png */; };
+		41E4AC159473235A439BEB084B2FC06C /* CFLAppConfigEditTextCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AAA15A435A85112DD3A540F73719EE81 /* CFLAppConfigEditTextCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42C8C7487F466D653977E1992C3464DC /* CFLAppConfigManageSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A09FD256452757FA7119E18F8ABCEBC /* CFLAppConfigManageSectionCell.m */; };
+		43FE92A48FA1619C9D75383FCC312AA0 /* CFLAppConfigBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 85A9CD49BD66BF67E0721CDE3A5D8603 /* CFLAppConfigBaseManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49790017032E26BE55A8E6AAC432AA4E /* Pods-CFLAppConfig_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9221E3ECD8644E178BDF68087063249 /* Pods-CFLAppConfig_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		506D8748A41382736899D3112B3C0938 /* CFLAppConfigManageTableValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A501AF02D91A07C973227AEC5FAC784 /* CFLAppConfigManageTableValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50F5439523A88CB89FEB818BD9FD8364 /* CFLAppConfigManageLoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEC3BA2AE1D4AFA58444D86855AB392 /* CFLAppConfigManageLoadingCell.m */; };
+		5183C32577C0E317A45FD97FB30534CD /* chevron.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B865EE5058EDB5E9B6265D507928E23 /* chevron.png */; };
+		51C591578B7B16BEBC5A717109987FCE /* CFLAppConfig-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A24552E60D91440B53811A7F5C2FAB /* CFLAppConfig-dummy.m */; };
+		5358B506665BCA53B9637065DBC27683 /* CFLAppConfigManageInfoCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A046762299BF2A237A83B3E841F029F /* CFLAppConfigManageInfoCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58355652C097008AA8327AE0BB1FBFC7 /* CFLAppConfigEditTable.h in Headers */ = {isa = PBXBuildFile; fileRef = E4E5808AF7B54E10AD9B7A7DB53193B5 /* CFLAppConfigEditTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FF46A4F81C9BC8DEA013DCAF46C67D4 /* CFLAppConfigEditLoadingCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 926BBD9FE5EE1BA723B7EA1250F4210D /* CFLAppConfigEditLoadingCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63C21A7585C8B79B45457D8174DAC4ED /* chevron@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F922E133C5B20660AE9D06A561FC47 /* chevron@3x.png */; };
+		67F9B0B0511B63B00122A85B3AAEA5DC /* CFLAppConfigEditActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F842F9DC3B7286491D6B8697D2D8552E /* CFLAppConfigEditActionCell.m */; };
+		699EB7A4A8198DE50D66F62725E0E9ED /* CFLAppConfigBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 27230495E8FB8F862340E0C6B7E40740 /* CFLAppConfigBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C8ABB71FCBA23783F1695E745007691 /* CFLAppConfigSelectionHelperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6723EA147AF892CE92661EB79BAD2EAF /* CFLAppConfigSelectionHelperViewController.m */; };
+		6E46C5A79DB20C7DB4EE524DA667E28A /* Pods-CFLAppConfig_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39C37870C524DCFC2490EEAB8814F9B0 /* Pods-CFLAppConfig_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72CC30DF59F06D5FF8AC111831360A0E /* CFLAppConfigBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3307E84A9FDBE1D576BE0B6435A08BE0 /* CFLAppConfigBaseModel.m */; };
+		7CC8BEAE494600EB7A7814BEBB26D412 /* CFLAppConfigManageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 585287D9393B55751CC2C54EE5ADDADB /* CFLAppConfigManageViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EC402DD779EB193C2272B85E66F6103 /* CFLAppConfigEnumSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = DF955A66B9B7663B7A67F57B15A9C4FC /* CFLAppConfigEnumSerializer.m */; };
+		81BF8C0E49AB9994E33E1979F01170C7 /* CFLAppConfigBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C69053CDAE2D86710BA5AAA3D14B2BEE /* CFLAppConfigBaseManager.m */; };
+		83A3C05BD3848C81D8CFD56D3315BAA3 /* CFLAppConfigManageTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 68182CE8CBD2EE6B3442DE5896B613DD /* CFLAppConfigManageTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84AFFDEBFC80FC6E54FEC03269DF17A7 /* CFLAppConfigManageInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB71619DA39051976E76E93B3BC0EAF7 /* CFLAppConfigManageInfoCell.m */; };
+		86C85597669561D53323F01224A96C06 /* Pods-CFLAppConfig_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9170E43ABA9C5C2D60D1A2E29CC4378D /* Pods-CFLAppConfig_Tests-dummy.m */; };
+		8CDB94A22B660102BBE3FBA7AB7BE4E3 /* CFLAppConfigEditTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 00539C8973C3DCE11BD3FE2F0A979915 /* CFLAppConfigEditTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		917492A6320A8108112C97B7A2A4981B /* CFLAppConfig-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7280EE0A66F9407271962AD5815AB25 /* CFLAppConfig-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9331274BB86BD55D47D693AF87C564CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		943D6DEF253F4C37E3D33A184DE72E82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		976367FC5952842DA12C92AA445A3C65 /* CFLAppConfigEditTableValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F5247394FDB12E0A1E8B8E58722A14 /* CFLAppConfigEditTableValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99DDE17D53F2A4CFC0B2D404C0957F6F /* CFLAppConfigEditActionCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F41A361F6A76FC32334C7A7F9FF870F8 /* CFLAppConfigEditActionCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A830E0BEDD080F37BE5B41B5DF139AC /* CFLAppConfigBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C6EDAFD82EC31F38B53535B5B9A4FF2 /* CFLAppConfigBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CBAD50DB2C7D7C83DC7ADB6F31A492F /* CFLAppConfigSelectionHelperViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FE458C92F3B4CF70FF4F8C63EFD50107 /* CFLAppConfigSelectionHelperViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FF1D78F1E4CD48A863F81E69A6AE5D0 /* CFLAppConfigSelectionHelperTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD54C3EA8565879F6AF67D80EAE0375 /* CFLAppConfigSelectionHelperTable.m */; };
+		A21E176A67A16129424D212B204AD08D /* CFLAppConfigManageTable.h in Headers */ = {isa = PBXBuildFile; fileRef = A2437E4A3FF56D5DFC4D532DBB9491A7 /* CFLAppConfigManageTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A47FEC737362A9A6BEBD17028860AE13 /* CFLAppConfigManageItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A053F22D2C1EBBE25F7EFC394E0C02 /* CFLAppConfigManageItemCell.m */; };
+		A9DDEA3C0698657317196D6B792C1712 /* CFLAppConfigSelectionHelperTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC783AFED328F953B65B7DC23FC303A /* CFLAppConfigSelectionHelperTableCell.m */; };
+		AB878470F5AC3F70271961DF87DDEBCE /* CFLAppConfigSelectionHelperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA25B1A77B0A69928B2223C767D2AE /* CFLAppConfigSelectionHelperCell.m */; };
+		AC934F8A9AAFDA00AD938CDF5E759837 /* CFLAppConfigManageItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F73BAC89C2122697151B7E1EB7736BCD /* CFLAppConfigManageItemCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE00E22D5D8C65DE7395B8AA7C7200E6 /* CFLAppConfigEditLoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1583AC42BAF6881C3B2328374AD0C4F8 /* CFLAppConfigEditLoadingCell.m */; };
+		B363EB514A7F507B209C9320C212E1C5 /* CFLAppConfigEnumSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 984171FEB85390794C121A931A0A5B2D /* CFLAppConfigEnumSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B43B052FBE56C4D5B5F135E1580D0AC1 /* CFLAppConfigEditSliderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B6C8D970A4A5F9EE6F241B75AE70FA8D /* CFLAppConfigEditSliderCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B790E67474E9EDF6D18421769775598B /* CFLAppConfigSelectionHelperTable.h in Headers */ = {isa = PBXBuildFile; fileRef = C8E23B3FDFA87DCFF6EEE6257EF9058B /* CFLAppConfigSelectionHelperTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC164DEE5ED2CAF56026247AB366E1CD /* CFLAppConfigEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3FEE76AC5667CBD5DBA649EBD9265F /* CFLAppConfigEditViewController.m */; };
+		C0F1A07464E1093C6DE9E1E31767D747 /* CFLAppConfigEditSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE3E17FC9CA2393BCC74C7AB49309F8 /* CFLAppConfigEditSliderCell.m */; };
+		C17F1ABD6382F2F378DFF860EBFCC429 /* CFLAppConfigEditSectionCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0BF7E1DDADAABD1E2BB5DFD1B4F5C6 /* CFLAppConfigEditSectionCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C771A59673AD1F4ACCE1B6F0C3C4CB21 /* Pods-CFLAppConfig_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F3AC18A08255F8315C3E9E7601A590 /* Pods-CFLAppConfig_Example-dummy.m */; };
+		D260F092F65127EABA601FCBA41580E8 /* CFLAppConfigEditTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 231616D4D668209D21CEE654549BD5EE /* CFLAppConfigEditTextCell.m */; };
+		D29760F3260477FF1EDBCCBAB8DBC043 /* CFLAppConfigManageTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A278A3C212D7E428DF1B30249A6E1E8 /* CFLAppConfigManageTable.m */; };
+		D429C6ADA39F721EFB94F46ED9A5EA31 /* CFLAppConfigSelectionHelperCell.h in Headers */ = {isa = PBXBuildFile; fileRef = B5FEE0AEF20B4301E19D4402A65C3EC0 /* CFLAppConfigSelectionHelperCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D759E7B27AB19FB222DD4E512FACF964 /* CFLAppConfigBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F17495ED45F1255BF89BBBD199326AF /* CFLAppConfigBundle.m */; };
+		DCC8B05FA3EB0BB2756517C326E4ACB7 /* CFLAppConfig.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 596A5BED81554E6CA0E32B04DD255D83 /* CFLAppConfig.bundle */; };
+		DCEEE3EA60B898D582B936530E1C5498 /* CFLAppConfigEditSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7FB3B2D5991B7D11F07D37753E48FF /* CFLAppConfigEditSectionCell.m */; };
+		E196D6FD65986AE9F8BE37F8ADA5DACC /* CFLAppConfigEditViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 08B8AECE81FF34659872810C7E12CD13 /* CFLAppConfigEditViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E444EE91F0E46C11837E34419E38D0FE /* CFLAppConfigManageSectionCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1929DB782BDAFEA3F702595258112033 /* CFLAppConfigManageSectionCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E569341FD03A25FEA9B39F5B9E54B928 /* CFLAppConfigEditTable.m in Sources */ = {isa = PBXBuildFile; fileRef = CABDFCA8011754144B9856A66F0F0CD2 /* CFLAppConfigEditTable.m */; };
+		F5E4C92F51E52BC4C2761DCF19161168 /* CFLAppConfigStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5D6293A1ED3812D76788B8DC9FDFE9 /* CFLAppConfigStorage.m */; };
+		FC78C788965DE8BDE79CA6B6201A261F /* CFLAppConfigEditTableValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC2AF977C6B4089A1ED1223DD8CE93 /* CFLAppConfigEditTableValue.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EA134CD58577A45083F3674DE04C63D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B82AB105AD65C85070BF99BCF6B25952;
+			remoteInfo = "CFLAppConfig-CFLAppConfig";
+		};
+		AD7AC9819AA712AED04BD3996E1B2127 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB7D9221D4B97529CD7034DA6B42BC4;
+			remoteInfo = CFLAppConfig;
+		};
+		CAFAF0BEE00DD0804348FB065806FF68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB7D9221D4B97529CD7034DA6B42BC4;
+			remoteInfo = CFLAppConfig;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00539C8973C3DCE11BD3FE2F0A979915 /* CFLAppConfigEditTableCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigEditTableCell.h; sourceTree = "<group>"; };
+		0446FE68D910A76F68259CDB459A38E7 /* CFLAppConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CFLAppConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0450467A1CFC5BDF003F3133 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		07550BD5A7B7E6AB820BE58B54F60CE9 /* CFLAppConfigManageTableCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigManageTableCell.m; sourceTree = "<group>"; };
+		08B8AECE81FF34659872810C7E12CD13 /* CFLAppConfigEditViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigEditViewController.h; sourceTree = "<group>"; };
+		09F8FFBF03A5A9819BBC6B4ACB9013B8 /* Pods-CFLAppConfig_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CFLAppConfig_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0C0BF7E1DDADAABD1E2BB5DFD1B4F5C6 /* CFLAppConfigEditSectionCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigEditSectionCell.h; sourceTree = "<group>"; };
+		0D4B40B54E1A19A642EBF09958F1FC41 /* CFLAppConfigManageLoadingCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigManageLoadingCell.h; sourceTree = "<group>"; };
+		0F17495ED45F1255BF89BBBD199326AF /* CFLAppConfigBundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigBundle.m; sourceTree = "<group>"; };
+		1583AC42BAF6881C3B2328374AD0C4F8 /* CFLAppConfigEditLoadingCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigEditLoadingCell.m; sourceTree = "<group>"; };
+		17F3AC18A08255F8315C3E9E7601A590 /* Pods-CFLAppConfig_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CFLAppConfig_Example-dummy.m"; sourceTree = "<group>"; };
+		1844C41AA33FFB8E911076C66159CB30 /* CFLAppConfigManageViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigManageViewController.m; sourceTree = "<group>"; };
+		1929DB782BDAFEA3F702595258112033 /* CFLAppConfigManageSectionCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigManageSectionCell.h; sourceTree = "<group>"; };
+		1C6EDAFD82EC31F38B53535B5B9A4FF2 /* CFLAppConfigBaseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigBaseModel.h; sourceTree = "<group>"; };
+		1DCB5C4BAC2886FFD4A3ABBDB0FBA90B /* Pods_CFLAppConfig_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CFLAppConfig_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		231616D4D668209D21CEE654549BD5EE /* CFLAppConfigEditTextCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigEditTextCell.m; sourceTree = "<group>"; };
+		231A21C19ECA7AA59FB2060C1A14D937 /* Pods-CFLAppConfig_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CFLAppConfig_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		27230495E8FB8F862340E0C6B7E40740 /* CFLAppConfigBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigBundle.h; sourceTree = "<group>"; };
+		2859FCC6E28A5246F561BFA4FF56819B /* Pods-CFLAppConfig_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CFLAppConfig_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2B865EE5058EDB5E9B6265D507928E23 /* chevron.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = chevron.png; sourceTree = "<group>"; };
+		2BEBD1164927FB571C8EAFF84CA91BAB /* Pods-CFLAppConfig_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CFLAppConfig_Example-resources.sh"; sourceTree = "<group>"; };
+		31312471EFCA0FA1F1A3E17764B588C3 /* Pods-CFLAppConfig_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CFLAppConfig_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3307E84A9FDBE1D576BE0B6435A08BE0 /* CFLAppConfigBaseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigBaseModel.m; sourceTree = "<group>"; };
+		36F5247394FDB12E0A1E8B8E58722A14 /* CFLAppConfigEditTableValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigEditTableValue.h; sourceTree = "<group>"; };
+		39C37870C524DCFC2490EEAB8814F9B0 /* Pods-CFLAppConfig_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CFLAppConfig_Example-umbrella.h"; sourceTree = "<group>"; };
+		3A09FD256452757FA7119E18F8ABCEBC /* CFLAppConfigManageSectionCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigManageSectionCell.m; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		475ABFFA7F24B116C0B3F40B80B6328E /* Pods-CFLAppConfig_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CFLAppConfig_Example-frameworks.sh"; sourceTree = "<group>"; };
+		4844B59099F6C3CD1D2DDE7B3EEE239C /* CFLAppConfigOrderedDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigOrderedDictionary.m; sourceTree = "<group>"; };
+		4CDC2AF977C6B4089A1ED1223DD8CE93 /* CFLAppConfigEditTableValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigEditTableValue.m; sourceTree = "<group>"; };
+		4EDA25B1A77B0A69928B2223C767D2AE /* CFLAppConfigSelectionHelperCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigSelectionHelperCell.m; sourceTree = "<group>"; };
+		50B7688642ADED8139D7931F31721830 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54540BC8032665B522E11DA04DAA311D /* CFLAppConfigStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigStorage.h; sourceTree = "<group>"; };
+		585287D9393B55751CC2C54EE5ADDADB /* CFLAppConfigManageViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigManageViewController.h; sourceTree = "<group>"; };
+		5952A008A5C040C14B9D06AA1D588B43 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		596A5BED81554E6CA0E32B04DD255D83 /* CFLAppConfig.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CFLAppConfig.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A046762299BF2A237A83B3E841F029F /* CFLAppConfigManageInfoCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigManageInfoCell.h; sourceTree = "<group>"; };
+		5A278A3C212D7E428DF1B30249A6E1E8 /* CFLAppConfigManageTable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigManageTable.m; sourceTree = "<group>"; };
+		5FEC3BA2AE1D4AFA58444D86855AB392 /* CFLAppConfigManageLoadingCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigManageLoadingCell.m; sourceTree = "<group>"; };
+		6723EA147AF892CE92661EB79BAD2EAF /* CFLAppConfigSelectionHelperViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigSelectionHelperViewController.m; sourceTree = "<group>"; };
+		68182CE8CBD2EE6B3442DE5896B613DD /* CFLAppConfigManageTableCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigManageTableCell.h; sourceTree = "<group>"; };
+		6CD8657AA7B755643DA3FB097B62E3B4 /* CFLAppConfigOrderedDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigOrderedDictionary.h; sourceTree = "<group>"; };
+		6F5D6293A1ED3812D76788B8DC9FDFE9 /* CFLAppConfigStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigStorage.m; sourceTree = "<group>"; };
+		72FEA99BEF907ED1A0DBB5502A61EB9D /* CFLAppConfigSelectionHelperTableCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigSelectionHelperTableCell.h; sourceTree = "<group>"; };
+		73E8DD1456B8F2DE7B3F75B4978FCC0B /* Pods-CFLAppConfig_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CFLAppConfig_Tests.modulemap"; sourceTree = "<group>"; };
+		7514894EE87A19ADC50F55E9D579072E /* Pods-CFLAppConfig_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CFLAppConfig_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7A501AF02D91A07C973227AEC5FAC784 /* CFLAppConfigManageTableValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigManageTableValue.h; sourceTree = "<group>"; };
+		7CD54C3EA8565879F6AF67D80EAE0375 /* CFLAppConfigSelectionHelperTable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigSelectionHelperTable.m; sourceTree = "<group>"; };
+		7CFC493CCD69B9F4C33458558D49EE97 /* CFLAppConfig.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CFLAppConfig.modulemap; sourceTree = "<group>"; };
+		7D268525EBB27CCC748AD6E05124FF42 /* Pods_CFLAppConfig_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CFLAppConfig_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B386289C2BDDD1F90248098D2E4E44 /* Pods-CFLAppConfig_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CFLAppConfig_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8409F1EA09942E6B2A4A5F9B49EA9713 /* CFLAppConfig.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CFLAppConfig.xcconfig; sourceTree = "<group>"; };
+		85A9CD49BD66BF67E0721CDE3A5D8603 /* CFLAppConfigBaseManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigBaseManager.h; sourceTree = "<group>"; };
+		8C7FB3B2D5991B7D11F07D37753E48FF /* CFLAppConfigEditSectionCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigEditSectionCell.m; sourceTree = "<group>"; };
+		9170E43ABA9C5C2D60D1A2E29CC4378D /* Pods-CFLAppConfig_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CFLAppConfig_Tests-dummy.m"; sourceTree = "<group>"; };
+		926BBD9FE5EE1BA723B7EA1250F4210D /* CFLAppConfigEditLoadingCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigEditLoadingCell.h; sourceTree = "<group>"; };
+		97168EA74205C2B7BE14D5C6159E7E78 /* Pods-CFLAppConfig_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CFLAppConfig_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		984171FEB85390794C121A931A0A5B2D /* CFLAppConfigEnumSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigEnumSerializer.h; sourceTree = "<group>"; };
+		A2437E4A3FF56D5DFC4D532DBB9491A7 /* CFLAppConfigManageTable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigManageTable.h; sourceTree = "<group>"; };
+		A91F5739D6F0EF6AC37A96644EA96ACD /* CFLAppConfig-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CFLAppConfig-prefix.pch"; sourceTree = "<group>"; };
+		AAA15A435A85112DD3A540F73719EE81 /* CFLAppConfigEditTextCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigEditTextCell.h; sourceTree = "<group>"; };
+		AB71619DA39051976E76E93B3BC0EAF7 /* CFLAppConfigManageInfoCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigManageInfoCell.m; sourceTree = "<group>"; };
+		AC3FEE76AC5667CBD5DBA649EBD9265F /* CFLAppConfigEditViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigEditViewController.m; sourceTree = "<group>"; };
+		ADE3E17FC9CA2393BCC74C7AB49309F8 /* CFLAppConfigEditSliderCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigEditSliderCell.m; sourceTree = "<group>"; };
+		B5FEE0AEF20B4301E19D4402A65C3EC0 /* CFLAppConfigSelectionHelperCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigSelectionHelperCell.h; sourceTree = "<group>"; };
+		B6C8D970A4A5F9EE6F241B75AE70FA8D /* CFLAppConfigEditSliderCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigEditSliderCell.h; sourceTree = "<group>"; };
+		B7280EE0A66F9407271962AD5815AB25 /* CFLAppConfig-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CFLAppConfig-umbrella.h"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C3F922E133C5B20660AE9D06A561FC47 /* chevron@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "chevron@3x.png"; sourceTree = "<group>"; };
+		C69053CDAE2D86710BA5AAA3D14B2BEE /* CFLAppConfigBaseManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigBaseManager.m; sourceTree = "<group>"; };
+		C8E23B3FDFA87DCFF6EEE6257EF9058B /* CFLAppConfigSelectionHelperTable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigSelectionHelperTable.h; sourceTree = "<group>"; };
+		CA29B146C1D7996F6138C9ED63026419 /* Pods-CFLAppConfig_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CFLAppConfig_Example.modulemap"; sourceTree = "<group>"; };
+		CABDFCA8011754144B9856A66F0F0CD2 /* CFLAppConfigEditTable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigEditTable.m; sourceTree = "<group>"; };
+		CCC783AFED328F953B65B7DC23FC303A /* CFLAppConfigSelectionHelperTableCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigSelectionHelperTableCell.m; sourceTree = "<group>"; };
+		D47D863C40EFEA8B8A99D56471241381 /* CFLAppConfigManageTableValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigManageTableValue.m; sourceTree = "<group>"; };
+		D6A24552E60D91440B53811A7F5C2FAB /* CFLAppConfig-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CFLAppConfig-dummy.m"; sourceTree = "<group>"; };
+		DF955A66B9B7663B7A67F57B15A9C4FC /* CFLAppConfigEnumSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigEnumSerializer.m; sourceTree = "<group>"; };
+		E39FE6BE1DF6A181616241B624FEB5C7 /* CFLAppConfigEditTableCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigEditTableCell.m; sourceTree = "<group>"; };
+		E4E5808AF7B54E10AD9B7A7DB53193B5 /* CFLAppConfigEditTable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigEditTable.h; sourceTree = "<group>"; };
+		E628F818F27E93DFF5DFBAB702553F0E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E68E5738E9701E709EF147C1E9C3F8EA /* Pods-CFLAppConfig_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CFLAppConfig_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		E9221E3ECD8644E178BDF68087063249 /* Pods-CFLAppConfig_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CFLAppConfig_Tests-umbrella.h"; sourceTree = "<group>"; };
+		EF834979A3ACBB2C1053A10700FB017F /* chevron@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "chevron@2x.png"; sourceTree = "<group>"; };
+		F125D042634248DC9B17831B36570161 /* Pods-CFLAppConfig_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CFLAppConfig_Tests-resources.sh"; sourceTree = "<group>"; };
+		F2A053F22D2C1EBBE25F7EFC394E0C02 /* CFLAppConfigManageItemCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigManageItemCell.m; sourceTree = "<group>"; };
+		F41A361F6A76FC32334C7A7F9FF870F8 /* CFLAppConfigEditActionCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigEditActionCell.h; sourceTree = "<group>"; };
+		F73BAC89C2122697151B7E1EB7736BCD /* CFLAppConfigManageItemCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigManageItemCell.h; sourceTree = "<group>"; };
+		F842F9DC3B7286491D6B8697D2D8552E /* CFLAppConfigEditActionCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFLAppConfigEditActionCell.m; sourceTree = "<group>"; };
+		F8C204F4AFF58636048D6778BADE63A2 /* Pods-CFLAppConfig_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CFLAppConfig_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FE458C92F3B4CF70FF4F8C63EFD50107 /* CFLAppConfigSelectionHelperViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFLAppConfigSelectionHelperViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4854B92DC965B0C3FE3CB642D9862285 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9331274BB86BD55D47D693AF87C564CF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FB578A625C4C20BE3AB4755EE5AB016 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DD5E9E9A5B72B58CAEEC1320B1F57DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A492CE2FB31136FAE6F18083574F4E4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE511C0C87A1EEAC64FE26E5814D7E48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				943D6DEF253F4C37E3D33A184DE72E82 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		050A1843EC57C29BDBBF241DDC99E63B /* CFLAppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				24675ADD628EDEA4B50E7DE0DED25706 /* Classes */,
+			);
+			path = CFLAppConfig;
+			sourceTree = "<group>";
+		};
+		0CCA9A479B2454FF3FEDBEA53D60955C /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				045046791CFC5BDF003F3133 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		1D8CAC28245194D01A9E358EE87B2D45 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2B865EE5058EDB5E9B6265D507928E23 /* chevron.png */,
+				EF834979A3ACBB2C1053A10700FB017F /* chevron@2x.png */,
+				C3F922E133C5B20660AE9D06A561FC47 /* chevron@3x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		204FD246C1758CFC9D8F361644AE737D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F41A361F6A76FC32334C7A7F9FF870F8 /* CFLAppConfigEditActionCell.h */,
+				F842F9DC3B7286491D6B8697D2D8552E /* CFLAppConfigEditActionCell.m */,
+				926BBD9FE5EE1BA723B7EA1250F4210D /* CFLAppConfigEditLoadingCell.h */,
+				1583AC42BAF6881C3B2328374AD0C4F8 /* CFLAppConfigEditLoadingCell.m */,
+				0C0BF7E1DDADAABD1E2BB5DFD1B4F5C6 /* CFLAppConfigEditSectionCell.h */,
+				8C7FB3B2D5991B7D11F07D37753E48FF /* CFLAppConfigEditSectionCell.m */,
+				B6C8D970A4A5F9EE6F241B75AE70FA8D /* CFLAppConfigEditSliderCell.h */,
+				ADE3E17FC9CA2393BCC74C7AB49309F8 /* CFLAppConfigEditSliderCell.m */,
+				AAA15A435A85112DD3A540F73719EE81 /* CFLAppConfigEditTextCell.h */,
+				231616D4D668209D21CEE654549BD5EE /* CFLAppConfigEditTextCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24675ADD628EDEA4B50E7DE0DED25706 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CE9A7D4B0C22AB94ACB670954A7CE5FF /* Helper */,
+				A96EA6A4D26DDC457251AE04A8B4D050 /* Manager */,
+				6299B3606C43DA1D48E4B1C2BE31BAA3 /* Model */,
+				72FF08A3FDA80E7F4DF63275EB9B1235 /* ViewController */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2A5B67FAD641DDBAD618E3455E44DCBC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B9529ABE2EFA9ADC9364ADD22E0D578 /* CFLAppConfig */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4B9529ABE2EFA9ADC9364ADD22E0D578 /* CFLAppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				1D8CAC28245194D01A9E358EE87B2D45 /* Assets */,
+				0CCA9A479B2454FF3FEDBEA53D60955C /* Localization */,
+			);
+			path = CFLAppConfig;
+			sourceTree = "<group>";
+		};
+		6299B3606C43DA1D48E4B1C2BE31BAA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C6EDAFD82EC31F38B53535B5B9A4FF2 /* CFLAppConfigBaseModel.h */,
+				3307E84A9FDBE1D576BE0B6435A08BE0 /* CFLAppConfigBaseModel.m */,
+				984171FEB85390794C121A931A0A5B2D /* CFLAppConfigEnumSerializer.h */,
+				DF955A66B9B7663B7A67F57B15A9C4FC /* CFLAppConfigEnumSerializer.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		651ACC2DA75E38903C130C084FA21EF4 /* CFLAppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				050A1843EC57C29BDBBF241DDC99E63B /* CFLAppConfig */,
+				2A5B67FAD641DDBAD618E3455E44DCBC /* Resources */,
+				ADC004238E8204E07C87BC9F3F6E8279 /* Support Files */,
+			);
+			name = CFLAppConfig;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		67443C1559E721D957678C7B66AC848D /* EditAppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				08B8AECE81FF34659872810C7E12CD13 /* CFLAppConfigEditViewController.h */,
+				AC3FEE76AC5667CBD5DBA649EBD9265F /* CFLAppConfigEditViewController.m */,
+				F455DB90598183EF12155C09D75A751E /* Table */,
+				204FD246C1758CFC9D8F361644AE737D /* View */,
+			);
+			path = EditAppConfig;
+			sourceTree = "<group>";
+		};
+		698B88AD71D2F5588CBA315E289C7C8A /* Pods-CFLAppConfig_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5952A008A5C040C14B9D06AA1D588B43 /* Info.plist */,
+				73E8DD1456B8F2DE7B3F75B4978FCC0B /* Pods-CFLAppConfig_Tests.modulemap */,
+				83B386289C2BDDD1F90248098D2E4E44 /* Pods-CFLAppConfig_Tests-acknowledgements.markdown */,
+				7514894EE87A19ADC50F55E9D579072E /* Pods-CFLAppConfig_Tests-acknowledgements.plist */,
+				9170E43ABA9C5C2D60D1A2E29CC4378D /* Pods-CFLAppConfig_Tests-dummy.m */,
+				E68E5738E9701E709EF147C1E9C3F8EA /* Pods-CFLAppConfig_Tests-frameworks.sh */,
+				F125D042634248DC9B17831B36570161 /* Pods-CFLAppConfig_Tests-resources.sh */,
+				E9221E3ECD8644E178BDF68087063249 /* Pods-CFLAppConfig_Tests-umbrella.h */,
+				31312471EFCA0FA1F1A3E17764B588C3 /* Pods-CFLAppConfig_Tests.debug.xcconfig */,
+				97168EA74205C2B7BE14D5C6159E7E78 /* Pods-CFLAppConfig_Tests.release.xcconfig */,
+			);
+			name = "Pods-CFLAppConfig_Tests";
+			path = "Target Support Files/Pods-CFLAppConfig_Tests";
+			sourceTree = "<group>";
+		};
+		6A4D23B662460C544DC349DD38DD63A6 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				A2437E4A3FF56D5DFC4D532DBB9491A7 /* CFLAppConfigManageTable.h */,
+				5A278A3C212D7E428DF1B30249A6E1E8 /* CFLAppConfigManageTable.m */,
+				68182CE8CBD2EE6B3442DE5896B613DD /* CFLAppConfigManageTableCell.h */,
+				07550BD5A7B7E6AB820BE58B54F60CE9 /* CFLAppConfigManageTableCell.m */,
+				7A501AF02D91A07C973227AEC5FAC784 /* CFLAppConfigManageTableValue.h */,
+				D47D863C40EFEA8B8A99D56471241381 /* CFLAppConfigManageTableValue.m */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		72FF08A3FDA80E7F4DF63275EB9B1235 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				67443C1559E721D957678C7B66AC848D /* EditAppConfig */,
+				92C1244F6BD4AECD9293840D78B6A438 /* ManageAppConfig */,
+				C4CAB576A28AE723828E1586FD111B17 /* SelectionHelper */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7A1CAFE915BF96E18290A2D3419F136B /* Pods-CFLAppConfig_Example */ = {
+			isa = PBXGroup;
+			children = (
+				E628F818F27E93DFF5DFBAB702553F0E /* Info.plist */,
+				CA29B146C1D7996F6138C9ED63026419 /* Pods-CFLAppConfig_Example.modulemap */,
+				09F8FFBF03A5A9819BBC6B4ACB9013B8 /* Pods-CFLAppConfig_Example-acknowledgements.markdown */,
+				231A21C19ECA7AA59FB2060C1A14D937 /* Pods-CFLAppConfig_Example-acknowledgements.plist */,
+				17F3AC18A08255F8315C3E9E7601A590 /* Pods-CFLAppConfig_Example-dummy.m */,
+				475ABFFA7F24B116C0B3F40B80B6328E /* Pods-CFLAppConfig_Example-frameworks.sh */,
+				2BEBD1164927FB571C8EAFF84CA91BAB /* Pods-CFLAppConfig_Example-resources.sh */,
+				39C37870C524DCFC2490EEAB8814F9B0 /* Pods-CFLAppConfig_Example-umbrella.h */,
+				2859FCC6E28A5246F561BFA4FF56819B /* Pods-CFLAppConfig_Example.debug.xcconfig */,
+				F8C204F4AFF58636048D6778BADE63A2 /* Pods-CFLAppConfig_Example.release.xcconfig */,
+			);
+			name = "Pods-CFLAppConfig_Example";
+			path = "Target Support Files/Pods-CFLAppConfig_Example";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				7E11F1599934E965B0D0B106DAD2CB5A /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				BDCB5711FEC4A9A206986D68B492B547 /* Products */,
+				B2B712A2C9C54566C9EDB73599885DAE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E11F1599934E965B0D0B106DAD2CB5A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				651ACC2DA75E38903C130C084FA21EF4 /* CFLAppConfig */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		92C1244F6BD4AECD9293840D78B6A438 /* ManageAppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				585287D9393B55751CC2C54EE5ADDADB /* CFLAppConfigManageViewController.h */,
+				1844C41AA33FFB8E911076C66159CB30 /* CFLAppConfigManageViewController.m */,
+				6A4D23B662460C544DC349DD38DD63A6 /* Table */,
+				C2BA0EA87D7189B6F226AE667D0ADFA9 /* View */,
+			);
+			path = ManageAppConfig;
+			sourceTree = "<group>";
+		};
+		95DE10319534692E361D6996AA2EDE18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5FEE0AEF20B4301E19D4402A65C3EC0 /* CFLAppConfigSelectionHelperCell.h */,
+				4EDA25B1A77B0A69928B2223C767D2AE /* CFLAppConfigSelectionHelperCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A96EA6A4D26DDC457251AE04A8B4D050 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				85A9CD49BD66BF67E0721CDE3A5D8603 /* CFLAppConfigBaseManager.h */,
+				C69053CDAE2D86710BA5AAA3D14B2BEE /* CFLAppConfigBaseManager.m */,
+				54540BC8032665B522E11DA04DAA311D /* CFLAppConfigStorage.h */,
+				6F5D6293A1ED3812D76788B8DC9FDFE9 /* CFLAppConfigStorage.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		ADC004238E8204E07C87BC9F3F6E8279 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CFC493CCD69B9F4C33458558D49EE97 /* CFLAppConfig.modulemap */,
+				8409F1EA09942E6B2A4A5F9B49EA9713 /* CFLAppConfig.xcconfig */,
+				D6A24552E60D91440B53811A7F5C2FAB /* CFLAppConfig-dummy.m */,
+				A91F5739D6F0EF6AC37A96644EA96ACD /* CFLAppConfig-prefix.pch */,
+				B7280EE0A66F9407271962AD5815AB25 /* CFLAppConfig-umbrella.h */,
+				50B7688642ADED8139D7931F31721830 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CFLAppConfig";
+			sourceTree = "<group>";
+		};
+		B2B712A2C9C54566C9EDB73599885DAE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A1CAFE915BF96E18290A2D3419F136B /* Pods-CFLAppConfig_Example */,
+				698B88AD71D2F5588CBA315E289C7C8A /* Pods-CFLAppConfig_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDCB5711FEC4A9A206986D68B492B547 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				596A5BED81554E6CA0E32B04DD255D83 /* CFLAppConfig.bundle */,
+				0446FE68D910A76F68259CDB459A38E7 /* CFLAppConfig.framework */,
+				7D268525EBB27CCC748AD6E05124FF42 /* Pods_CFLAppConfig_Example.framework */,
+				1DCB5C4BAC2886FFD4A3ABBDB0FBA90B /* Pods_CFLAppConfig_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C2BA0EA87D7189B6F226AE667D0ADFA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5A046762299BF2A237A83B3E841F029F /* CFLAppConfigManageInfoCell.h */,
+				AB71619DA39051976E76E93B3BC0EAF7 /* CFLAppConfigManageInfoCell.m */,
+				F73BAC89C2122697151B7E1EB7736BCD /* CFLAppConfigManageItemCell.h */,
+				F2A053F22D2C1EBBE25F7EFC394E0C02 /* CFLAppConfigManageItemCell.m */,
+				0D4B40B54E1A19A642EBF09958F1FC41 /* CFLAppConfigManageLoadingCell.h */,
+				5FEC3BA2AE1D4AFA58444D86855AB392 /* CFLAppConfigManageLoadingCell.m */,
+				1929DB782BDAFEA3F702595258112033 /* CFLAppConfigManageSectionCell.h */,
+				3A09FD256452757FA7119E18F8ABCEBC /* CFLAppConfigManageSectionCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4CAB576A28AE723828E1586FD111B17 /* SelectionHelper */ = {
+			isa = PBXGroup;
+			children = (
+				FE458C92F3B4CF70FF4F8C63EFD50107 /* CFLAppConfigSelectionHelperViewController.h */,
+				6723EA147AF892CE92661EB79BAD2EAF /* CFLAppConfigSelectionHelperViewController.m */,
+				D02BEC031BCE69DB731527A6BA7DA230 /* Table */,
+				95DE10319534692E361D6996AA2EDE18 /* View */,
+			);
+			path = SelectionHelper;
+			sourceTree = "<group>";
+		};
+		CE9A7D4B0C22AB94ACB670954A7CE5FF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				27230495E8FB8F862340E0C6B7E40740 /* CFLAppConfigBundle.h */,
+				0F17495ED45F1255BF89BBBD199326AF /* CFLAppConfigBundle.m */,
+				6CD8657AA7B755643DA3FB097B62E3B4 /* CFLAppConfigOrderedDictionary.h */,
+				4844B59099F6C3CD1D2DDE7B3EEE239C /* CFLAppConfigOrderedDictionary.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		D02BEC031BCE69DB731527A6BA7DA230 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				C8E23B3FDFA87DCFF6EEE6257EF9058B /* CFLAppConfigSelectionHelperTable.h */,
+				7CD54C3EA8565879F6AF67D80EAE0375 /* CFLAppConfigSelectionHelperTable.m */,
+				72FEA99BEF907ED1A0DBB5502A61EB9D /* CFLAppConfigSelectionHelperTableCell.h */,
+				CCC783AFED328F953B65B7DC23FC303A /* CFLAppConfigSelectionHelperTableCell.m */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		F455DB90598183EF12155C09D75A751E /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				E4E5808AF7B54E10AD9B7A7DB53193B5 /* CFLAppConfigEditTable.h */,
+				CABDFCA8011754144B9856A66F0F0CD2 /* CFLAppConfigEditTable.m */,
+				00539C8973C3DCE11BD3FE2F0A979915 /* CFLAppConfigEditTableCell.h */,
+				E39FE6BE1DF6A181616241B624FEB5C7 /* CFLAppConfigEditTableCell.m */,
+				36F5247394FDB12E0A1E8B8E58722A14 /* CFLAppConfigEditTableValue.h */,
+				4CDC2AF977C6B4089A1ED1223DD8CE93 /* CFLAppConfigEditTableValue.m */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		06F121A21319C982464777D6B87CC92C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49790017032E26BE55A8E6AAC432AA4E /* Pods-CFLAppConfig_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC412F3039B2AEFB46CDF21DFAA93807 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E46C5A79DB20C7DB4EE524DA667E28A /* Pods-CFLAppConfig_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B57753C91E6C1BE23AC4C4F99E096840 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				917492A6320A8108112C97B7A2A4981B /* CFLAppConfig-umbrella.h in Headers */,
+				43FE92A48FA1619C9D75383FCC312AA0 /* CFLAppConfigBaseManager.h in Headers */,
+				9A830E0BEDD080F37BE5B41B5DF139AC /* CFLAppConfigBaseModel.h in Headers */,
+				699EB7A4A8198DE50D66F62725E0E9ED /* CFLAppConfigBundle.h in Headers */,
+				99DDE17D53F2A4CFC0B2D404C0957F6F /* CFLAppConfigEditActionCell.h in Headers */,
+				5FF46A4F81C9BC8DEA013DCAF46C67D4 /* CFLAppConfigEditLoadingCell.h in Headers */,
+				C17F1ABD6382F2F378DFF860EBFCC429 /* CFLAppConfigEditSectionCell.h in Headers */,
+				B43B052FBE56C4D5B5F135E1580D0AC1 /* CFLAppConfigEditSliderCell.h in Headers */,
+				58355652C097008AA8327AE0BB1FBFC7 /* CFLAppConfigEditTable.h in Headers */,
+				8CDB94A22B660102BBE3FBA7AB7BE4E3 /* CFLAppConfigEditTableCell.h in Headers */,
+				976367FC5952842DA12C92AA445A3C65 /* CFLAppConfigEditTableValue.h in Headers */,
+				41E4AC159473235A439BEB084B2FC06C /* CFLAppConfigEditTextCell.h in Headers */,
+				E196D6FD65986AE9F8BE37F8ADA5DACC /* CFLAppConfigEditViewController.h in Headers */,
+				B363EB514A7F507B209C9320C212E1C5 /* CFLAppConfigEnumSerializer.h in Headers */,
+				5358B506665BCA53B9637065DBC27683 /* CFLAppConfigManageInfoCell.h in Headers */,
+				AC934F8A9AAFDA00AD938CDF5E759837 /* CFLAppConfigManageItemCell.h in Headers */,
+				2C9614CAE8CF00D27D9195C80ACC4EC5 /* CFLAppConfigManageLoadingCell.h in Headers */,
+				E444EE91F0E46C11837E34419E38D0FE /* CFLAppConfigManageSectionCell.h in Headers */,
+				A21E176A67A16129424D212B204AD08D /* CFLAppConfigManageTable.h in Headers */,
+				83A3C05BD3848C81D8CFD56D3315BAA3 /* CFLAppConfigManageTableCell.h in Headers */,
+				506D8748A41382736899D3112B3C0938 /* CFLAppConfigManageTableValue.h in Headers */,
+				7CC8BEAE494600EB7A7814BEBB26D412 /* CFLAppConfigManageViewController.h in Headers */,
+				35B7A02B7B31BCB8CDB1D821D451F4A4 /* CFLAppConfigOrderedDictionary.h in Headers */,
+				D429C6ADA39F721EFB94F46ED9A5EA31 /* CFLAppConfigSelectionHelperCell.h in Headers */,
+				B790E67474E9EDF6D18421769775598B /* CFLAppConfigSelectionHelperTable.h in Headers */,
+				28483BBB5D086B322CF009E3DEA5ED30 /* CFLAppConfigSelectionHelperTableCell.h in Headers */,
+				9CBAD50DB2C7D7C83DC7ADB6F31A492F /* CFLAppConfigSelectionHelperViewController.h in Headers */,
+				26CD0555238BF8E8F433DBE2A47E7AD8 /* CFLAppConfigStorage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3B7A32142AA3675050E1A7E60E51FD17 /* Pods-CFLAppConfig_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7F57C3E1B88F4A241D002CCDFA5D868 /* Build configuration list for PBXNativeTarget "Pods-CFLAppConfig_Tests" */;
+			buildPhases = (
+				4579B02AA368B26AFF417A20A3271A5B /* Sources */,
+				4854B92DC965B0C3FE3CB642D9862285 /* Frameworks */,
+				06F121A21319C982464777D6B87CC92C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C8ABB6D6709683B29057FA4F4F0F30C /* PBXTargetDependency */,
+			);
+			name = "Pods-CFLAppConfig_Tests";
+			productName = "Pods-CFLAppConfig_Tests";
+			productReference = 1DCB5C4BAC2886FFD4A3ABBDB0FBA90B /* Pods_CFLAppConfig_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B82AB105AD65C85070BF99BCF6B25952 /* CFLAppConfig-CFLAppConfig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAD7BE6265730CC64DA004220A1ECCC3 /* Build configuration list for PBXNativeTarget "CFLAppConfig-CFLAppConfig" */;
+			buildPhases = (
+				6748C1D08673D17E779C05B4DF0BED80 /* Sources */,
+				5FB578A625C4C20BE3AB4755EE5AB016 /* Frameworks */,
+				972650F8A5950F341E4FFD81EA9F4EF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CFLAppConfig-CFLAppConfig";
+			productName = "CFLAppConfig-CFLAppConfig";
+			productReference = 596A5BED81554E6CA0E32B04DD255D83 /* CFLAppConfig.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E8057B1BF6F72E01D2C512C405F1BD89 /* Pods-CFLAppConfig_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21A2B0D5576D7CE745D99A6F702088F0 /* Build configuration list for PBXNativeTarget "Pods-CFLAppConfig_Example" */;
+			buildPhases = (
+				BC9EEE362953D78B9931257DC43555D5 /* Sources */,
+				9DD5E9E9A5B72B58CAEEC1320B1F57DD /* Frameworks */,
+				AC412F3039B2AEFB46CDF21DFAA93807 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86062C023C369E54B9AAF960AABBF4A0 /* PBXTargetDependency */,
+			);
+			name = "Pods-CFLAppConfig_Example";
+			productName = "Pods-CFLAppConfig_Example";
+			productReference = 7D268525EBB27CCC748AD6E05124FF42 /* Pods_CFLAppConfig_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FAB7D9221D4B97529CD7034DA6B42BC4 /* CFLAppConfig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21640D72289029ABB1EC4B4637CDBBD9 /* Build configuration list for PBXNativeTarget "CFLAppConfig" */;
+			buildPhases = (
+				D574088AED2D824B2A02E0D72FD3BB6B /* Sources */,
+				FE511C0C87A1EEAC64FE26E5814D7E48 /* Frameworks */,
+				F5743D62D3E16E29B945FB57B93DD825 /* Resources */,
+				B57753C91E6C1BE23AC4C4F99E096840 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCC99168738A4E93F0F48045A158DB36 /* PBXTargetDependency */,
+			);
+			name = CFLAppConfig;
+			productName = CFLAppConfig;
+			productReference = 0446FE68D910A76F68259CDB459A38E7 /* CFLAppConfig.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = BDCB5711FEC4A9A206986D68B492B547 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAB7D9221D4B97529CD7034DA6B42BC4 /* CFLAppConfig */,
+				B82AB105AD65C85070BF99BCF6B25952 /* CFLAppConfig-CFLAppConfig */,
+				E8057B1BF6F72E01D2C512C405F1BD89 /* Pods-CFLAppConfig_Example */,
+				3B7A32142AA3675050E1A7E60E51FD17 /* Pods-CFLAppConfig_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		972650F8A5950F341E4FFD81EA9F4EF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5183C32577C0E317A45FD97FB30534CD /* chevron.png in Resources */,
+				0450467C1CFC5BDF003F3133 /* Localizable.strings in Resources */,
+				3C85FC519AAE93BB0A82813607F1CEA2 /* chevron@2x.png in Resources */,
+				63C21A7585C8B79B45457D8174DAC4ED /* chevron@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5743D62D3E16E29B945FB57B93DD825 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC8B05FA3EB0BB2756517C326E4ACB7 /* CFLAppConfig.bundle in Resources */,
+				0450467B1CFC5BDF003F3133 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4579B02AA368B26AFF417A20A3271A5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86C85597669561D53323F01224A96C06 /* Pods-CFLAppConfig_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6748C1D08673D17E779C05B4DF0BED80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9EEE362953D78B9931257DC43555D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C771A59673AD1F4ACCE1B6F0C3C4CB21 /* Pods-CFLAppConfig_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D574088AED2D824B2A02E0D72FD3BB6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51C591578B7B16BEBC5A717109987FCE /* CFLAppConfig-dummy.m in Sources */,
+				81BF8C0E49AB9994E33E1979F01170C7 /* CFLAppConfigBaseManager.m in Sources */,
+				72CC30DF59F06D5FF8AC111831360A0E /* CFLAppConfigBaseModel.m in Sources */,
+				D759E7B27AB19FB222DD4E512FACF964 /* CFLAppConfigBundle.m in Sources */,
+				67F9B0B0511B63B00122A85B3AAEA5DC /* CFLAppConfigEditActionCell.m in Sources */,
+				AE00E22D5D8C65DE7395B8AA7C7200E6 /* CFLAppConfigEditLoadingCell.m in Sources */,
+				DCEEE3EA60B898D582B936530E1C5498 /* CFLAppConfigEditSectionCell.m in Sources */,
+				C0F1A07464E1093C6DE9E1E31767D747 /* CFLAppConfigEditSliderCell.m in Sources */,
+				E569341FD03A25FEA9B39F5B9E54B928 /* CFLAppConfigEditTable.m in Sources */,
+				1C691A8194A1815FAA3FB531DF7BB0A4 /* CFLAppConfigEditTableCell.m in Sources */,
+				FC78C788965DE8BDE79CA6B6201A261F /* CFLAppConfigEditTableValue.m in Sources */,
+				D260F092F65127EABA601FCBA41580E8 /* CFLAppConfigEditTextCell.m in Sources */,
+				BC164DEE5ED2CAF56026247AB366E1CD /* CFLAppConfigEditViewController.m in Sources */,
+				7EC402DD779EB193C2272B85E66F6103 /* CFLAppConfigEnumSerializer.m in Sources */,
+				84AFFDEBFC80FC6E54FEC03269DF17A7 /* CFLAppConfigManageInfoCell.m in Sources */,
+				A47FEC737362A9A6BEBD17028860AE13 /* CFLAppConfigManageItemCell.m in Sources */,
+				50F5439523A88CB89FEB818BD9FD8364 /* CFLAppConfigManageLoadingCell.m in Sources */,
+				42C8C7487F466D653977E1992C3464DC /* CFLAppConfigManageSectionCell.m in Sources */,
+				D29760F3260477FF1EDBCCBAB8DBC043 /* CFLAppConfigManageTable.m in Sources */,
+				2CCA2EABFC3A2155433E2BAFB0025460 /* CFLAppConfigManageTableCell.m in Sources */,
+				364221171F9321E8610CCF2C32C3300B /* CFLAppConfigManageTableValue.m in Sources */,
+				304DB455DA8DB7A2BBCFFE4746D5789C /* CFLAppConfigManageViewController.m in Sources */,
+				1024854BB914CBB8E5CC06143CADB0FF /* CFLAppConfigOrderedDictionary.m in Sources */,
+				AB878470F5AC3F70271961DF87DDEBCE /* CFLAppConfigSelectionHelperCell.m in Sources */,
+				9FF1D78F1E4CD48A863F81E69A6AE5D0 /* CFLAppConfigSelectionHelperTable.m in Sources */,
+				A9DDEA3C0698657317196D6B792C1712 /* CFLAppConfigSelectionHelperTableCell.m in Sources */,
+				6C8ABB71FCBA23783F1695E745007691 /* CFLAppConfigSelectionHelperViewController.m in Sources */,
+				F5E4C92F51E52BC4C2761DCF19161168 /* CFLAppConfigStorage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C8ABB6D6709683B29057FA4F4F0F30C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CFLAppConfig;
+			target = FAB7D9221D4B97529CD7034DA6B42BC4 /* CFLAppConfig */;
+			targetProxy = AD7AC9819AA712AED04BD3996E1B2127 /* PBXContainerItemProxy */;
+		};
+		86062C023C369E54B9AAF960AABBF4A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CFLAppConfig;
+			target = FAB7D9221D4B97529CD7034DA6B42BC4 /* CFLAppConfig */;
+			targetProxy = CAFAF0BEE00DD0804348FB065806FF68 /* PBXContainerItemProxy */;
+		};
+		CCC99168738A4E93F0F48045A158DB36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CFLAppConfig-CFLAppConfig";
+			target = B82AB105AD65C85070BF99BCF6B25952 /* CFLAppConfig-CFLAppConfig */;
+			targetProxy = 1EA134CD58577A45083F3674DE04C63D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		045046791CFC5BDF003F3133 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0450467A1CFC5BDF003F3133 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00CAD008AE2303286A6860E6F55C5780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8409F1EA09942E6B2A4A5F9B49EA9713 /* CFLAppConfig.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = CFLAppConfig;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		276B11BFF7B2C273B9D1DD78CF94BB60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8C204F4AFF58636048D6778BADE63A2 /* Pods-CFLAppConfig_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CFLAppConfig_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CFLAppConfig_Example/Pods-CFLAppConfig_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_CFLAppConfig_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		77EA4931F243312AED287BFCB32717D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8409F1EA09942E6B2A4A5F9B49EA9713 /* CFLAppConfig.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CFLAppConfig/CFLAppConfig-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CFLAppConfig/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CFLAppConfig/CFLAppConfig.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CFLAppConfig;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84847928E3F132D83C3E38626D93732C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2859FCC6E28A5246F561BFA4FF56819B /* Pods-CFLAppConfig_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CFLAppConfig_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CFLAppConfig_Example/Pods-CFLAppConfig_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_CFLAppConfig_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		99861CA6AA995F4B20FF6697A5700E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31312471EFCA0FA1F1A3E17764B588C3 /* Pods-CFLAppConfig_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CFLAppConfig_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CFLAppConfig_Tests/Pods-CFLAppConfig_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_CFLAppConfig_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9ECCD7C7D48FC76A3160306EA91E4D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97168EA74205C2B7BE14D5C6159E7E78 /* Pods-CFLAppConfig_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CFLAppConfig_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CFLAppConfig_Tests/Pods-CFLAppConfig_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_CFLAppConfig_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DA76FC27C7634FCE8355F629F1D5252F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8409F1EA09942E6B2A4A5F9B49EA9713 /* CFLAppConfig.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = CFLAppConfig;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		E30F4D282E6B9F99A6E73558AC7E9740 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8409F1EA09942E6B2A4A5F9B49EA9713 /* CFLAppConfig.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CFLAppConfig/CFLAppConfig-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CFLAppConfig/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CFLAppConfig/CFLAppConfig.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CFLAppConfig;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21640D72289029ABB1EC4B4637CDBBD9 /* Build configuration list for PBXNativeTarget "CFLAppConfig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E30F4D282E6B9F99A6E73558AC7E9740 /* Debug */,
+				77EA4931F243312AED287BFCB32717D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21A2B0D5576D7CE745D99A6F702088F0 /* Build configuration list for PBXNativeTarget "Pods-CFLAppConfig_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84847928E3F132D83C3E38626D93732C /* Debug */,
+				276B11BFF7B2C273B9D1DD78CF94BB60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAD7BE6265730CC64DA004220A1ECCC3 /* Build configuration list for PBXNativeTarget "CFLAppConfig-CFLAppConfig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00CAD008AE2303286A6860E6F55C5780 /* Debug */,
+				DA76FC27C7634FCE8355F629F1D5252F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7F57C3E1B88F4A241D002CCDFA5D868 /* Build configuration list for PBXNativeTarget "Pods-CFLAppConfig_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99861CA6AA995F4B20FF6697A5700E2D /* Debug */,
+				9ECCD7C7D48FC76A3160306EA91E4D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

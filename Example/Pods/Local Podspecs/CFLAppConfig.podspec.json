@@ -18,6 +18,7 @@
   "source_files": "CFLAppConfig/Classes/**/*",
   "resource_bundles": {
     "CFLAppConfig": [
+      "CFLAppConfig/Localization/*.lproj",
       "CFLAppConfig/Assets/*.png"
     ]
   }

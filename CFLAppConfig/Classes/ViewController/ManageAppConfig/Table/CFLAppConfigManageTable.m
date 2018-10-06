@@ -12,6 +12,10 @@
 #import "CFLAppConfigManageLoadingCell.h"
 #import "CFLAppConfigManageSectionCell.h"
 #import "CFLAppConfigStorage.h"
+#import "CFLAppConfigBundle.h"
+
+//Special identifier for adding a new config
+#define kAddNewConfig @"kAddNewConfig"
 
 //Internal interface definition
 @interface CFLAppConfigManageTable ()
@@ -43,7 +47,7 @@
         
         //Show loading indicator by default
         self.tableValues = [NSMutableArray new];
-        [self.tableValues addObject:[CFLAppConfigManageTableValue valueForLoading:NSLocalizedString(@"Loading configurations...", nil)]];
+        [self.tableValues addObject:[CFLAppConfigManageTableValue valueForLoading:[CFLAppConfigBundle localizedString:@"CFLAC_SHARED_LOADING_CONFIGS"]]];
     }
     return self;
 }
@@ -59,40 +63,54 @@
 
 #pragma mark Implementation
 
-- (void)setConfigurations:(NSArray *)configurations lastSelected:(NSString *)lastSelectedConfig
+- (void)setConfigurations:(NSArray *)configurations customConfigs:(NSArray *)customConfigurations lastSelected:(NSString *)lastSelectedConfig
 {
     //Table values list
     self.tableValues = [NSMutableArray new];
     
     //Add last selected config
     BOOL foundLastSelected = NO;
-    [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForSection:NSLocalizedString(@"Last selected", nil)]];
+    [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForSection:[CFLAppConfigBundle localizedString:@"CFLAC_MANAGE_SECTION_LAST_SELECTED"]]];
     if (lastSelectedConfig)
     {
         for (NSString *configuration in configurations)
         {
             if ([configuration isEqualToString:lastSelectedConfig])
             {
-                NSString *label = lastSelectedConfig;
-                if ([[CFLAppConfigStorage sharedStorage] isConfigOverride:label])
-                {
-                    label = [NSString stringWithFormat:@"%@ *", label];
-                }
-                [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:lastSelectedConfig andText:label]];
                 foundLastSelected = YES;
                 break;
             }
         }
+        if (!foundLastSelected)
+        {
+            for (NSString *configuration in customConfigurations)
+            {
+                if ([configuration isEqualToString:lastSelectedConfig])
+                {
+                    foundLastSelected = YES;
+                    break;
+                }
+            }
+        }
     }
-    if (!foundLastSelected)
+    if (foundLastSelected)
     {
-        [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:@"" andText:NSLocalizedString(@"None", nil)]];
+        NSString *label = lastSelectedConfig;
+        if ([[CFLAppConfigStorage sharedStorage] isConfigOverride:label])
+        {
+            label = [NSString stringWithFormat:@"%@ *", label];
+        }
+        [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:lastSelectedConfig andText:label]];
+    }
+    else
+    {
+        [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:@"" andText:[CFLAppConfigBundle localizedString:@"CFLAC_MANAGE_LAST_SELECTED_NONE"]]];
     }
 
     //Add predefined configurations (if present)
     if ([configurations count] > 0)
     {
-        [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForSection:NSLocalizedString(@"Predefined configurations", nil)]];
+        [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForSection:[CFLAppConfigBundle localizedString:@"CFLAC_MANAGE_SECTION_PREDEFINED"]]];
         for (NSString *configuration in configurations)
         {
             NSString *label = configuration;
@@ -104,10 +122,22 @@
         }
     }
     
+    //Add custom config list (if there are predefined configurations to copy)
+    if ([configurations count] > 0)
+    {
+        [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForSection:[CFLAppConfigBundle localizedString:@"CFLAC_MANAGE_SECTION_CUSTOM"]]];
+        for (NSString *configuration in customConfigurations)
+        {
+            NSString *label = [NSString stringWithFormat:@"%@ *", configuration];
+            [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:configuration andText:label]];
+        }
+        [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForConfig:kAddNewConfig andText:[CFLAppConfigBundle localizedString:@"CFLAC_MANAGE_ADD_NEW"]]];
+    }
+    
     //Add build information
-    [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForSection:NSLocalizedString(@"Build information", nil)]];
-    [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForInfo:[NSString stringWithFormat:@"%@: %@", NSLocalizedString(@"Build", nil), [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleVersion"]]]];
-    [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForInfo:[NSString stringWithFormat:@"%@: %@", NSLocalizedString(@"iOS version", nil), [[UIDevice currentDevice] systemVersion]]]];
+    [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForSection:[CFLAppConfigBundle localizedString:@"CFLAC_MANAGE_SECTION_BUILD_INFO"]]];
+    [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForInfo:[NSString stringWithFormat:@"%@: %@", [CFLAppConfigBundle localizedString:@"CFLAC_MANAGE_BUILD_NR"], [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleVersion"]]]];
+    [[self tableValues] addObject:[CFLAppConfigManageTableValue valueForInfo:[NSString stringWithFormat:@"%@: %@", [CFLAppConfigBundle localizedString:@"CFLAC_MANAGE_BUILD_IOS_VERSION"], [[UIDevice currentDevice] systemVersion]]]];
     [self.tableView reloadData];
 }
 
@@ -237,16 +267,16 @@
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CFLAppConfigManageTableValue *tableValue = (CFLAppConfigManageTableValue *)[self.tableValues objectAtIndex:indexPath.row];
-    return tableValue.type == CFLAppConfigManageTableValueTypeConfig;
+    return tableValue.type == CFLAppConfigManageTableValueTypeConfig && ![tableValue.config isEqualToString:kAddNewConfig];
 }
 
 - (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewRowAction *editAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:NSLocalizedString(@"Edit", nil) handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
+    UITableViewRowAction *editAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:[CFLAppConfigBundle localizedString:@"CFLAC_MANAGE_SWIPE_EDIT"] handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
         CFLAppConfigManageTableValue *tableValue = (CFLAppConfigManageTableValue *)[self.tableValues objectAtIndex:indexPath.row];
         if (self.delegate)
         {
-            if (tableValue.config)
+            if (tableValue.config && ![tableValue.config isEqualToString:kAddNewConfig])
             {
                 [self.delegate editConfig:tableValue.config];
             }
@@ -256,6 +286,7 @@
     editAction.backgroundColor = [UIColor blueColor];
     return @[editAction];
 }
+
 
 #pragma mark UITableViewDelegate
 
@@ -276,10 +307,30 @@
     {
         if (tableValue.config)
         {
-            [self.delegate selectedConfig:tableValue.config];
+            if ([tableValue.config isEqualToString:kAddNewConfig])
+            {
+                CFLAppConfigSelectionHelperViewController *viewController = [CFLAppConfigSelectionHelperViewController new];
+                viewController.tag = @"";
+                viewController.preventAnimateOnClose = YES;
+                viewController.choices = [[CFLAppConfigStorage sharedStorage] obtainConfigList];
+                viewController.delegate = self;
+                [self.parentViewController.navigationController pushViewController:viewController animated:YES];
+            }
+            else
+            {
+                [self.delegate selectedConfig:tableValue.config];
+            }
         }
     }
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+}
+
+
+#pragma mark CFLAppConfigSelectionHelperViewControllerDelegate
+
+- (void)chosenItem:(NSString *)item givenTag:(NSObject *)tag
+{
+    [self.delegate newCustomConfigFrom:item];
 }
 
 @end

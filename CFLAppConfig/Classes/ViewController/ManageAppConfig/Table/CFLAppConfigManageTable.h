@@ -9,20 +9,23 @@
 
 //Import
 @import UIKit;
+#import "CFLAppConfigSelectionHelperViewController.h"
 
 //Delegate protocol
 @protocol CFLAppConfigManageTableDelegate <NSObject>
 
 - (void)selectedConfig:(NSString *)configName;
 - (void)editConfig:(NSString *)configName;
+- (void)newCustomConfigFrom:(NSString *)originalConfigName;
 
 @end
 
 //Interface definition
-@interface CFLAppConfigManageTable : UIView <UITableViewDataSource, UITableViewDelegate>
+@interface CFLAppConfigManageTable : UIView <UITableViewDataSource, UITableViewDelegate, CFLAppConfigSelectionHelperViewControllerDelegate>
 
 @property (nonatomic, weak) id<CFLAppConfigManageTableDelegate> delegate;
+@property (nonatomic, weak) UIViewController *parentViewController;
 
-- (void)setConfigurations:(NSArray *)configurations lastSelected:(NSString *)lastSelectedConfig;
+- (void)setConfigurations:(NSArray *)configurations customConfigs:(NSArray *)customConfigurations lastSelected:(NSString *)lastSelectedConfig;
 
 @end

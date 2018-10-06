@@ -118,6 +118,19 @@
     return list;
 }
 
+- (NSArray *)obtainCustomConfigList
+{
+    NSMutableArray *list = [NSMutableArray new];
+    for (NSString *key in self.customConfigs)
+    {
+        if (![self isConfigOverride:key])
+        {
+            [list addObject:key];
+        }
+    }
+    return list;
+}
+
 
 #pragma mark Add to storage
 
@@ -167,12 +180,23 @@
 - (void)selectConfig:(NSString *)configName
 {
     self.selectedItem = nil;
-    for (NSString *key in self.storedConfigs)
+    for (NSString *key in self.customConfigs)
     {
         if ([key isEqualToString:configName])
         {
             self.selectedItem = configName;
             break;
+        }
+    }
+    if (!self.selectedItem)
+    {
+        for (NSString *key in self.storedConfigs)
+        {
+            if ([key isEqualToString:configName])
+            {
+                self.selectedItem = configName;
+                break;
+            }
         }
     }
     [self storeSelectedItemInUserDefaults];

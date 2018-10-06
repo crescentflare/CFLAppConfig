@@ -5,6 +5,7 @@
 
 //Import
 #import "CFLAppConfigEditActionCell.h"
+#import "CFLAppConfigBundle.h"
 
 //Definitions
 static CGFloat kEdgePadding = 8;
@@ -32,8 +33,7 @@ static CGFloat kMinHeight = 48;
     if (self)
     {
         //Initial loading
-        NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle bundleForClass:[self class]] URLForResource:@"CFLAppConfig" withExtension:@"bundle"]];
-        UIImage *chevronImage = [UIImage imageNamed:@"chevron" inBundle:bundle compatibleWithTraitCollection:nil];
+        UIImage *chevronImage = [CFLAppConfigBundle imageNamed:@"chevron"];
         self.backgroundColor = [UIColor whiteColor];
         
         //Add label for action

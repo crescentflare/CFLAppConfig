@@ -6,6 +6,7 @@
 //Import
 #import "CFLAppConfigSelectionHelperViewController.h"
 #import "CFLAppConfigStorage.h"
+#import "CFLAppConfigBundle.h"
 
 //Internal interface definition
 @interface CFLAppConfigSelectionHelperViewController ()
@@ -23,7 +24,7 @@
 {
     //Set title
     [super viewDidLoad];
-    [self.navigationItem setTitle:NSLocalizedString(@"Select item", nil)];
+    [self.navigationItem setTitle:[CFLAppConfigBundle localizedString:@"CFLAC_SHARED_SELECT_MENU"]];
     self.navigationController.navigationBar.translucent = NO;
     
     //Always use a cancel button (when having a navigation bar)
@@ -38,7 +39,7 @@
         //Create button
         UIButton *cancelButton = [UIButton new];
         [cancelButton.titleLabel setFont:[UIFont systemFontOfSize:15]];
-        [cancelButton setTitle:NSLocalizedString(@"Cancel", nil) forState:UIControlStateNormal];
+        [cancelButton setTitle:[CFLAppConfigBundle localizedString:@"CFLAC_SHARED_CANCEL"] forState:UIControlStateNormal];
         [cancelButton setTitleColor:tintColor forState:UIControlStateNormal];
         [cancelButton setTitleColor:highlightTintColor forState:UIControlStateHighlighted];
         [cancelButton addTarget:self action:@selector(cancelButtonPressed) forControlEvents:UIControlEventTouchUpInside];
@@ -79,11 +80,11 @@
 
 - (void)chosenItem:(NSString *)choice
 {
+    [self.navigationController popViewControllerAnimated:!self.preventAnimateOnClose];
     if (self.delegate)
     {
         [self.delegate chosenItem:choice givenTag:self.tag];
     }
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

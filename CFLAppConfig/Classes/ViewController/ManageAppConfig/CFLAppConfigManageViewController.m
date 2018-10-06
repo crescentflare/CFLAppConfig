@@ -7,6 +7,7 @@
 #import "CFLAppConfigManageViewController.h"
 #import "CFLAppConfigStorage.h"
 #import "CFLAppConfigEditViewController.h"
+#import "CFLAppConfigBundle.h"
 
 //Internal interface definition
 @interface CFLAppConfigManageViewController ()
@@ -26,7 +27,7 @@
 {
     //Set title
     [super viewDidLoad];
-    [self.navigationItem setTitle:NSLocalizedString(@"App configurations", nil)];
+    [self.navigationItem setTitle:[CFLAppConfigBundle localizedString:@"CFLAC_MANAGE_TITLE"]];
     self.navigationController.navigationBar.translucent = NO;
     
     //Always use a cancel button (when having a navigation bar)
@@ -41,7 +42,7 @@
         //Create button
         UIButton *cancelButton = [UIButton new];
         [cancelButton.titleLabel setFont:[UIFont systemFontOfSize:15]];
-        [cancelButton setTitle:NSLocalizedString(@"Cancel", nil) forState:UIControlStateNormal];
+        [cancelButton setTitle:[CFLAppConfigBundle localizedString:@"CFLAC_SHARED_CANCEL"] forState:UIControlStateNormal];
         [cancelButton setTitleColor:tintColor forState:UIControlStateNormal];
         [cancelButton setTitleColor:highlightTintColor forState:UIControlStateHighlighted];
         [cancelButton addTarget:self action:@selector(cancelButtonPressed) forControlEvents:UIControlEventTouchUpInside];
@@ -56,7 +57,7 @@
     //Update configuration list
     [[CFLAppConfigStorage sharedStorage] loadFromSource:^(){
         self.isLoaded = YES;
-        [self.manageConfigTable setConfigurations:[[CFLAppConfigStorage sharedStorage] obtainConfigList] lastSelected:[[CFLAppConfigStorage sharedStorage] selectedConfig]];
+        [self.manageConfigTable setConfigurations:[[CFLAppConfigStorage sharedStorage] obtainConfigList] customConfigs:[[CFLAppConfigStorage sharedStorage] obtainCustomConfigList] lastSelected:[[CFLAppConfigStorage sharedStorage] selectedConfig]];
     }];
 }
 
@@ -71,6 +72,7 @@
         self.isPresentedController = [self isBeingPresented];
     }
     self.manageConfigTable = [CFLAppConfigManageTable new];
+    self.manageConfigTable.parentViewController = self;
     self.manageConfigTable.delegate = self;
     self.view = self.manageConfigTable;
 }
@@ -79,7 +81,7 @@
 {
     if (self.isLoaded)
     {
-        [self.manageConfigTable setConfigurations:[[CFLAppConfigStorage sharedStorage] obtainConfigList] lastSelected:[[CFLAppConfigStorage sharedStorage] selectedConfig]];
+        [self.manageConfigTable setConfigurations:[[CFLAppConfigStorage sharedStorage] obtainConfigList] customConfigs:[[CFLAppConfigStorage sharedStorage] obtainCustomConfigList] lastSelected:[[CFLAppConfigStorage sharedStorage] selectedConfig]];
     }
 }
 
@@ -133,6 +135,17 @@
     {
         CFLAppConfigEditViewController *viewController = [CFLAppConfigEditViewController new];
         viewController.configName = configName;
+        [self.navigationController pushViewController:viewController animated:YES];
+    }
+}
+
+- (void)newCustomConfigFrom:(NSString *)originalConfigName
+{
+    if (self.navigationController)
+    {
+        CFLAppConfigEditViewController *viewController = [CFLAppConfigEditViewController new];
+        viewController.configName = originalConfigName;
+        viewController.newConfig = YES;
         [self.navigationController pushViewController:viewController animated:YES];
     }
 }

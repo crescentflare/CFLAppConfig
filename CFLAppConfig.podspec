@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'CFLAppConfig/Classes/**/*'
   s.resource_bundles = {
-    'CFLAppConfig' => ['CFLAppConfig/Assets/*.png']
+    'CFLAppConfig' => ['CFLAppConfig/Localization/*.lproj', 'CFLAppConfig/Assets/*.png']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
